@@ -33,8 +33,6 @@ inst/results.json
 .lintr
 
 errorReport.txt
-output/
-results/
 thresholds/
 hs_err_pid*.log
 docs/Gemfile
