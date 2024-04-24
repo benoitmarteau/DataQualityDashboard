@@ -349,7 +349,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the CONDITION_ERA_START_DATE field of the CONDITION_ERA that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the CONDITION_ERA_START_DATE field of the CONDITION_ERA that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_ERA_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -378,7 +378,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = CONDITION_ERA
 cdmFieldName = CONDITION_ERA_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -402,14 +402,14 @@ FROM
 			cdmTable.*
     	FROM dbo.CONDITION_ERA cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.CONDITION_ERA_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -603,7 +603,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the CONDITION_START_DATE field of the CONDITION_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the CONDITION_START_DATE field of the CONDITION_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -632,7 +632,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = CONDITION_OCCURRENCE
 cdmFieldName = CONDITION_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -656,14 +656,14 @@ FROM
 			cdmTable.*
     	FROM dbo.CONDITION_OCCURRENCE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.CONDITION_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -691,7 +691,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the CONDITION_START_DATETIME field of the CONDITION_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the CONDITION_START_DATETIME field of the CONDITION_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -720,7 +720,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = CONDITION_OCCURRENCE
 cdmFieldName = CONDITION_START_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -744,14 +744,14 @@ FROM
 			cdmTable.*
     	FROM dbo.CONDITION_OCCURRENCE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.CONDITION_START_DATETIME AS DATE)
 		/*violatedRowsEnd*/
@@ -779,7 +779,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the DEATH_DATE field of the DEATH that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the DEATH_DATE field of the DEATH that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'DEATH' as cdm_table_name
   ,'DEATH_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -808,7 +808,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = DEATH
 cdmFieldName = DEATH_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -832,14 +832,14 @@ FROM
 			cdmTable.*
     	FROM dbo.DEATH cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.DEATH_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -867,7 +867,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the DEATH_DATETIME field of the DEATH that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the DEATH_DATETIME field of the DEATH that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'DEATH' as cdm_table_name
   ,'DEATH_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -896,7 +896,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = DEATH
 cdmFieldName = DEATH_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -920,14 +920,14 @@ FROM
 			cdmTable.*
     	FROM dbo.DEATH cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.DEATH_DATETIME AS DATE)
 		/*violatedRowsEnd*/
@@ -1121,7 +1121,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the DEVICE_EXPOSURE_START_DATE field of the DEVICE_EXPOSURE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the DEVICE_EXPOSURE_START_DATE field of the DEVICE_EXPOSURE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1150,7 +1150,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = DEVICE_EXPOSURE
 cdmFieldName = DEVICE_EXPOSURE_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -1174,14 +1174,14 @@ FROM
 			cdmTable.*
     	FROM dbo.DEVICE_EXPOSURE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.DEVICE_EXPOSURE_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -1209,7 +1209,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the DEVICE_EXPOSURE_START_DATETIME field of the DEVICE_EXPOSURE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the DEVICE_EXPOSURE_START_DATETIME field of the DEVICE_EXPOSURE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -1238,7 +1238,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = DEVICE_EXPOSURE
 cdmFieldName = DEVICE_EXPOSURE_START_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -1262,14 +1262,14 @@ FROM
 			cdmTable.*
     	FROM dbo.DEVICE_EXPOSURE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.DEVICE_EXPOSURE_START_DATETIME AS DATE)
 		/*violatedRowsEnd*/
@@ -1297,7 +1297,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the DOSE_ERA_END_DATE field of the DOSE_ERA that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the DOSE_ERA_END_DATE field of the DOSE_ERA that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_END_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1326,7 +1326,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = DOSE_ERA
 cdmFieldName = DOSE_ERA_END_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -1350,14 +1350,14 @@ FROM
 			cdmTable.*
     	FROM dbo.DOSE_ERA cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.DOSE_ERA_END_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -1385,7 +1385,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the DOSE_ERA_START_DATE field of the DOSE_ERA that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the DOSE_ERA_START_DATE field of the DOSE_ERA that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1414,7 +1414,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = DOSE_ERA
 cdmFieldName = DOSE_ERA_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -1438,14 +1438,14 @@ FROM
 			cdmTable.*
     	FROM dbo.DOSE_ERA cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.DOSE_ERA_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -1556,7 +1556,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the DRUG_ERA_START_DATE field of the DRUG_ERA that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the DRUG_ERA_START_DATE field of the DRUG_ERA that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_ERA_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1585,7 +1585,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = DRUG_ERA
 cdmFieldName = DRUG_ERA_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -1609,14 +1609,14 @@ FROM
 			cdmTable.*
     	FROM dbo.DRUG_ERA cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.DRUG_ERA_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -1810,7 +1810,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the DRUG_EXPOSURE_START_DATE field of the DRUG_EXPOSURE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the DRUG_EXPOSURE_START_DATE field of the DRUG_EXPOSURE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1839,7 +1839,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = DRUG_EXPOSURE
 cdmFieldName = DRUG_EXPOSURE_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -1863,14 +1863,14 @@ FROM
 			cdmTable.*
     	FROM dbo.DRUG_EXPOSURE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.DRUG_EXPOSURE_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -1898,7 +1898,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the DRUG_EXPOSURE_START_DATETIME field of the DRUG_EXPOSURE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the DRUG_EXPOSURE_START_DATETIME field of the DRUG_EXPOSURE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -1927,7 +1927,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = DRUG_EXPOSURE
 cdmFieldName = DRUG_EXPOSURE_START_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -1951,14 +1951,14 @@ FROM
 			cdmTable.*
     	FROM dbo.DRUG_EXPOSURE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.DRUG_EXPOSURE_START_DATETIME AS DATE)
 		/*violatedRowsEnd*/
@@ -2318,7 +2318,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the EPISODE_START_DATE field of the EPISODE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the EPISODE_START_DATE field of the EPISODE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -2347,7 +2347,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = EPISODE
 cdmFieldName = EPISODE_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -2371,14 +2371,14 @@ FROM
 			cdmTable.*
     	FROM dbo.EPISODE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.EPISODE_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -2406,7 +2406,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the EPISODE_START_DATETIME field of the EPISODE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the EPISODE_START_DATETIME field of the EPISODE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -2435,7 +2435,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = EPISODE
 cdmFieldName = EPISODE_START_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -2459,14 +2459,14 @@ FROM
 			cdmTable.*
     	FROM dbo.EPISODE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.EPISODE_START_DATETIME AS DATE)
 		/*violatedRowsEnd*/
@@ -2494,7 +2494,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the MEASUREMENT_DATE field of the MEASUREMENT that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the MEASUREMENT_DATE field of the MEASUREMENT that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -2523,7 +2523,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = MEASUREMENT
 cdmFieldName = MEASUREMENT_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -2547,14 +2547,14 @@ FROM
 			cdmTable.*
     	FROM dbo.MEASUREMENT cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.MEASUREMENT_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -2582,7 +2582,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the NOTE_DATE field of the NOTE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the NOTE_DATE field of the NOTE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -2611,7 +2611,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = NOTE
 cdmFieldName = NOTE_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -2635,14 +2635,14 @@ FROM
 			cdmTable.*
     	FROM dbo.NOTE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.NOTE_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -2670,7 +2670,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the NOTE_DATETIME field of the NOTE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the NOTE_DATETIME field of the NOTE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -2699,7 +2699,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = NOTE
 cdmFieldName = NOTE_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -2723,14 +2723,14 @@ FROM
 			cdmTable.*
     	FROM dbo.NOTE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.NOTE_DATETIME AS DATE)
 		/*violatedRowsEnd*/
@@ -2758,7 +2758,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the OBSERVATION_DATE field of the OBSERVATION that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the OBSERVATION_DATE field of the OBSERVATION that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -2787,7 +2787,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = OBSERVATION
 cdmFieldName = OBSERVATION_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -2811,14 +2811,14 @@ FROM
 			cdmTable.*
     	FROM dbo.OBSERVATION cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.OBSERVATION_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -2846,7 +2846,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the OBSERVATION_DATETIME field of the OBSERVATION that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the OBSERVATION_DATETIME field of the OBSERVATION that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -2875,7 +2875,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = OBSERVATION
 cdmFieldName = OBSERVATION_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -2899,14 +2899,14 @@ FROM
 			cdmTable.*
     	FROM dbo.OBSERVATION cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.OBSERVATION_DATETIME AS DATE)
 		/*violatedRowsEnd*/
@@ -3017,7 +3017,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the OBSERVATION_PERIOD_START_DATE field of the OBSERVATION_PERIOD that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the OBSERVATION_PERIOD_START_DATE field of the OBSERVATION_PERIOD that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -3046,7 +3046,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = OBSERVATION_PERIOD
 cdmFieldName = OBSERVATION_PERIOD_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -3070,14 +3070,14 @@ FROM
 			cdmTable.*
     	FROM dbo.OBSERVATION_PERIOD cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.OBSERVATION_PERIOD_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -3188,7 +3188,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the PAYER_PLAN_PERIOD_START_DATE field of the PAYER_PLAN_PERIOD that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the PAYER_PLAN_PERIOD_START_DATE field of the PAYER_PLAN_PERIOD that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -3217,7 +3217,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = PAYER_PLAN_PERIOD
 cdmFieldName = PAYER_PLAN_PERIOD_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -3241,14 +3241,14 @@ FROM
 			cdmTable.*
     	FROM dbo.PAYER_PLAN_PERIOD cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.PAYER_PLAN_PERIOD_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -3276,7 +3276,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the PROCEDURE_DATE field of the PROCEDURE_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the PROCEDURE_DATE field of the PROCEDURE_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -3305,7 +3305,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = PROCEDURE_OCCURRENCE
 cdmFieldName = PROCEDURE_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -3329,14 +3329,14 @@ FROM
 			cdmTable.*
     	FROM dbo.PROCEDURE_OCCURRENCE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.PROCEDURE_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -3364,7 +3364,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the PROCEDURE_DATETIME field of the PROCEDURE_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the PROCEDURE_DATETIME field of the PROCEDURE_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -3393,7 +3393,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = PROCEDURE_OCCURRENCE
 cdmFieldName = PROCEDURE_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -3417,14 +3417,14 @@ FROM
 			cdmTable.*
     	FROM dbo.PROCEDURE_OCCURRENCE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.PROCEDURE_DATETIME AS DATE)
 		/*violatedRowsEnd*/
@@ -3701,7 +3701,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the SPECIMEN_DATE field of the SPECIMEN that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the SPECIMEN_DATE field of the SPECIMEN that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -3730,7 +3730,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = SPECIMEN
 cdmFieldName = SPECIMEN_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -3754,14 +3754,14 @@ FROM
 			cdmTable.*
     	FROM dbo.SPECIMEN cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.SPECIMEN_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -3789,7 +3789,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the SPECIMEN_DATETIME field of the SPECIMEN that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the SPECIMEN_DATETIME field of the SPECIMEN that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -3818,7 +3818,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = SPECIMEN
 cdmFieldName = SPECIMEN_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -3842,14 +3842,14 @@ FROM
 			cdmTable.*
     	FROM dbo.SPECIMEN cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.SPECIMEN_DATETIME AS DATE)
 		/*violatedRowsEnd*/
@@ -4043,7 +4043,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the VISIT_DETAIL_START_DATE field of the VISIT_DETAIL that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the VISIT_DETAIL_START_DATE field of the VISIT_DETAIL that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -4072,7 +4072,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = VISIT_DETAIL
 cdmFieldName = VISIT_DETAIL_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -4096,14 +4096,14 @@ FROM
 			cdmTable.*
     	FROM dbo.VISIT_DETAIL cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.VISIT_DETAIL_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -4131,7 +4131,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the VISIT_DETAIL_START_DATETIME field of the VISIT_DETAIL that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the VISIT_DETAIL_START_DATETIME field of the VISIT_DETAIL that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -4160,7 +4160,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = VISIT_DETAIL
 cdmFieldName = VISIT_DETAIL_START_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -4184,14 +4184,14 @@ FROM
 			cdmTable.*
     	FROM dbo.VISIT_DETAIL cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.VISIT_DETAIL_START_DATETIME AS DATE)
 		/*violatedRowsEnd*/
@@ -4385,7 +4385,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the VISIT_START_DATE field of the VISIT_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the VISIT_START_DATE field of the VISIT_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -4414,7 +4414,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = VISIT_OCCURRENCE
 cdmFieldName = VISIT_START_DATE
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -4438,14 +4438,14 @@ FROM
 			cdmTable.*
     	FROM dbo.VISIT_OCCURRENCE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.VISIT_START_DATE AS DATE)
 		/*violatedRowsEnd*/
@@ -4473,7 +4473,7 @@ SELECT
   ,'' as query_text
   ,'plausibleTemporalAfter' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the VISIT_START_DATETIME field of the VISIT_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the PERSON table.' as check_description
+  ,'The number and percent of records with a value in the VISIT_START_DATETIME field of the VISIT_OCCURRENCE that occurs prior to the date in the BIRTH_DATETIME field of the person table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -4502,7 +4502,7 @@ Parameters used in this template:
 schema = dbo
 cdmTableName = VISIT_OCCURRENCE
 cdmFieldName = VISIT_START_DATETIME
-plausibleTemporalAfterTableName = PERSON
+plausibleTemporalAfterTableName = person
 plausibleTemporalAfterFieldName = BIRTH_DATETIME
 
 **********/
@@ -4526,14 +4526,14 @@ FROM
 			cdmTable.*
     	FROM dbo.VISIT_OCCURRENCE cdmTable
     		
-				JOIN dbo.PERSON plausibleTable 
-                    ON cdmTable.person_id = plausibleTable.person_id
+				JOIN dbo.person plausibleTable 
+                    ON cdmTable.PERSON_ID = plausibleTable.PERSON_ID
 			
     WHERE 
     	
 			COALESCE(
 				CAST(plausibleTable.BIRTH_DATETIME AS DATE),
-				CAST(CONCAT(plausibleTable.year_of_birth,'-06-01') AS DATE)
+				CAST(CONCAT(plausibleTable.YEAR_OF_BIRTH,'-06-01') AS DATE)
 			) 
 		 > CAST(cdmTable.VISIT_START_DATETIME AS DATE)
 		/*violatedRowsEnd*/

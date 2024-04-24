@@ -17,10 +17,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the PLACE_OF_SERVICE_CONCEPT_ID field in the CARE_SITE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the PLACE_OF_SERVICE_CONCEPT_ID field in the CARE_SITE table.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'PLACE_OF_SERVICE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -41,7 +41,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -70,10 +70,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.CARE_SITE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.PLACE_OF_SERVICE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.PLACE_OF_SERVICE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -99,10 +99,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the CDM_VERSION_CONCEPT_ID field in the CDM_SOURCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the CDM_VERSION_CONCEPT_ID field in the CDM_SOURCE table.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_VERSION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -123,7 +123,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -152,10 +152,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.CDM_SOURCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.CDM_VERSION_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.CDM_VERSION_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -181,10 +181,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DEFINITION_TYPE_CONCEPT_ID field in the COHORT_DEFINITION table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DEFINITION_TYPE_CONCEPT_ID field in the COHORT_DEFINITION table.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'DEFINITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -205,7 +205,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -234,10 +234,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.COHORT_DEFINITION cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DEFINITION_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DEFINITION_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -263,10 +263,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the SUBJECT_CONCEPT_ID field in the COHORT_DEFINITION table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the SUBJECT_CONCEPT_ID field in the COHORT_DEFINITION table.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'SUBJECT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -287,7 +287,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -316,10 +316,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.COHORT_DEFINITION cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.SUBJECT_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.SUBJECT_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -345,10 +345,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the CONDITION_CONCEPT_ID field in the CONDITION_ERA table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the CONDITION_CONCEPT_ID field in the CONDITION_ERA table.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -369,7 +369,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -398,10 +398,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.CONDITION_ERA cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.CONDITION_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.CONDITION_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -427,10 +427,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the CONDITION_CONCEPT_ID field in the CONDITION_OCCURRENCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the CONDITION_CONCEPT_ID field in the CONDITION_OCCURRENCE table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -451,7 +451,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -480,10 +480,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.CONDITION_OCCURRENCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.CONDITION_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.CONDITION_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -509,10 +509,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the CONDITION_STATUS_CONCEPT_ID field in the CONDITION_OCCURRENCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the CONDITION_STATUS_CONCEPT_ID field in the CONDITION_OCCURRENCE table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_STATUS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -533,7 +533,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -562,10 +562,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.CONDITION_OCCURRENCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.CONDITION_STATUS_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.CONDITION_STATUS_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -591,10 +591,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the CONDITION_TYPE_CONCEPT_ID field in the CONDITION_OCCURRENCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the CONDITION_TYPE_CONCEPT_ID field in the CONDITION_OCCURRENCE table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -615,7 +615,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -644,10 +644,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.CONDITION_OCCURRENCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.CONDITION_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.CONDITION_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -673,10 +673,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the COST_TYPE_CONCEPT_ID field in the COST table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the COST_TYPE_CONCEPT_ID field in the COST table.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -697,7 +697,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -726,10 +726,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.COST cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.COST_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.COST_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -755,10 +755,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the CAUSE_CONCEPT_ID field in the DEATH table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the CAUSE_CONCEPT_ID field in the DEATH table.' as check_description
   ,'DEATH' as cdm_table_name
   ,'CAUSE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -779,7 +779,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -808,10 +808,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DEATH cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.CAUSE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.CAUSE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -837,10 +837,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DEATH_TYPE_CONCEPT_ID field in the DEATH table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DEATH_TYPE_CONCEPT_ID field in the DEATH table.' as check_description
   ,'DEATH' as cdm_table_name
   ,'DEATH_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -861,7 +861,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -890,10 +890,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DEATH cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DEATH_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DEATH_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -919,10 +919,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DEVICE_CONCEPT_ID field in the DEVICE_EXPOSURE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DEVICE_CONCEPT_ID field in the DEVICE_EXPOSURE table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -943,7 +943,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -972,10 +972,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DEVICE_EXPOSURE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DEVICE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DEVICE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1001,10 +1001,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DEVICE_TYPE_CONCEPT_ID field in the DEVICE_EXPOSURE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DEVICE_TYPE_CONCEPT_ID field in the DEVICE_EXPOSURE table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1025,7 +1025,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1054,10 +1054,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DEVICE_EXPOSURE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DEVICE_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DEVICE_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1083,10 +1083,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the UNIT_CONCEPT_ID field in the DEVICE_EXPOSURE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the UNIT_CONCEPT_ID field in the DEVICE_EXPOSURE table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1107,7 +1107,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1136,10 +1136,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DEVICE_EXPOSURE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.UNIT_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.UNIT_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1165,10 +1165,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DRUG_CONCEPT_ID field in the DOSE_ERA table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DRUG_CONCEPT_ID field in the DOSE_ERA table.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1189,7 +1189,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1218,10 +1218,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DOSE_ERA cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DRUG_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DRUG_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1247,10 +1247,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the UNIT_CONCEPT_ID field in the DOSE_ERA table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the UNIT_CONCEPT_ID field in the DOSE_ERA table.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1271,7 +1271,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1300,10 +1300,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DOSE_ERA cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.UNIT_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.UNIT_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1329,10 +1329,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DRUG_CONCEPT_ID field in the DRUG_ERA table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DRUG_CONCEPT_ID field in the DRUG_ERA table.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1353,7 +1353,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1382,10 +1382,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DRUG_ERA cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DRUG_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DRUG_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1411,10 +1411,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DRUG_CONCEPT_ID field in the DRUG_EXPOSURE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DRUG_CONCEPT_ID field in the DRUG_EXPOSURE table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1435,7 +1435,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1464,10 +1464,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DRUG_EXPOSURE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DRUG_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DRUG_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1493,10 +1493,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DRUG_TYPE_CONCEPT_ID field in the DRUG_EXPOSURE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DRUG_TYPE_CONCEPT_ID field in the DRUG_EXPOSURE table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1517,7 +1517,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1546,10 +1546,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DRUG_EXPOSURE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DRUG_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DRUG_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1575,10 +1575,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the ROUTE_CONCEPT_ID field in the DRUG_EXPOSURE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the ROUTE_CONCEPT_ID field in the DRUG_EXPOSURE table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'ROUTE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1599,7 +1599,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1628,10 +1628,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.DRUG_EXPOSURE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.ROUTE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.ROUTE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1657,10 +1657,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the EPISODE_CONCEPT_ID field in the EPISODE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the EPISODE_CONCEPT_ID field in the EPISODE table.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1681,7 +1681,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1710,10 +1710,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.EPISODE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.EPISODE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.EPISODE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1739,10 +1739,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the EPISODE_TYPE_CONCEPT_ID field in the EPISODE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the EPISODE_TYPE_CONCEPT_ID field in the EPISODE table.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1763,7 +1763,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1792,10 +1792,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.EPISODE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.EPISODE_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.EPISODE_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1821,10 +1821,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the EPISODE_EVENT_FIELD_CONCEPT_ID field in the EPISODE_EVENT table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the EPISODE_EVENT_FIELD_CONCEPT_ID field in the EPISODE_EVENT table.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EPISODE_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1845,7 +1845,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1874,10 +1874,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.EPISODE_EVENT cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.EPISODE_EVENT_FIELD_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.EPISODE_EVENT_FIELD_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1903,10 +1903,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the COUNTRY_CONCEPT_ID field in the LOCATION table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the COUNTRY_CONCEPT_ID field in the LOCATION table.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'COUNTRY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -1927,7 +1927,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -1956,10 +1956,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.LOCATION cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.COUNTRY_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.COUNTRY_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -1985,10 +1985,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the MEAS_EVENT_FIELD_CONCEPT_ID field in the MEASUREMENT table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the MEAS_EVENT_FIELD_CONCEPT_ID field in the MEASUREMENT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEAS_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2009,7 +2009,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2038,10 +2038,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.MEASUREMENT cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.MEAS_EVENT_FIELD_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.MEAS_EVENT_FIELD_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2067,10 +2067,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the MEASUREMENT_CONCEPT_ID field in the MEASUREMENT table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the MEASUREMENT_CONCEPT_ID field in the MEASUREMENT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2091,7 +2091,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2120,10 +2120,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.MEASUREMENT cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.MEASUREMENT_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.MEASUREMENT_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2149,10 +2149,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the MEASUREMENT_TYPE_CONCEPT_ID field in the MEASUREMENT table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the MEASUREMENT_TYPE_CONCEPT_ID field in the MEASUREMENT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2173,7 +2173,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2202,10 +2202,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.MEASUREMENT cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.MEASUREMENT_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.MEASUREMENT_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2231,10 +2231,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the OPERATOR_CONCEPT_ID field in the MEASUREMENT table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the OPERATOR_CONCEPT_ID field in the MEASUREMENT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'OPERATOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2255,7 +2255,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2284,10 +2284,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.MEASUREMENT cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.OPERATOR_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.OPERATOR_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2313,10 +2313,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the UNIT_CONCEPT_ID field in the MEASUREMENT table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the UNIT_CONCEPT_ID field in the MEASUREMENT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2337,7 +2337,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2366,10 +2366,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.MEASUREMENT cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.UNIT_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.UNIT_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2395,10 +2395,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the ENCODING_CONCEPT_ID field in the NOTE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the ENCODING_CONCEPT_ID field in the NOTE table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'ENCODING_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2419,7 +2419,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2448,10 +2448,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.NOTE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.ENCODING_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.ENCODING_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2477,10 +2477,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the LANGUAGE_CONCEPT_ID field in the NOTE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the LANGUAGE_CONCEPT_ID field in the NOTE table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'LANGUAGE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2501,7 +2501,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2530,10 +2530,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.NOTE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.LANGUAGE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.LANGUAGE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2559,10 +2559,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the NOTE_CLASS_CONCEPT_ID field in the NOTE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the NOTE_CLASS_CONCEPT_ID field in the NOTE table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_CLASS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2583,7 +2583,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2612,10 +2612,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.NOTE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.NOTE_CLASS_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.NOTE_CLASS_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2641,10 +2641,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the NOTE_EVENT_FIELD_CONCEPT_ID field in the NOTE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the NOTE_EVENT_FIELD_CONCEPT_ID field in the NOTE table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2665,7 +2665,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2694,10 +2694,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.NOTE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.NOTE_EVENT_FIELD_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.NOTE_EVENT_FIELD_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2723,10 +2723,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the NOTE_TYPE_CONCEPT_ID field in the NOTE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the NOTE_TYPE_CONCEPT_ID field in the NOTE table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2747,7 +2747,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2776,10 +2776,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.NOTE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.NOTE_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.NOTE_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2805,10 +2805,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the NOTE_NLP_CONCEPT_ID field in the NOTE_NLP table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the NOTE_NLP_CONCEPT_ID field in the NOTE_NLP table.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2829,7 +2829,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2858,10 +2858,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.NOTE_NLP cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.NOTE_NLP_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.NOTE_NLP_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2887,10 +2887,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the SECTION_CONCEPT_ID field in the NOTE_NLP table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the SECTION_CONCEPT_ID field in the NOTE_NLP table.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'SECTION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2911,7 +2911,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -2940,10 +2940,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.NOTE_NLP cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.SECTION_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.SECTION_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -2969,10 +2969,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the OBS_EVENT_FIELD_CONCEPT_ID field in the OBSERVATION table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the OBS_EVENT_FIELD_CONCEPT_ID field in the OBSERVATION table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBS_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -2993,7 +2993,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -3022,10 +3022,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.OBSERVATION cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.OBS_EVENT_FIELD_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.OBS_EVENT_FIELD_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -3051,10 +3051,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the OBSERVATION_CONCEPT_ID field in the OBSERVATION table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the OBSERVATION_CONCEPT_ID field in the OBSERVATION table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3075,7 +3075,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -3104,10 +3104,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.OBSERVATION cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.OBSERVATION_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.OBSERVATION_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -3133,10 +3133,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the OBSERVATION_TYPE_CONCEPT_ID field in the OBSERVATION table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the OBSERVATION_TYPE_CONCEPT_ID field in the OBSERVATION table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3157,7 +3157,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -3186,10 +3186,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.OBSERVATION cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.OBSERVATION_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.OBSERVATION_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -3215,10 +3215,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the QUALIFIER_CONCEPT_ID field in the OBSERVATION table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the QUALIFIER_CONCEPT_ID field in the OBSERVATION table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'QUALIFIER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3239,7 +3239,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -3268,10 +3268,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.OBSERVATION cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.QUALIFIER_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.QUALIFIER_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -3297,10 +3297,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the UNIT_CONCEPT_ID field in the OBSERVATION table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the UNIT_CONCEPT_ID field in the OBSERVATION table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3321,7 +3321,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -3350,10 +3350,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.OBSERVATION cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.UNIT_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.UNIT_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -3379,10 +3379,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the PERIOD_TYPE_CONCEPT_ID field in the OBSERVATION_PERIOD table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the PERIOD_TYPE_CONCEPT_ID field in the OBSERVATION_PERIOD table.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'PERIOD_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3403,7 +3403,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -3432,10 +3432,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.OBSERVATION_PERIOD cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.PERIOD_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.PERIOD_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -3461,10 +3461,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the ETHNICITY_CONCEPT_ID field in the PERSON table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the ETHNICITY_CONCEPT_ID field in the person table.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3485,12 +3485,12 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_CONCEPT_ID
 
 **********/
@@ -3510,21 +3510,21 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.ETHNICITY_CONCEPT_ID' AS violating_field, 
+			'person.ETHNICITY_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.ETHNICITY_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.ETHNICITY_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 		
 ) denominator
 
@@ -3543,10 +3543,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the GENDER_CONCEPT_ID field in the PERSON table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the GENDER_CONCEPT_ID field in the person table.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3567,12 +3567,12 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_CONCEPT_ID
 
 **********/
@@ -3592,21 +3592,21 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.GENDER_CONCEPT_ID' AS violating_field, 
+			'person.GENDER_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.GENDER_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.GENDER_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 		
 ) denominator
 
@@ -3625,10 +3625,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the RACE_CONCEPT_ID field in the PERSON table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the RACE_CONCEPT_ID field in the person table.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3649,12 +3649,12 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_CONCEPT_ID
 
 **********/
@@ -3674,21 +3674,21 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.RACE_CONCEPT_ID' AS violating_field, 
+			'person.RACE_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.RACE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.RACE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 		
 ) denominator
 
@@ -3707,10 +3707,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the MODIFIER_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the MODIFIER_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'MODIFIER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3731,7 +3731,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -3760,10 +3760,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.PROCEDURE_OCCURRENCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.MODIFIER_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.MODIFIER_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -3789,10 +3789,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the PROCEDURE_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the PROCEDURE_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3813,7 +3813,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -3842,10 +3842,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.PROCEDURE_OCCURRENCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.PROCEDURE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.PROCEDURE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -3871,10 +3871,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the PROCEDURE_TYPE_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the PROCEDURE_TYPE_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3895,7 +3895,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -3924,10 +3924,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.PROCEDURE_OCCURRENCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.PROCEDURE_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.PROCEDURE_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -3953,10 +3953,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the GENDER_CONCEPT_ID field in the PROVIDER table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the GENDER_CONCEPT_ID field in the PROVIDER table.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -3977,7 +3977,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4006,10 +4006,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.PROVIDER cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.GENDER_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.GENDER_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4035,10 +4035,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the SPECIALTY_CONCEPT_ID field in the PROVIDER table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the SPECIALTY_CONCEPT_ID field in the PROVIDER table.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'SPECIALTY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4059,7 +4059,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4088,10 +4088,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.PROVIDER cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.SPECIALTY_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.SPECIALTY_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4117,10 +4117,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the TARGET_CONCEPT_ID field in the SOURCE_TO_CONCEPT_MAP table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the TARGET_CONCEPT_ID field in the SOURCE_TO_CONCEPT_MAP table.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'TARGET_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4141,7 +4141,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4170,10 +4170,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.SOURCE_TO_CONCEPT_MAP cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.TARGET_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.TARGET_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4199,10 +4199,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the ANATOMIC_SITE_CONCEPT_ID field in the SPECIMEN table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the ANATOMIC_SITE_CONCEPT_ID field in the SPECIMEN table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'ANATOMIC_SITE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4223,7 +4223,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4252,10 +4252,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.SPECIMEN cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.ANATOMIC_SITE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.ANATOMIC_SITE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4281,10 +4281,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DISEASE_STATUS_CONCEPT_ID field in the SPECIMEN table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DISEASE_STATUS_CONCEPT_ID field in the SPECIMEN table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'DISEASE_STATUS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4305,7 +4305,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4334,10 +4334,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.SPECIMEN cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DISEASE_STATUS_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DISEASE_STATUS_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4363,10 +4363,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the SPECIMEN_CONCEPT_ID field in the SPECIMEN table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the SPECIMEN_CONCEPT_ID field in the SPECIMEN table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4387,7 +4387,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4416,10 +4416,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.SPECIMEN cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.SPECIMEN_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.SPECIMEN_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4445,10 +4445,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the SPECIMEN_TYPE_CONCEPT_ID field in the SPECIMEN table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the SPECIMEN_TYPE_CONCEPT_ID field in the SPECIMEN table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4469,7 +4469,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4498,10 +4498,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.SPECIMEN cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.SPECIMEN_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.SPECIMEN_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4527,10 +4527,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the UNIT_CONCEPT_ID field in the SPECIMEN table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the UNIT_CONCEPT_ID field in the SPECIMEN table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4551,7 +4551,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4580,10 +4580,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.SPECIMEN cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.UNIT_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.UNIT_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4609,10 +4609,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the ADMITTED_FROM_CONCEPT_ID field in the VISIT_DETAIL table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the ADMITTED_FROM_CONCEPT_ID field in the VISIT_DETAIL table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'ADMITTED_FROM_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4633,7 +4633,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4662,10 +4662,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.VISIT_DETAIL cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.ADMITTED_FROM_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.ADMITTED_FROM_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4691,10 +4691,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DISCHARGED_TO_CONCEPT_ID field in the VISIT_DETAIL table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DISCHARGED_TO_CONCEPT_ID field in the VISIT_DETAIL table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'DISCHARGED_TO_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4715,7 +4715,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4744,10 +4744,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.VISIT_DETAIL cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DISCHARGED_TO_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DISCHARGED_TO_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4773,10 +4773,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the VISIT_DETAIL_CONCEPT_ID field in the VISIT_DETAIL table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the VISIT_DETAIL_CONCEPT_ID field in the VISIT_DETAIL table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4797,7 +4797,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4826,10 +4826,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.VISIT_DETAIL cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.VISIT_DETAIL_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.VISIT_DETAIL_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4855,10 +4855,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the VISIT_DETAIL_TYPE_CONCEPT_ID field in the VISIT_DETAIL table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the VISIT_DETAIL_TYPE_CONCEPT_ID field in the VISIT_DETAIL table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4879,7 +4879,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4908,10 +4908,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.VISIT_DETAIL cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.VISIT_DETAIL_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.VISIT_DETAIL_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -4937,10 +4937,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the ADMITTED_FROM_CONCEPT_ID field in the VISIT_OCCURRENCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the ADMITTED_FROM_CONCEPT_ID field in the VISIT_OCCURRENCE table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'ADMITTED_FROM_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -4961,7 +4961,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -4990,10 +4990,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.VISIT_OCCURRENCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.ADMITTED_FROM_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.ADMITTED_FROM_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -5019,10 +5019,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the DISCHARGED_TO_CONCEPT_ID field in the VISIT_OCCURRENCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the DISCHARGED_TO_CONCEPT_ID field in the VISIT_OCCURRENCE table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'DISCHARGED_TO_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -5043,7 +5043,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -5072,10 +5072,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.VISIT_OCCURRENCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.DISCHARGED_TO_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.DISCHARGED_TO_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -5101,10 +5101,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the VISIT_CONCEPT_ID field in the VISIT_OCCURRENCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the VISIT_CONCEPT_ID field in the VISIT_OCCURRENCE table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -5125,7 +5125,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -5154,10 +5154,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.VISIT_OCCURRENCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.VISIT_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.VISIT_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -5183,10 +5183,10 @@ SELECT
   ,'' as query_text
   ,'isStandardValidConcept' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that do not have a standard, valid concept in the VISIT_TYPE_CONCEPT_ID field in the VISIT_OCCURRENCE table.' as check_description
+  ,'The number and percent of records that do not have a standard, valid CONCEPT in the VISIT_TYPE_CONCEPT_ID field in the VISIT_OCCURRENCE table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_standard_valid_concept.sql' as sql_file
   ,'Conformance' as category
@@ -5207,7 +5207,7 @@ FROM (
 /*********
 FIELD_IS_STANDARD_VALID_CONCEPT
 
-all standard concept id fields are standard and valid
+all standard CONCEPT id fields are standard and valid
 
 Parameters used in this template:
 schema = dbo
@@ -5236,10 +5236,10 @@ FROM
 			cdmTable.* 
 		FROM dbo.VISIT_OCCURRENCE cdmTable
 			
-	  	JOIN dbo.concept co 
-	  	    ON cdmTable.VISIT_TYPE_CONCEPT_ID = co.concept_id
-		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+	  	JOIN dbo.CONCEPT co 
+	  	    ON cdmTable.VISIT_TYPE_CONCEPT_ID = co.CONCEPT_ID
+		WHERE co.CONCEPT_ID != 0 
+			AND (co.STANDARD_CONCEPT != 'S' OR co.INVALID_REASON IS NOT NULL)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,

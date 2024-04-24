@@ -20,7 +20,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CARE_SITE_ID of the CARE_SITE that is considered not nullable.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -97,7 +97,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CDM_HOLDER of the CDM_SOURCE that is considered not nullable.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_HOLDER' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -174,7 +174,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CDM_RELEASE_DATE of the CDM_SOURCE that is considered not nullable.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_RELEASE_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -251,7 +251,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CDM_SOURCE_ABBREVIATION of the CDM_SOURCE that is considered not nullable.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_SOURCE_ABBREVIATION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -328,7 +328,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CDM_SOURCE_NAME of the CDM_SOURCE that is considered not nullable.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_SOURCE_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -405,7 +405,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CDM_VERSION_CONCEPT_ID of the CDM_SOURCE that is considered not nullable.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_VERSION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -482,7 +482,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the SOURCE_RELEASE_DATE of the CDM_SOURCE that is considered not nullable.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'SOURCE_RELEASE_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -559,7 +559,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VOCABULARY_VERSION of the CDM_SOURCE that is considered not nullable.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'VOCABULARY_VERSION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -636,7 +636,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the COHORT_DEFINITION_ID of the COHORT that is considered not nullable.' as check_description
   ,'COHORT' as cdm_table_name
   ,'COHORT_DEFINITION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -713,7 +713,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the COHORT_END_DATE of the COHORT that is considered not nullable.' as check_description
   ,'COHORT' as cdm_table_name
   ,'COHORT_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -790,7 +790,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the COHORT_START_DATE of the COHORT that is considered not nullable.' as check_description
   ,'COHORT' as cdm_table_name
   ,'COHORT_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -867,7 +867,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the SUBJECT_ID of the COHORT that is considered not nullable.' as check_description
   ,'COHORT' as cdm_table_name
   ,'SUBJECT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -944,7 +944,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the COHORT_DEFINITION_ID of the COHORT_DEFINITION that is considered not nullable.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'COHORT_DEFINITION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1021,7 +1021,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the COHORT_DEFINITION_NAME of the COHORT_DEFINITION that is considered not nullable.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'COHORT_DEFINITION_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1098,7 +1098,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DEFINITION_TYPE_CONCEPT_ID of the COHORT_DEFINITION that is considered not nullable.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'DEFINITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1175,7 +1175,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the SUBJECT_CONCEPT_ID of the COHORT_DEFINITION that is considered not nullable.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'SUBJECT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1252,7 +1252,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_CLASS_ID of the CONCEPT that is considered not nullable.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_CLASS_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1329,7 +1329,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_CODE of the CONCEPT that is considered not nullable.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_CODE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1406,7 +1406,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_ID of the CONCEPT that is considered not nullable.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1483,7 +1483,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_NAME of the CONCEPT that is considered not nullable.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1560,7 +1560,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DOMAIN_ID of the CONCEPT that is considered not nullable.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'DOMAIN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1637,7 +1637,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VALID_END_DATE of the CONCEPT that is considered not nullable.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'VALID_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1714,7 +1714,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VALID_START_DATE of the CONCEPT that is considered not nullable.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'VALID_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1791,7 +1791,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VOCABULARY_ID of the CONCEPT that is considered not nullable.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1868,7 +1868,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the ANCESTOR_CONCEPT_ID of the CONCEPT_ANCESTOR that is considered not nullable.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'ANCESTOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -1945,7 +1945,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DESCENDANT_CONCEPT_ID of the CONCEPT_ANCESTOR that is considered not nullable.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'DESCENDANT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2022,7 +2022,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the MAX_LEVELS_OF_SEPARATION of the CONCEPT_ANCESTOR that is considered not nullable.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'MAX_LEVELS_OF_SEPARATION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2099,7 +2099,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the MIN_LEVELS_OF_SEPARATION of the CONCEPT_ANCESTOR that is considered not nullable.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'MIN_LEVELS_OF_SEPARATION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2176,7 +2176,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_CLASS_CONCEPT_ID of the CONCEPT_CLASS that is considered not nullable.' as check_description
   ,'CONCEPT_CLASS' as cdm_table_name
   ,'CONCEPT_CLASS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2253,7 +2253,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_CLASS_ID of the CONCEPT_CLASS that is considered not nullable.' as check_description
   ,'CONCEPT_CLASS' as cdm_table_name
   ,'CONCEPT_CLASS_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2330,7 +2330,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_CLASS_NAME of the CONCEPT_CLASS that is considered not nullable.' as check_description
   ,'CONCEPT_CLASS' as cdm_table_name
   ,'CONCEPT_CLASS_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2407,7 +2407,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_ID_1 of the CONCEPT_RELATIONSHIP that is considered not nullable.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'CONCEPT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2484,7 +2484,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_ID_2 of the CONCEPT_RELATIONSHIP that is considered not nullable.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'CONCEPT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2561,7 +2561,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the RELATIONSHIP_ID of the CONCEPT_RELATIONSHIP that is considered not nullable.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2638,7 +2638,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VALID_END_DATE of the CONCEPT_RELATIONSHIP that is considered not nullable.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'VALID_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2715,7 +2715,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VALID_START_DATE of the CONCEPT_RELATIONSHIP that is considered not nullable.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'VALID_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2792,7 +2792,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_ID of the CONCEPT_SYNONYM that is considered not nullable.' as check_description
   ,'CONCEPT_SYNONYM' as cdm_table_name
   ,'CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2869,7 +2869,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONCEPT_SYNONYM_NAME of the CONCEPT_SYNONYM that is considered not nullable.' as check_description
   ,'CONCEPT_SYNONYM' as cdm_table_name
   ,'CONCEPT_SYNONYM_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -2946,7 +2946,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the LANGUAGE_CONCEPT_ID of the CONCEPT_SYNONYM that is considered not nullable.' as check_description
   ,'CONCEPT_SYNONYM' as cdm_table_name
   ,'LANGUAGE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3023,7 +3023,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONDITION_CONCEPT_ID of the CONDITION_ERA that is considered not nullable.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3100,7 +3100,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONDITION_ERA_END_DATE of the CONDITION_ERA that is considered not nullable.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_ERA_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3177,7 +3177,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONDITION_ERA_ID of the CONDITION_ERA that is considered not nullable.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3254,7 +3254,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONDITION_ERA_START_DATE of the CONDITION_ERA that is considered not nullable.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_ERA_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3331,7 +3331,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the CONDITION_ERA that is considered not nullable.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3408,7 +3408,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONDITION_CONCEPT_ID of the CONDITION_OCCURRENCE that is considered not nullable.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3485,7 +3485,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONDITION_OCCURRENCE_ID of the CONDITION_OCCURRENCE that is considered not nullable.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3562,7 +3562,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONDITION_START_DATE of the CONDITION_OCCURRENCE that is considered not nullable.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3639,7 +3639,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the CONDITION_TYPE_CONCEPT_ID of the CONDITION_OCCURRENCE that is considered not nullable.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3716,7 +3716,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the CONDITION_OCCURRENCE that is considered not nullable.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3793,7 +3793,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the COST_DOMAIN_ID of the COST that is considered not nullable.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_DOMAIN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3870,7 +3870,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the COST_EVENT_ID of the COST that is considered not nullable.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_EVENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -3947,7 +3947,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the COST_ID of the COST that is considered not nullable.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4024,7 +4024,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the COST_TYPE_CONCEPT_ID of the COST that is considered not nullable.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4101,7 +4101,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DEATH_DATE of the DEATH that is considered not nullable.' as check_description
   ,'DEATH' as cdm_table_name
   ,'DEATH_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4178,7 +4178,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the DEATH that is considered not nullable.' as check_description
   ,'DEATH' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4255,7 +4255,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DEVICE_CONCEPT_ID of the DEVICE_EXPOSURE that is considered not nullable.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4332,7 +4332,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DEVICE_EXPOSURE_ID of the DEVICE_EXPOSURE that is considered not nullable.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4409,7 +4409,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DEVICE_EXPOSURE_START_DATE of the DEVICE_EXPOSURE that is considered not nullable.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4486,7 +4486,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DEVICE_TYPE_CONCEPT_ID of the DEVICE_EXPOSURE that is considered not nullable.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4563,7 +4563,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the DEVICE_EXPOSURE that is considered not nullable.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4640,7 +4640,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DOMAIN_CONCEPT_ID of the DOMAIN that is considered not nullable.' as check_description
   ,'DOMAIN' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4717,7 +4717,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DOMAIN_ID of the DOMAIN that is considered not nullable.' as check_description
   ,'DOMAIN' as cdm_table_name
   ,'DOMAIN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4794,7 +4794,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DOMAIN_NAME of the DOMAIN that is considered not nullable.' as check_description
   ,'DOMAIN' as cdm_table_name
   ,'DOMAIN_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4871,7 +4871,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DOSE_ERA_END_DATE of the DOSE_ERA that is considered not nullable.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -4948,7 +4948,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DOSE_ERA_ID of the DOSE_ERA that is considered not nullable.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5025,7 +5025,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DOSE_ERA_START_DATE of the DOSE_ERA that is considered not nullable.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5102,7 +5102,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DOSE_VALUE of the DOSE_ERA that is considered not nullable.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5179,7 +5179,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_CONCEPT_ID of the DOSE_ERA that is considered not nullable.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5256,7 +5256,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the DOSE_ERA that is considered not nullable.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5333,7 +5333,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the UNIT_CONCEPT_ID of the DOSE_ERA that is considered not nullable.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5410,7 +5410,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_CONCEPT_ID of the DRUG_ERA that is considered not nullable.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5487,7 +5487,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_ERA_END_DATE of the DRUG_ERA that is considered not nullable.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_ERA_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5564,7 +5564,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_ERA_ID of the DRUG_ERA that is considered not nullable.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5641,7 +5641,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_ERA_START_DATE of the DRUG_ERA that is considered not nullable.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_ERA_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5718,7 +5718,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the DRUG_ERA that is considered not nullable.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5795,7 +5795,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_CONCEPT_ID of the DRUG_EXPOSURE that is considered not nullable.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5872,7 +5872,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_EXPOSURE_END_DATE of the DRUG_EXPOSURE that is considered not nullable.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -5949,7 +5949,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_EXPOSURE_ID of the DRUG_EXPOSURE that is considered not nullable.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6026,7 +6026,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_EXPOSURE_START_DATE of the DRUG_EXPOSURE that is considered not nullable.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6103,7 +6103,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_TYPE_CONCEPT_ID of the DRUG_EXPOSURE that is considered not nullable.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6180,7 +6180,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the DRUG_EXPOSURE that is considered not nullable.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6257,7 +6257,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DRUG_CONCEPT_ID of the DRUG_STRENGTH that is considered not nullable.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6334,7 +6334,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the INGREDIENT_CONCEPT_ID of the DRUG_STRENGTH that is considered not nullable.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'INGREDIENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6411,7 +6411,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VALID_END_DATE of the DRUG_STRENGTH that is considered not nullable.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'VALID_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6488,7 +6488,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VALID_START_DATE of the DRUG_STRENGTH that is considered not nullable.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'VALID_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6565,7 +6565,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the EPISODE_CONCEPT_ID of the EPISODE that is considered not nullable.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6642,7 +6642,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the EPISODE_ID of the EPISODE that is considered not nullable.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6719,7 +6719,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the EPISODE_OBJECT_CONCEPT_ID of the EPISODE that is considered not nullable.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_OBJECT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6796,7 +6796,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the EPISODE_START_DATE of the EPISODE that is considered not nullable.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6873,7 +6873,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the EPISODE_TYPE_CONCEPT_ID of the EPISODE that is considered not nullable.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -6950,7 +6950,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the EPISODE that is considered not nullable.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7027,7 +7027,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the EPISODE_EVENT_FIELD_CONCEPT_ID of the EPISODE_EVENT that is considered not nullable.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EPISODE_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7104,7 +7104,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the EPISODE_ID of the EPISODE_EVENT that is considered not nullable.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EPISODE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7181,7 +7181,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the EVENT_ID of the EPISODE_EVENT that is considered not nullable.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EVENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7258,7 +7258,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DOMAIN_CONCEPT_ID_1 of the FACT_RELATIONSHIP that is considered not nullable.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7335,7 +7335,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DOMAIN_CONCEPT_ID_2 of the FACT_RELATIONSHIP that is considered not nullable.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7412,7 +7412,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the FACT_ID_1 of the FACT_RELATIONSHIP that is considered not nullable.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'FACT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7489,7 +7489,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the FACT_ID_2 of the FACT_RELATIONSHIP that is considered not nullable.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'FACT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7566,7 +7566,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the RELATIONSHIP_CONCEPT_ID of the FACT_RELATIONSHIP that is considered not nullable.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7643,7 +7643,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the LOCATION_ID of the LOCATION that is considered not nullable.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7720,7 +7720,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the MEASUREMENT_CONCEPT_ID of the MEASUREMENT that is considered not nullable.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7797,7 +7797,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the MEASUREMENT_DATE of the MEASUREMENT that is considered not nullable.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7874,7 +7874,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the MEASUREMENT_ID of the MEASUREMENT that is considered not nullable.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -7951,7 +7951,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the MEASUREMENT_TYPE_CONCEPT_ID of the MEASUREMENT that is considered not nullable.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8028,7 +8028,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the MEASUREMENT that is considered not nullable.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8105,7 +8105,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the METADATA_CONCEPT_ID of the METADATA that is considered not nullable.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8182,7 +8182,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the METADATA_ID of the METADATA that is considered not nullable.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8259,7 +8259,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the METADATA_TYPE_CONCEPT_ID of the METADATA that is considered not nullable.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8336,7 +8336,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the NAME of the METADATA that is considered not nullable.' as check_description
   ,'METADATA' as cdm_table_name
   ,'NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8413,7 +8413,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the ENCODING_CONCEPT_ID of the NOTE that is considered not nullable.' as check_description
   ,'NOTE' as cdm_table_name
   ,'ENCODING_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8490,7 +8490,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the LANGUAGE_CONCEPT_ID of the NOTE that is considered not nullable.' as check_description
   ,'NOTE' as cdm_table_name
   ,'LANGUAGE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8567,7 +8567,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the NOTE_CLASS_CONCEPT_ID of the NOTE that is considered not nullable.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_CLASS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8644,7 +8644,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the NOTE_DATE of the NOTE that is considered not nullable.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8721,7 +8721,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the NOTE_ID of the NOTE that is considered not nullable.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8798,7 +8798,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the NOTE_TEXT of the NOTE that is considered not nullable.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_TEXT' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8875,7 +8875,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the NOTE_TYPE_CONCEPT_ID of the NOTE that is considered not nullable.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -8952,7 +8952,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the NOTE that is considered not nullable.' as check_description
   ,'NOTE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9029,7 +9029,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the LEXICAL_VARIANT of the NOTE_NLP that is considered not nullable.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'LEXICAL_VARIANT' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9106,7 +9106,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the NLP_DATE of the NOTE_NLP that is considered not nullable.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NLP_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9183,7 +9183,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the NOTE_ID of the NOTE_NLP that is considered not nullable.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9260,7 +9260,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the NOTE_NLP_ID of the NOTE_NLP that is considered not nullable.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9337,7 +9337,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the OBSERVATION_CONCEPT_ID of the OBSERVATION that is considered not nullable.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9414,7 +9414,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the OBSERVATION_DATE of the OBSERVATION that is considered not nullable.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9491,7 +9491,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the OBSERVATION_ID of the OBSERVATION that is considered not nullable.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9568,7 +9568,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the OBSERVATION_TYPE_CONCEPT_ID of the OBSERVATION that is considered not nullable.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9645,7 +9645,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the OBSERVATION that is considered not nullable.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9722,7 +9722,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the OBSERVATION_PERIOD_END_DATE of the OBSERVATION_PERIOD that is considered not nullable.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9799,7 +9799,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the OBSERVATION_PERIOD_ID of the OBSERVATION_PERIOD that is considered not nullable.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9876,7 +9876,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the OBSERVATION_PERIOD_START_DATE of the OBSERVATION_PERIOD that is considered not nullable.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -9953,7 +9953,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERIOD_TYPE_CONCEPT_ID of the OBSERVATION_PERIOD that is considered not nullable.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'PERIOD_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10030,7 +10030,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the OBSERVATION_PERIOD that is considered not nullable.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10107,7 +10107,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PAYER_PLAN_PERIOD_END_DATE of the PAYER_PLAN_PERIOD that is considered not nullable.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10184,7 +10184,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PAYER_PLAN_PERIOD_ID of the PAYER_PLAN_PERIOD that is considered not nullable.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10261,7 +10261,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PAYER_PLAN_PERIOD_START_DATE of the PAYER_PLAN_PERIOD that is considered not nullable.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10338,7 +10338,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the PAYER_PLAN_PERIOD that is considered not nullable.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10412,10 +10412,10 @@ SELECT
   ,'' as query_text
   ,'isRequired' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the ETHNICITY_CONCEPT_ID of the PERSON that is considered not nullable.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the ETHNICITY_CONCEPT_ID of the person that is considered not nullable.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10440,7 +10440,7 @@ Check that values in fields where isRequired == TRUE are non-null
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_CONCEPT_ID
 
 **********/
@@ -10459,9 +10459,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.ETHNICITY_CONCEPT_ID' AS violating_field, 
+            'person.ETHNICITY_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
         WHERE cdmTable.ETHNICITY_CONCEPT_ID IS NULL
         /*violatedRowsEnd*/
@@ -10470,7 +10470,7 @@ FROM (
 ( 
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -10489,10 +10489,10 @@ SELECT
   ,'' as query_text
   ,'isRequired' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the GENDER_CONCEPT_ID of the PERSON that is considered not nullable.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the GENDER_CONCEPT_ID of the person that is considered not nullable.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10517,7 +10517,7 @@ Check that values in fields where isRequired == TRUE are non-null
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_CONCEPT_ID
 
 **********/
@@ -10536,9 +10536,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.GENDER_CONCEPT_ID' AS violating_field, 
+            'person.GENDER_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
         WHERE cdmTable.GENDER_CONCEPT_ID IS NULL
         /*violatedRowsEnd*/
@@ -10547,7 +10547,7 @@ FROM (
 ( 
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -10566,10 +10566,10 @@ SELECT
   ,'' as query_text
   ,'isRequired' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the PERSON_ID of the PERSON that is considered not nullable.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the PERSON_ID of the person that is considered not nullable.' as check_description
+  ,'person' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10594,7 +10594,7 @@ Check that values in fields where isRequired == TRUE are non-null
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PERSON_ID
 
 **********/
@@ -10613,9 +10613,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.PERSON_ID' AS violating_field, 
+            'person.PERSON_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
         WHERE cdmTable.PERSON_ID IS NULL
         /*violatedRowsEnd*/
@@ -10624,7 +10624,7 @@ FROM (
 ( 
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -10643,10 +10643,10 @@ SELECT
   ,'' as query_text
   ,'isRequired' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the RACE_CONCEPT_ID of the PERSON that is considered not nullable.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the RACE_CONCEPT_ID of the person that is considered not nullable.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10671,7 +10671,7 @@ Check that values in fields where isRequired == TRUE are non-null
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_CONCEPT_ID
 
 **********/
@@ -10690,9 +10690,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.RACE_CONCEPT_ID' AS violating_field, 
+            'person.RACE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
         WHERE cdmTable.RACE_CONCEPT_ID IS NULL
         /*violatedRowsEnd*/
@@ -10701,7 +10701,7 @@ FROM (
 ( 
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -10720,10 +10720,10 @@ SELECT
   ,'' as query_text
   ,'isRequired' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the YEAR_OF_BIRTH of the PERSON that is considered not nullable.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the YEAR_OF_BIRTH of the person that is considered not nullable.' as check_description
+  ,'person' as cdm_table_name
   ,'YEAR_OF_BIRTH' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10748,7 +10748,7 @@ Check that values in fields where isRequired == TRUE are non-null
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = YEAR_OF_BIRTH
 
 **********/
@@ -10767,9 +10767,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.YEAR_OF_BIRTH' AS violating_field, 
+            'person.YEAR_OF_BIRTH' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
         WHERE cdmTable.YEAR_OF_BIRTH IS NULL
         /*violatedRowsEnd*/
@@ -10778,7 +10778,7 @@ FROM (
 ( 
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -10800,7 +10800,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the PROCEDURE_OCCURRENCE that is considered not nullable.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10877,7 +10877,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PROCEDURE_CONCEPT_ID of the PROCEDURE_OCCURRENCE that is considered not nullable.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -10954,7 +10954,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PROCEDURE_DATE of the PROCEDURE_OCCURRENCE that is considered not nullable.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11031,7 +11031,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PROCEDURE_OCCURRENCE_ID of the PROCEDURE_OCCURRENCE that is considered not nullable.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11108,7 +11108,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PROCEDURE_TYPE_CONCEPT_ID of the PROCEDURE_OCCURRENCE that is considered not nullable.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11185,7 +11185,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PROVIDER_ID of the PROVIDER that is considered not nullable.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11262,7 +11262,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the DEFINES_ANCESTRY of the RELATIONSHIP that is considered not nullable.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'DEFINES_ANCESTRY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11339,7 +11339,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the IS_HIERARCHICAL of the RELATIONSHIP that is considered not nullable.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'IS_HIERARCHICAL' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11416,7 +11416,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the RELATIONSHIP_CONCEPT_ID of the RELATIONSHIP that is considered not nullable.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11493,7 +11493,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the RELATIONSHIP_ID of the RELATIONSHIP that is considered not nullable.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11570,7 +11570,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the RELATIONSHIP_NAME of the RELATIONSHIP that is considered not nullable.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11647,7 +11647,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the REVERSE_RELATIONSHIP_ID of the RELATIONSHIP that is considered not nullable.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'REVERSE_RELATIONSHIP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11724,7 +11724,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the SOURCE_CODE of the SOURCE_TO_CONCEPT_MAP that is considered not nullable.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'SOURCE_CODE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11801,7 +11801,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the SOURCE_CONCEPT_ID of the SOURCE_TO_CONCEPT_MAP that is considered not nullable.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11878,7 +11878,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the SOURCE_VOCABULARY_ID of the SOURCE_TO_CONCEPT_MAP that is considered not nullable.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'SOURCE_VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -11955,7 +11955,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the TARGET_CONCEPT_ID of the SOURCE_TO_CONCEPT_MAP that is considered not nullable.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'TARGET_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12032,7 +12032,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the TARGET_VOCABULARY_ID of the SOURCE_TO_CONCEPT_MAP that is considered not nullable.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'TARGET_VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12109,7 +12109,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VALID_END_DATE of the SOURCE_TO_CONCEPT_MAP that is considered not nullable.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'VALID_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12186,7 +12186,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VALID_START_DATE of the SOURCE_TO_CONCEPT_MAP that is considered not nullable.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'VALID_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12263,7 +12263,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the SPECIMEN that is considered not nullable.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12340,7 +12340,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the SPECIMEN_CONCEPT_ID of the SPECIMEN that is considered not nullable.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12417,7 +12417,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the SPECIMEN_DATE of the SPECIMEN that is considered not nullable.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12494,7 +12494,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the SPECIMEN_ID of the SPECIMEN that is considered not nullable.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12571,7 +12571,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the SPECIMEN_TYPE_CONCEPT_ID of the SPECIMEN that is considered not nullable.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12648,7 +12648,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the VISIT_DETAIL that is considered not nullable.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12725,7 +12725,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_DETAIL_CONCEPT_ID of the VISIT_DETAIL that is considered not nullable.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12802,7 +12802,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_DETAIL_END_DATE of the VISIT_DETAIL that is considered not nullable.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12879,7 +12879,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_DETAIL_ID of the VISIT_DETAIL that is considered not nullable.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -12956,7 +12956,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_DETAIL_START_DATE of the VISIT_DETAIL that is considered not nullable.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13033,7 +13033,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_DETAIL_TYPE_CONCEPT_ID of the VISIT_DETAIL that is considered not nullable.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13110,7 +13110,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_OCCURRENCE_ID of the VISIT_DETAIL that is considered not nullable.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13187,7 +13187,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the PERSON_ID of the VISIT_OCCURRENCE that is considered not nullable.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13264,7 +13264,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_CONCEPT_ID of the VISIT_OCCURRENCE that is considered not nullable.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13341,7 +13341,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_END_DATE of the VISIT_OCCURRENCE that is considered not nullable.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13418,7 +13418,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_OCCURRENCE_ID of the VISIT_OCCURRENCE that is considered not nullable.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13495,7 +13495,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_START_DATE of the VISIT_OCCURRENCE that is considered not nullable.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13572,7 +13572,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VISIT_TYPE_CONCEPT_ID of the VISIT_OCCURRENCE that is considered not nullable.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13649,7 +13649,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VOCABULARY_CONCEPT_ID of the VOCABULARY that is considered not nullable.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13726,7 +13726,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VOCABULARY_ID of the VOCABULARY that is considered not nullable.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category
@@ -13803,7 +13803,7 @@ SELECT
   ,'The number and percent of records with a NULL value in the VOCABULARY_NAME of the VOCABULARY that is considered not nullable.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_not_nullable.sql' as sql_file
   ,'Conformance' as category

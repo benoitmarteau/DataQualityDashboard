@@ -60,7 +60,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -69,8 +69,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.OBSERVATION_PERIOD cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -139,7 +139,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -148,8 +148,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.VISIT_OCCURRENCE cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -218,7 +218,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -227,8 +227,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.VISIT_DETAIL cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -297,7 +297,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -306,8 +306,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.CONDITION_OCCURRENCE cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -376,7 +376,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -385,8 +385,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.DRUG_EXPOSURE cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -455,7 +455,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -464,8 +464,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.PROCEDURE_OCCURRENCE cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -534,7 +534,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -543,8 +543,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.DEVICE_EXPOSURE cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -613,7 +613,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -622,8 +622,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.MEASUREMENT cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -692,7 +692,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -701,8 +701,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.OBSERVATION cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -771,7 +771,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -780,8 +780,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.DEATH cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -850,7 +850,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -859,8 +859,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.NOTE cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -929,7 +929,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -938,8 +938,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.SPECIMEN cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -1008,7 +1008,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -1017,8 +1017,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.PAYER_PLAN_PERIOD cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -1087,7 +1087,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -1096,8 +1096,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.DRUG_ERA cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -1166,7 +1166,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -1175,8 +1175,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.DOSE_ERA cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,
@@ -1245,7 +1245,7 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		/*violatedRowsBegin*/
@@ -1254,8 +1254,8 @@ FROM
 		FROM dbo.person cdmTable
 		
 			LEFT JOIN dbo.CONDITION_ERA cdmTable2 
-			    ON cdmTable.person_id = cdmTable2.person_id
-		WHERE cdmTable2.person_id IS NULL
+			    ON cdmTable.PERSON_ID = cdmTable2.PERSON_ID
+		WHERE cdmTable2.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
 	) violated_rows
 ) violated_row_count,

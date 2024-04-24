@@ -20,7 +20,7 @@ SELECT
   ,'The number and percent of records that have a value in the LOCATION_ID field in the CARE_SITE table that does not exist in the LOCATION table.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -105,7 +105,7 @@ SELECT
   ,'The number and percent of records that have a value in the PLACE_OF_SERVICE_CONCEPT_ID field in the CARE_SITE table that does not exist in the CONCEPT table.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'PLACE_OF_SERVICE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -190,7 +190,7 @@ SELECT
   ,'The number and percent of records that have a value in the CDM_VERSION_CONCEPT_ID field in the CDM_SOURCE table that does not exist in the CONCEPT table.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_VERSION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -275,7 +275,7 @@ SELECT
   ,'The number and percent of records that have a value in the COHORT_DEFINITION_ID field in the COHORT_DEFINITION table that does not exist in the COHORT table.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'COHORT_DEFINITION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -360,7 +360,7 @@ SELECT
   ,'The number and percent of records that have a value in the DEFINITION_TYPE_CONCEPT_ID field in the COHORT_DEFINITION table that does not exist in the CONCEPT table.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'DEFINITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -445,7 +445,7 @@ SELECT
   ,'The number and percent of records that have a value in the SUBJECT_CONCEPT_ID field in the COHORT_DEFINITION table that does not exist in the CONCEPT table.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'SUBJECT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -530,7 +530,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONCEPT_CLASS_ID field in the CONCEPT table that does not exist in the CONCEPT_CLASS table.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_CLASS_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -615,7 +615,7 @@ SELECT
   ,'The number and percent of records that have a value in the DOMAIN_ID field in the CONCEPT table that does not exist in the DOMAIN table.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'DOMAIN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -700,7 +700,7 @@ SELECT
   ,'The number and percent of records that have a value in the VOCABULARY_ID field in the CONCEPT table that does not exist in the VOCABULARY table.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -785,7 +785,7 @@ SELECT
   ,'The number and percent of records that have a value in the ANCESTOR_CONCEPT_ID field in the CONCEPT_ANCESTOR table that does not exist in the CONCEPT table.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'ANCESTOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -870,7 +870,7 @@ SELECT
   ,'The number and percent of records that have a value in the DESCENDANT_CONCEPT_ID field in the CONCEPT_ANCESTOR table that does not exist in the CONCEPT table.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'DESCENDANT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -955,7 +955,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONCEPT_CLASS_CONCEPT_ID field in the CONCEPT_CLASS table that does not exist in the CONCEPT table.' as check_description
   ,'CONCEPT_CLASS' as cdm_table_name
   ,'CONCEPT_CLASS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1040,7 +1040,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONCEPT_ID_1 field in the CONCEPT_RELATIONSHIP table that does not exist in the CONCEPT table.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'CONCEPT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1125,7 +1125,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONCEPT_ID_2 field in the CONCEPT_RELATIONSHIP table that does not exist in the CONCEPT table.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'CONCEPT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1210,7 +1210,7 @@ SELECT
   ,'The number and percent of records that have a value in the RELATIONSHIP_ID field in the CONCEPT_RELATIONSHIP table that does not exist in the RELATIONSHIP table.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1295,7 +1295,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONCEPT_ID field in the CONCEPT_SYNONYM table that does not exist in the CONCEPT table.' as check_description
   ,'CONCEPT_SYNONYM' as cdm_table_name
   ,'CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1380,7 +1380,7 @@ SELECT
   ,'The number and percent of records that have a value in the LANGUAGE_CONCEPT_ID field in the CONCEPT_SYNONYM table that does not exist in the CONCEPT table.' as check_description
   ,'CONCEPT_SYNONYM' as cdm_table_name
   ,'LANGUAGE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1465,7 +1465,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONDITION_CONCEPT_ID field in the CONDITION_ERA table that does not exist in the CONCEPT table.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1547,10 +1547,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the CONDITION_ERA table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the CONDITION_ERA table that does not exist in the person table.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1578,7 +1578,7 @@ schema = dbo
 
 cdmTableName = CONDITION_ERA
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -1603,7 +1603,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -1635,7 +1635,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONDITION_CONCEPT_ID field in the CONDITION_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1720,7 +1720,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONDITION_SOURCE_CONCEPT_ID field in the CONDITION_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1805,7 +1805,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONDITION_STATUS_CONCEPT_ID field in the CONDITION_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_STATUS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1890,7 +1890,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONDITION_TYPE_CONCEPT_ID field in the CONDITION_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -1972,10 +1972,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the CONDITION_OCCURRENCE table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the CONDITION_OCCURRENCE table that does not exist in the person table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2003,7 +2003,7 @@ schema = dbo
 
 cdmTableName = CONDITION_OCCURRENCE
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -2028,7 +2028,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -2060,7 +2060,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROVIDER_ID field in the CONDITION_OCCURRENCE table that does not exist in the PROVIDER table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2145,7 +2145,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_ID field in the CONDITION_OCCURRENCE table that does not exist in the VISIT_DETAIL table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2230,7 +2230,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_OCCURRENCE_ID field in the CONDITION_OCCURRENCE table that does not exist in the VISIT_OCCURRENCE table.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2315,7 +2315,7 @@ SELECT
   ,'The number and percent of records that have a value in the COST_DOMAIN_ID field in the COST table that does not exist in the DOMAIN table.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_DOMAIN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2400,7 +2400,7 @@ SELECT
   ,'The number and percent of records that have a value in the COST_TYPE_CONCEPT_ID field in the COST table that does not exist in the CONCEPT table.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2485,7 +2485,7 @@ SELECT
   ,'The number and percent of records that have a value in the CURRENCY_CONCEPT_ID field in the COST table that does not exist in the CONCEPT table.' as check_description
   ,'COST' as cdm_table_name
   ,'CURRENCY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2570,7 +2570,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRG_CONCEPT_ID field in the COST table that does not exist in the CONCEPT table.' as check_description
   ,'COST' as cdm_table_name
   ,'DRG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2655,7 +2655,7 @@ SELECT
   ,'The number and percent of records that have a value in the REVENUE_CODE_CONCEPT_ID field in the COST table that does not exist in the CONCEPT table.' as check_description
   ,'COST' as cdm_table_name
   ,'REVENUE_CODE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2740,7 +2740,7 @@ SELECT
   ,'The number and percent of records that have a value in the CAUSE_CONCEPT_ID field in the DEATH table that does not exist in the CONCEPT table.' as check_description
   ,'DEATH' as cdm_table_name
   ,'CAUSE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2825,7 +2825,7 @@ SELECT
   ,'The number and percent of records that have a value in the CAUSE_SOURCE_CONCEPT_ID field in the DEATH table that does not exist in the CONCEPT table.' as check_description
   ,'DEATH' as cdm_table_name
   ,'CAUSE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2910,7 +2910,7 @@ SELECT
   ,'The number and percent of records that have a value in the DEATH_TYPE_CONCEPT_ID field in the DEATH table that does not exist in the CONCEPT table.' as check_description
   ,'DEATH' as cdm_table_name
   ,'DEATH_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -2992,10 +2992,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the DEATH table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the DEATH table that does not exist in the person table.' as check_description
   ,'DEATH' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3023,7 +3023,7 @@ schema = dbo
 
 cdmTableName = DEATH
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -3048,7 +3048,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -3080,7 +3080,7 @@ SELECT
   ,'The number and percent of records that have a value in the DEVICE_CONCEPT_ID field in the DEVICE_EXPOSURE table that does not exist in the CONCEPT table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3165,7 +3165,7 @@ SELECT
   ,'The number and percent of records that have a value in the DEVICE_SOURCE_CONCEPT_ID field in the DEVICE_EXPOSURE table that does not exist in the CONCEPT table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3250,7 +3250,7 @@ SELECT
   ,'The number and percent of records that have a value in the DEVICE_TYPE_CONCEPT_ID field in the DEVICE_EXPOSURE table that does not exist in the CONCEPT table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3332,10 +3332,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the DEVICE_EXPOSURE table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the DEVICE_EXPOSURE table that does not exist in the person table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3363,7 +3363,7 @@ schema = dbo
 
 cdmTableName = DEVICE_EXPOSURE
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -3388,7 +3388,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -3420,7 +3420,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROVIDER_ID field in the DEVICE_EXPOSURE table that does not exist in the PROVIDER table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3505,7 +3505,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_CONCEPT_ID field in the DEVICE_EXPOSURE table that does not exist in the CONCEPT table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3590,7 +3590,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_SOURCE_CONCEPT_ID field in the DEVICE_EXPOSURE table that does not exist in the CONCEPT table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'UNIT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3675,7 +3675,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_ID field in the DEVICE_EXPOSURE table that does not exist in the VISIT_DETAIL table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3760,7 +3760,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_OCCURRENCE_ID field in the DEVICE_EXPOSURE table that does not exist in the VISIT_OCCURRENCE table.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3845,7 +3845,7 @@ SELECT
   ,'The number and percent of records that have a value in the DOMAIN_CONCEPT_ID field in the DOMAIN table that does not exist in the CONCEPT table.' as check_description
   ,'DOMAIN' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -3930,7 +3930,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_CONCEPT_ID field in the DOSE_ERA table that does not exist in the CONCEPT table.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4012,10 +4012,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the DOSE_ERA table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the DOSE_ERA table that does not exist in the person table.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4043,7 +4043,7 @@ schema = dbo
 
 cdmTableName = DOSE_ERA
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -4068,7 +4068,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -4100,7 +4100,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_CONCEPT_ID field in the DOSE_ERA table that does not exist in the CONCEPT table.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4185,7 +4185,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_CONCEPT_ID field in the DRUG_ERA table that does not exist in the CONCEPT table.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4267,10 +4267,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the DRUG_ERA table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the DRUG_ERA table that does not exist in the person table.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4298,7 +4298,7 @@ schema = dbo
 
 cdmTableName = DRUG_ERA
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -4323,7 +4323,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -4355,7 +4355,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_CONCEPT_ID field in the DRUG_EXPOSURE table that does not exist in the CONCEPT table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4440,7 +4440,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_SOURCE_CONCEPT_ID field in the DRUG_EXPOSURE table that does not exist in the CONCEPT table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4525,7 +4525,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_TYPE_CONCEPT_ID field in the DRUG_EXPOSURE table that does not exist in the CONCEPT table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4607,10 +4607,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the DRUG_EXPOSURE table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the DRUG_EXPOSURE table that does not exist in the person table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4638,7 +4638,7 @@ schema = dbo
 
 cdmTableName = DRUG_EXPOSURE
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -4663,7 +4663,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -4695,7 +4695,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROVIDER_ID field in the DRUG_EXPOSURE table that does not exist in the PROVIDER table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4780,7 +4780,7 @@ SELECT
   ,'The number and percent of records that have a value in the ROUTE_CONCEPT_ID field in the DRUG_EXPOSURE table that does not exist in the CONCEPT table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'ROUTE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4865,7 +4865,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_ID field in the DRUG_EXPOSURE table that does not exist in the VISIT_DETAIL table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -4950,7 +4950,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_OCCURRENCE_ID field in the DRUG_EXPOSURE table that does not exist in the VISIT_OCCURRENCE table.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5035,7 +5035,7 @@ SELECT
   ,'The number and percent of records that have a value in the AMOUNT_UNIT_CONCEPT_ID field in the DRUG_STRENGTH table that does not exist in the CONCEPT table.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'AMOUNT_UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5120,7 +5120,7 @@ SELECT
   ,'The number and percent of records that have a value in the DENOMINATOR_UNIT_CONCEPT_ID field in the DRUG_STRENGTH table that does not exist in the CONCEPT table.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'DENOMINATOR_UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5205,7 +5205,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_CONCEPT_ID field in the DRUG_STRENGTH table that does not exist in the CONCEPT table.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5290,7 +5290,7 @@ SELECT
   ,'The number and percent of records that have a value in the INGREDIENT_CONCEPT_ID field in the DRUG_STRENGTH table that does not exist in the CONCEPT table.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'INGREDIENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5375,7 +5375,7 @@ SELECT
   ,'The number and percent of records that have a value in the NUMERATOR_UNIT_CONCEPT_ID field in the DRUG_STRENGTH table that does not exist in the CONCEPT table.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'NUMERATOR_UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5460,7 +5460,7 @@ SELECT
   ,'The number and percent of records that have a value in the EPISODE_CONCEPT_ID field in the EPISODE table that does not exist in the CONCEPT table.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5545,7 +5545,7 @@ SELECT
   ,'The number and percent of records that have a value in the EPISODE_OBJECT_CONCEPT_ID field in the EPISODE table that does not exist in the CONCEPT table.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_OBJECT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5630,7 +5630,7 @@ SELECT
   ,'The number and percent of records that have a value in the EPISODE_SOURCE_CONCEPT_ID field in the EPISODE table that does not exist in the CONCEPT table.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5715,7 +5715,7 @@ SELECT
   ,'The number and percent of records that have a value in the EPISODE_TYPE_CONCEPT_ID field in the EPISODE table that does not exist in the CONCEPT table.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5797,10 +5797,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the EPISODE table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the EPISODE table that does not exist in the person table.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5828,7 +5828,7 @@ schema = dbo
 
 cdmTableName = EPISODE
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -5853,7 +5853,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -5885,7 +5885,7 @@ SELECT
   ,'The number and percent of records that have a value in the EPISODE_EVENT_FIELD_CONCEPT_ID field in the EPISODE_EVENT table that does not exist in the CONCEPT table.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EPISODE_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -5970,7 +5970,7 @@ SELECT
   ,'The number and percent of records that have a value in the EPISODE_ID field in the EPISODE_EVENT table that does not exist in the EPISODE table.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EPISODE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6055,7 +6055,7 @@ SELECT
   ,'The number and percent of records that have a value in the DOMAIN_CONCEPT_ID_1 field in the FACT_RELATIONSHIP table that does not exist in the CONCEPT table.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6140,7 +6140,7 @@ SELECT
   ,'The number and percent of records that have a value in the DOMAIN_CONCEPT_ID_2 field in the FACT_RELATIONSHIP table that does not exist in the CONCEPT table.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6225,7 +6225,7 @@ SELECT
   ,'The number and percent of records that have a value in the RELATIONSHIP_CONCEPT_ID field in the FACT_RELATIONSHIP table that does not exist in the CONCEPT table.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6310,7 +6310,7 @@ SELECT
   ,'The number and percent of records that have a value in the COUNTRY_CONCEPT_ID field in the LOCATION table that does not exist in the CONCEPT table.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'COUNTRY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6395,7 +6395,7 @@ SELECT
   ,'The number and percent of records that have a value in the MEAS_EVENT_FIELD_CONCEPT_ID field in the MEASUREMENT table that does not exist in the CONCEPT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEAS_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6480,7 +6480,7 @@ SELECT
   ,'The number and percent of records that have a value in the MEASUREMENT_CONCEPT_ID field in the MEASUREMENT table that does not exist in the CONCEPT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6565,7 +6565,7 @@ SELECT
   ,'The number and percent of records that have a value in the MEASUREMENT_SOURCE_CONCEPT_ID field in the MEASUREMENT table that does not exist in the CONCEPT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6650,7 +6650,7 @@ SELECT
   ,'The number and percent of records that have a value in the MEASUREMENT_TYPE_CONCEPT_ID field in the MEASUREMENT table that does not exist in the CONCEPT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6735,7 +6735,7 @@ SELECT
   ,'The number and percent of records that have a value in the OPERATOR_CONCEPT_ID field in the MEASUREMENT table that does not exist in the CONCEPT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'OPERATOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6817,10 +6817,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the MEASUREMENT table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the MEASUREMENT table that does not exist in the person table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6848,7 +6848,7 @@ schema = dbo
 
 cdmTableName = MEASUREMENT
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -6873,7 +6873,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -6905,7 +6905,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROVIDER_ID field in the MEASUREMENT table that does not exist in the PROVIDER table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -6990,7 +6990,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_CONCEPT_ID field in the MEASUREMENT table that does not exist in the CONCEPT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7075,7 +7075,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_SOURCE_CONCEPT_ID field in the MEASUREMENT table that does not exist in the CONCEPT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'UNIT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7160,7 +7160,7 @@ SELECT
   ,'The number and percent of records that have a value in the VALUE_AS_CONCEPT_ID field in the MEASUREMENT table that does not exist in the CONCEPT table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VALUE_AS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7245,7 +7245,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_ID field in the MEASUREMENT table that does not exist in the VISIT_DETAIL table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7330,7 +7330,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_OCCURRENCE_ID field in the MEASUREMENT table that does not exist in the VISIT_OCCURRENCE table.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7415,7 +7415,7 @@ SELECT
   ,'The number and percent of records that have a value in the METADATA_CONCEPT_ID field in the METADATA table that does not exist in the CONCEPT table.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7500,7 +7500,7 @@ SELECT
   ,'The number and percent of records that have a value in the METADATA_TYPE_CONCEPT_ID field in the METADATA table that does not exist in the CONCEPT table.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7585,7 +7585,7 @@ SELECT
   ,'The number and percent of records that have a value in the VALUE_AS_CONCEPT_ID field in the METADATA table that does not exist in the CONCEPT table.' as check_description
   ,'METADATA' as cdm_table_name
   ,'VALUE_AS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7670,7 +7670,7 @@ SELECT
   ,'The number and percent of records that have a value in the ENCODING_CONCEPT_ID field in the NOTE table that does not exist in the CONCEPT table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'ENCODING_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7755,7 +7755,7 @@ SELECT
   ,'The number and percent of records that have a value in the LANGUAGE_CONCEPT_ID field in the NOTE table that does not exist in the CONCEPT table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'LANGUAGE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7840,7 +7840,7 @@ SELECT
   ,'The number and percent of records that have a value in the NOTE_CLASS_CONCEPT_ID field in the NOTE table that does not exist in the CONCEPT table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_CLASS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -7925,7 +7925,7 @@ SELECT
   ,'The number and percent of records that have a value in the NOTE_EVENT_FIELD_CONCEPT_ID field in the NOTE table that does not exist in the CONCEPT table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8010,7 +8010,7 @@ SELECT
   ,'The number and percent of records that have a value in the NOTE_TYPE_CONCEPT_ID field in the NOTE table that does not exist in the CONCEPT table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8092,10 +8092,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the NOTE table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the NOTE table that does not exist in the person table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8123,7 +8123,7 @@ schema = dbo
 
 cdmTableName = NOTE
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -8148,7 +8148,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -8180,7 +8180,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROVIDER_ID field in the NOTE table that does not exist in the PROVIDER table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8265,7 +8265,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_ID field in the NOTE table that does not exist in the VISIT_DETAIL table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8350,7 +8350,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_OCCURRENCE_ID field in the NOTE table that does not exist in the VISIT_OCCURRENCE table.' as check_description
   ,'NOTE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8435,7 +8435,7 @@ SELECT
   ,'The number and percent of records that have a value in the NOTE_NLP_CONCEPT_ID field in the NOTE_NLP table that does not exist in the CONCEPT table.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8520,7 +8520,7 @@ SELECT
   ,'The number and percent of records that have a value in the NOTE_NLP_SOURCE_CONCEPT_ID field in the NOTE_NLP table that does not exist in the CONCEPT table.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8605,7 +8605,7 @@ SELECT
   ,'The number and percent of records that have a value in the SECTION_CONCEPT_ID field in the NOTE_NLP table that does not exist in the CONCEPT table.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'SECTION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8690,7 +8690,7 @@ SELECT
   ,'The number and percent of records that have a value in the OBS_EVENT_FIELD_CONCEPT_ID field in the OBSERVATION table that does not exist in the CONCEPT table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBS_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8775,7 +8775,7 @@ SELECT
   ,'The number and percent of records that have a value in the OBSERVATION_CONCEPT_ID field in the OBSERVATION table that does not exist in the CONCEPT table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8860,7 +8860,7 @@ SELECT
   ,'The number and percent of records that have a value in the OBSERVATION_SOURCE_CONCEPT_ID field in the OBSERVATION table that does not exist in the CONCEPT table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -8945,7 +8945,7 @@ SELECT
   ,'The number and percent of records that have a value in the OBSERVATION_TYPE_CONCEPT_ID field in the OBSERVATION table that does not exist in the CONCEPT table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9027,10 +9027,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the OBSERVATION table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the OBSERVATION table that does not exist in the person table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9058,7 +9058,7 @@ schema = dbo
 
 cdmTableName = OBSERVATION
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -9083,7 +9083,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -9115,7 +9115,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROVIDER_ID field in the OBSERVATION table that does not exist in the PROVIDER table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9200,7 +9200,7 @@ SELECT
   ,'The number and percent of records that have a value in the QUALIFIER_CONCEPT_ID field in the OBSERVATION table that does not exist in the CONCEPT table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'QUALIFIER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9285,7 +9285,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_CONCEPT_ID field in the OBSERVATION table that does not exist in the CONCEPT table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9370,7 +9370,7 @@ SELECT
   ,'The number and percent of records that have a value in the VALUE_AS_CONCEPT_ID field in the OBSERVATION table that does not exist in the CONCEPT table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VALUE_AS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9455,7 +9455,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_ID field in the OBSERVATION table that does not exist in the VISIT_DETAIL table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9540,7 +9540,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_OCCURRENCE_ID field in the OBSERVATION table that does not exist in the VISIT_OCCURRENCE table.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9625,7 +9625,7 @@ SELECT
   ,'The number and percent of records that have a value in the PERIOD_TYPE_CONCEPT_ID field in the OBSERVATION_PERIOD table that does not exist in the CONCEPT table.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'PERIOD_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9707,10 +9707,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the OBSERVATION_PERIOD table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the OBSERVATION_PERIOD table that does not exist in the person table.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9738,7 +9738,7 @@ schema = dbo
 
 cdmTableName = OBSERVATION_PERIOD
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -9763,7 +9763,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -9795,7 +9795,7 @@ SELECT
   ,'The number and percent of records that have a value in the PAYER_CONCEPT_ID field in the PAYER_PLAN_PERIOD table that does not exist in the CONCEPT table.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9880,7 +9880,7 @@ SELECT
   ,'The number and percent of records that have a value in the PAYER_SOURCE_CONCEPT_ID field in the PAYER_PLAN_PERIOD table that does not exist in the CONCEPT table.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9962,10 +9962,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the PAYER_PLAN_PERIOD table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the PAYER_PLAN_PERIOD table that does not exist in the person table.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -9993,7 +9993,7 @@ schema = dbo
 
 cdmTableName = PAYER_PLAN_PERIOD
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -10018,7 +10018,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -10050,7 +10050,7 @@ SELECT
   ,'The number and percent of records that have a value in the PLAN_CONCEPT_ID field in the PAYER_PLAN_PERIOD table that does not exist in the CONCEPT table.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PLAN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10135,7 +10135,7 @@ SELECT
   ,'The number and percent of records that have a value in the PLAN_SOURCE_CONCEPT_ID field in the PAYER_PLAN_PERIOD table that does not exist in the CONCEPT table.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PLAN_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10220,7 +10220,7 @@ SELECT
   ,'The number and percent of records that have a value in the SPONSOR_CONCEPT_ID field in the PAYER_PLAN_PERIOD table that does not exist in the CONCEPT table.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'SPONSOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10305,7 +10305,7 @@ SELECT
   ,'The number and percent of records that have a value in the SPONSOR_SOURCE_CONCEPT_ID field in the PAYER_PLAN_PERIOD table that does not exist in the CONCEPT table.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'SPONSOR_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10390,7 +10390,7 @@ SELECT
   ,'The number and percent of records that have a value in the STOP_REASON_CONCEPT_ID field in the PAYER_PLAN_PERIOD table that does not exist in the CONCEPT table.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'STOP_REASON_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10475,7 +10475,7 @@ SELECT
   ,'The number and percent of records that have a value in the STOP_REASON_SOURCE_CONCEPT_ID field in the PAYER_PLAN_PERIOD table that does not exist in the CONCEPT table.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'STOP_REASON_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10557,10 +10557,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the CARE_SITE_ID field in the PERSON table that does not exist in the CARE_SITE table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the CARE_SITE_ID field in the person table that does not exist in the CARE_SITE table.' as check_description
+  ,'person' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10586,7 +10586,7 @@ Foreign key check.
 Parameters used in this template:
 schema = dbo
 
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = CARE_SITE_ID
 fkTableName = CARE_SITE
 fkFieldName = CARE_SITE_ID
@@ -10606,9 +10606,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.CARE_SITE_ID' AS violating_field, 
+            'person.CARE_SITE_ID' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
             LEFT JOIN 
                 
@@ -10623,7 +10623,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -10642,10 +10642,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the ETHNICITY_CONCEPT_ID field in the PERSON table that does not exist in the CONCEPT table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the ETHNICITY_CONCEPT_ID field in the person table that does not exist in the CONCEPT table.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10671,7 +10671,7 @@ Foreign key check.
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_CONCEPT_ID
 fkTableName = CONCEPT
 fkFieldName = CONCEPT_ID
@@ -10691,9 +10691,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.ETHNICITY_CONCEPT_ID' AS violating_field, 
+            'person.ETHNICITY_CONCEPT_ID' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
             LEFT JOIN 
                 dbo.CONCEPT fkTable
@@ -10708,7 +10708,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -10727,10 +10727,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the ETHNICITY_SOURCE_CONCEPT_ID field in the PERSON table that does not exist in the CONCEPT table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the ETHNICITY_SOURCE_CONCEPT_ID field in the person table that does not exist in the CONCEPT table.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10756,7 +10756,7 @@ Foreign key check.
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_SOURCE_CONCEPT_ID
 fkTableName = CONCEPT
 fkFieldName = CONCEPT_ID
@@ -10776,9 +10776,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.ETHNICITY_SOURCE_CONCEPT_ID' AS violating_field, 
+            'person.ETHNICITY_SOURCE_CONCEPT_ID' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
             LEFT JOIN 
                 dbo.CONCEPT fkTable
@@ -10793,7 +10793,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -10812,10 +10812,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the GENDER_CONCEPT_ID field in the PERSON table that does not exist in the CONCEPT table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the GENDER_CONCEPT_ID field in the person table that does not exist in the CONCEPT table.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10841,7 +10841,7 @@ Foreign key check.
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_CONCEPT_ID
 fkTableName = CONCEPT
 fkFieldName = CONCEPT_ID
@@ -10861,9 +10861,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.GENDER_CONCEPT_ID' AS violating_field, 
+            'person.GENDER_CONCEPT_ID' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
             LEFT JOIN 
                 dbo.CONCEPT fkTable
@@ -10878,7 +10878,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -10897,10 +10897,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the GENDER_SOURCE_CONCEPT_ID field in the PERSON table that does not exist in the CONCEPT table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the GENDER_SOURCE_CONCEPT_ID field in the person table that does not exist in the CONCEPT table.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -10926,7 +10926,7 @@ Foreign key check.
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_SOURCE_CONCEPT_ID
 fkTableName = CONCEPT
 fkFieldName = CONCEPT_ID
@@ -10946,9 +10946,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.GENDER_SOURCE_CONCEPT_ID' AS violating_field, 
+            'person.GENDER_SOURCE_CONCEPT_ID' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
             LEFT JOIN 
                 dbo.CONCEPT fkTable
@@ -10963,7 +10963,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -10982,10 +10982,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the LOCATION_ID field in the PERSON table that does not exist in the LOCATION table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the LOCATION_ID field in the person table that does not exist in the LOCATION table.' as check_description
+  ,'person' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11011,7 +11011,7 @@ Foreign key check.
 Parameters used in this template:
 schema = dbo
 
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = LOCATION_ID
 fkTableName = LOCATION
 fkFieldName = LOCATION_ID
@@ -11031,9 +11031,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.LOCATION_ID' AS violating_field, 
+            'person.LOCATION_ID' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
             LEFT JOIN 
                 
@@ -11048,7 +11048,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -11067,10 +11067,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PROVIDER_ID field in the PERSON table that does not exist in the PROVIDER table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the PROVIDER_ID field in the person table that does not exist in the PROVIDER table.' as check_description
+  ,'person' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11096,7 +11096,7 @@ Foreign key check.
 Parameters used in this template:
 schema = dbo
 
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PROVIDER_ID
 fkTableName = PROVIDER
 fkFieldName = PROVIDER_ID
@@ -11116,9 +11116,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.PROVIDER_ID' AS violating_field, 
+            'person.PROVIDER_ID' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
             LEFT JOIN 
                 
@@ -11133,7 +11133,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -11152,10 +11152,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the RACE_CONCEPT_ID field in the PERSON table that does not exist in the CONCEPT table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the RACE_CONCEPT_ID field in the person table that does not exist in the CONCEPT table.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11181,7 +11181,7 @@ Foreign key check.
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_CONCEPT_ID
 fkTableName = CONCEPT
 fkFieldName = CONCEPT_ID
@@ -11201,9 +11201,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.RACE_CONCEPT_ID' AS violating_field, 
+            'person.RACE_CONCEPT_ID' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
             LEFT JOIN 
                 dbo.CONCEPT fkTable
@@ -11218,7 +11218,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -11237,10 +11237,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the RACE_SOURCE_CONCEPT_ID field in the PERSON table that does not exist in the CONCEPT table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the RACE_SOURCE_CONCEPT_ID field in the person table that does not exist in the CONCEPT table.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11266,7 +11266,7 @@ Foreign key check.
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_SOURCE_CONCEPT_ID
 fkTableName = CONCEPT
 fkFieldName = CONCEPT_ID
@@ -11286,9 +11286,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.RACE_SOURCE_CONCEPT_ID' AS violating_field, 
+            'person.RACE_SOURCE_CONCEPT_ID' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
             LEFT JOIN 
                 dbo.CONCEPT fkTable
@@ -11303,7 +11303,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -11325,7 +11325,7 @@ SELECT
   ,'The number and percent of records that have a value in the MODIFIER_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'MODIFIER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11407,10 +11407,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the PROCEDURE_OCCURRENCE table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the PROCEDURE_OCCURRENCE table that does not exist in the person table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11438,7 +11438,7 @@ schema = dbo
 
 cdmTableName = PROCEDURE_OCCURRENCE
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -11463,7 +11463,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -11495,7 +11495,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROCEDURE_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11580,7 +11580,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROCEDURE_SOURCE_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11665,7 +11665,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROCEDURE_TYPE_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11750,7 +11750,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROVIDER_ID field in the PROCEDURE_OCCURRENCE table that does not exist in the PROVIDER table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11835,7 +11835,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_ID field in the PROCEDURE_OCCURRENCE table that does not exist in the VISIT_DETAIL table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -11920,7 +11920,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_OCCURRENCE_ID field in the PROCEDURE_OCCURRENCE table that does not exist in the VISIT_OCCURRENCE table.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12005,7 +12005,7 @@ SELECT
   ,'The number and percent of records that have a value in the CARE_SITE_ID field in the PROVIDER table that does not exist in the CARE_SITE table.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12090,7 +12090,7 @@ SELECT
   ,'The number and percent of records that have a value in the GENDER_CONCEPT_ID field in the PROVIDER table that does not exist in the CONCEPT table.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12175,7 +12175,7 @@ SELECT
   ,'The number and percent of records that have a value in the GENDER_SOURCE_CONCEPT_ID field in the PROVIDER table that does not exist in the CONCEPT table.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'GENDER_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12260,7 +12260,7 @@ SELECT
   ,'The number and percent of records that have a value in the SPECIALTY_CONCEPT_ID field in the PROVIDER table that does not exist in the CONCEPT table.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'SPECIALTY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12345,7 +12345,7 @@ SELECT
   ,'The number and percent of records that have a value in the SPECIALTY_SOURCE_CONCEPT_ID field in the PROVIDER table that does not exist in the CONCEPT table.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'SPECIALTY_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12430,7 +12430,7 @@ SELECT
   ,'The number and percent of records that have a value in the RELATIONSHIP_CONCEPT_ID field in the RELATIONSHIP table that does not exist in the CONCEPT table.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12515,7 +12515,7 @@ SELECT
   ,'The number and percent of records that have a value in the SOURCE_CONCEPT_ID field in the SOURCE_TO_CONCEPT_MAP table that does not exist in the CONCEPT table.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12600,7 +12600,7 @@ SELECT
   ,'The number and percent of records that have a value in the TARGET_CONCEPT_ID field in the SOURCE_TO_CONCEPT_MAP table that does not exist in the CONCEPT table.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'TARGET_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12685,7 +12685,7 @@ SELECT
   ,'The number and percent of records that have a value in the TARGET_VOCABULARY_ID field in the SOURCE_TO_CONCEPT_MAP table that does not exist in the VOCABULARY table.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'TARGET_VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12770,7 +12770,7 @@ SELECT
   ,'The number and percent of records that have a value in the ANATOMIC_SITE_CONCEPT_ID field in the SPECIMEN table that does not exist in the CONCEPT table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'ANATOMIC_SITE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12855,7 +12855,7 @@ SELECT
   ,'The number and percent of records that have a value in the DISEASE_STATUS_CONCEPT_ID field in the SPECIMEN table that does not exist in the CONCEPT table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'DISEASE_STATUS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12937,10 +12937,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the SPECIMEN table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the SPECIMEN table that does not exist in the person table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -12968,7 +12968,7 @@ schema = dbo
 
 cdmTableName = SPECIMEN
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -12993,7 +12993,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -13025,7 +13025,7 @@ SELECT
   ,'The number and percent of records that have a value in the SPECIMEN_CONCEPT_ID field in the SPECIMEN table that does not exist in the CONCEPT table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13110,7 +13110,7 @@ SELECT
   ,'The number and percent of records that have a value in the SPECIMEN_TYPE_CONCEPT_ID field in the SPECIMEN table that does not exist in the CONCEPT table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13195,7 +13195,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_CONCEPT_ID field in the SPECIMEN table that does not exist in the CONCEPT table.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13280,7 +13280,7 @@ SELECT
   ,'The number and percent of records that have a value in the ADMITTED_FROM_CONCEPT_ID field in the VISIT_DETAIL table that does not exist in the CONCEPT table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'ADMITTED_FROM_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13365,7 +13365,7 @@ SELECT
   ,'The number and percent of records that have a value in the CARE_SITE_ID field in the VISIT_DETAIL table that does not exist in the CARE_SITE table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13450,7 +13450,7 @@ SELECT
   ,'The number and percent of records that have a value in the DISCHARGED_TO_CONCEPT_ID field in the VISIT_DETAIL table that does not exist in the CONCEPT table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'DISCHARGED_TO_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13535,7 +13535,7 @@ SELECT
   ,'The number and percent of records that have a value in the PARENT_VISIT_DETAIL_ID field in the VISIT_DETAIL table that does not exist in the VISIT_DETAIL table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PARENT_VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13617,10 +13617,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the VISIT_DETAIL table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the VISIT_DETAIL table that does not exist in the person table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13648,7 +13648,7 @@ schema = dbo
 
 cdmTableName = VISIT_DETAIL
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -13673,7 +13673,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -13705,7 +13705,7 @@ SELECT
   ,'The number and percent of records that have a value in the PRECEDING_VISIT_DETAIL_ID field in the VISIT_DETAIL table that does not exist in the VISIT_DETAIL table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PRECEDING_VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13790,7 +13790,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROVIDER_ID field in the VISIT_DETAIL table that does not exist in the PROVIDER table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13875,7 +13875,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_CONCEPT_ID field in the VISIT_DETAIL table that does not exist in the CONCEPT table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -13960,7 +13960,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_SOURCE_CONCEPT_ID field in the VISIT_DETAIL table that does not exist in the CONCEPT table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14045,7 +14045,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_TYPE_CONCEPT_ID field in the VISIT_DETAIL table that does not exist in the CONCEPT table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14130,7 +14130,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_OCCURRENCE_ID field in the VISIT_DETAIL table that does not exist in the VISIT_OCCURRENCE table.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14215,7 +14215,7 @@ SELECT
   ,'The number and percent of records that have a value in the ADMITTED_FROM_CONCEPT_ID field in the VISIT_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'ADMITTED_FROM_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14300,7 +14300,7 @@ SELECT
   ,'The number and percent of records that have a value in the CARE_SITE_ID field in the VISIT_OCCURRENCE table that does not exist in the CARE_SITE table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14385,7 +14385,7 @@ SELECT
   ,'The number and percent of records that have a value in the DISCHARGED_TO_CONCEPT_ID field in the VISIT_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'DISCHARGED_TO_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14467,10 +14467,10 @@ SELECT
   ,'' as query_text
   ,'isForeignKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the PERSON_ID field in the VISIT_OCCURRENCE table that does not exist in the PERSON table.' as check_description
+  ,'The number and percent of records that have a value in the PERSON_ID field in the VISIT_OCCURRENCE table that does not exist in the person table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14498,7 +14498,7 @@ schema = dbo
 
 cdmTableName = VISIT_OCCURRENCE
 cdmFieldName = PERSON_ID
-fkTableName = PERSON
+fkTableName = person
 fkFieldName = PERSON_ID
 
 **********/
@@ -14523,7 +14523,7 @@ FROM (
             LEFT JOIN 
                 
                 
-                dbo.PERSON fkTable 
+                dbo.person fkTable 
                 ON cdmTable.PERSON_ID = fkTable.PERSON_ID
         WHERE fkTable.PERSON_ID IS NULL 
             AND cdmTable.PERSON_ID IS NOT NULL
@@ -14555,7 +14555,7 @@ SELECT
   ,'The number and percent of records that have a value in the PRECEDING_VISIT_OCCURRENCE_ID field in the VISIT_OCCURRENCE table that does not exist in the VISIT_OCCURRENCE table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'PRECEDING_VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14640,7 +14640,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROVIDER_ID field in the VISIT_OCCURRENCE table that does not exist in the PROVIDER table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14725,7 +14725,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_CONCEPT_ID field in the VISIT_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14810,7 +14810,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_SOURCE_CONCEPT_ID field in the VISIT_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14895,7 +14895,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_TYPE_CONCEPT_ID field in the VISIT_OCCURRENCE table that does not exist in the CONCEPT table.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category
@@ -14980,7 +14980,7 @@ SELECT
   ,'The number and percent of records that have a value in the VOCABULARY_CONCEPT_ID field in the VOCABULARY table that does not exist in the CONCEPT table.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'is_foreign_key.sql' as sql_file
   ,'Conformance' as category

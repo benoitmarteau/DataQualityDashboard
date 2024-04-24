@@ -20,7 +20,7 @@ SELECT
   ,'A yes or no value indicating if CARE_SITE_ID is present in the CARE_SITE table as expected based on the specification.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -89,7 +89,7 @@ SELECT
   ,'A yes or no value indicating if CARE_SITE_NAME is present in the CARE_SITE table as expected based on the specification.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'CARE_SITE_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -158,7 +158,7 @@ SELECT
   ,'A yes or no value indicating if CARE_SITE_SOURCE_VALUE is present in the CARE_SITE table as expected based on the specification.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'CARE_SITE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -227,7 +227,7 @@ SELECT
   ,'A yes or no value indicating if LOCATION_ID is present in the CARE_SITE table as expected based on the specification.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -296,7 +296,7 @@ SELECT
   ,'A yes or no value indicating if PLACE_OF_SERVICE_CONCEPT_ID is present in the CARE_SITE table as expected based on the specification.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'PLACE_OF_SERVICE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -365,7 +365,7 @@ SELECT
   ,'A yes or no value indicating if PLACE_OF_SERVICE_SOURCE_VALUE is present in the CARE_SITE table as expected based on the specification.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'PLACE_OF_SERVICE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -434,7 +434,7 @@ SELECT
   ,'A yes or no value indicating if CDM_ETL_REFERENCE is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_ETL_REFERENCE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -503,7 +503,7 @@ SELECT
   ,'A yes or no value indicating if CDM_HOLDER is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_HOLDER' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -572,7 +572,7 @@ SELECT
   ,'A yes or no value indicating if CDM_RELEASE_DATE is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_RELEASE_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -641,7 +641,7 @@ SELECT
   ,'A yes or no value indicating if CDM_SOURCE_ABBREVIATION is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_SOURCE_ABBREVIATION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -710,7 +710,7 @@ SELECT
   ,'A yes or no value indicating if CDM_SOURCE_NAME is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_SOURCE_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -779,7 +779,7 @@ SELECT
   ,'A yes or no value indicating if CDM_VERSION is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_VERSION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -848,7 +848,7 @@ SELECT
   ,'A yes or no value indicating if CDM_VERSION_CONCEPT_ID is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_VERSION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -917,7 +917,7 @@ SELECT
   ,'A yes or no value indicating if SOURCE_DESCRIPTION is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'SOURCE_DESCRIPTION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -986,7 +986,7 @@ SELECT
   ,'A yes or no value indicating if SOURCE_DOCUMENTATION_REFERENCE is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'SOURCE_DOCUMENTATION_REFERENCE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1055,7 +1055,7 @@ SELECT
   ,'A yes or no value indicating if SOURCE_RELEASE_DATE is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'SOURCE_RELEASE_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1124,7 +1124,7 @@ SELECT
   ,'A yes or no value indicating if VOCABULARY_VERSION is present in the CDM_SOURCE table as expected based on the specification.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'VOCABULARY_VERSION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1193,7 +1193,7 @@ SELECT
   ,'A yes or no value indicating if COHORT_DEFINITION_ID is present in the COHORT table as expected based on the specification.' as check_description
   ,'COHORT' as cdm_table_name
   ,'COHORT_DEFINITION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1262,7 +1262,7 @@ SELECT
   ,'A yes or no value indicating if COHORT_END_DATE is present in the COHORT table as expected based on the specification.' as check_description
   ,'COHORT' as cdm_table_name
   ,'COHORT_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1331,7 +1331,7 @@ SELECT
   ,'A yes or no value indicating if COHORT_START_DATE is present in the COHORT table as expected based on the specification.' as check_description
   ,'COHORT' as cdm_table_name
   ,'COHORT_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1400,7 +1400,7 @@ SELECT
   ,'A yes or no value indicating if SUBJECT_ID is present in the COHORT table as expected based on the specification.' as check_description
   ,'COHORT' as cdm_table_name
   ,'SUBJECT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1469,7 +1469,7 @@ SELECT
   ,'A yes or no value indicating if COHORT_DEFINITION_DESCRIPTION is present in the COHORT_DEFINITION table as expected based on the specification.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'COHORT_DEFINITION_DESCRIPTION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1538,7 +1538,7 @@ SELECT
   ,'A yes or no value indicating if COHORT_DEFINITION_ID is present in the COHORT_DEFINITION table as expected based on the specification.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'COHORT_DEFINITION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1607,7 +1607,7 @@ SELECT
   ,'A yes or no value indicating if COHORT_DEFINITION_NAME is present in the COHORT_DEFINITION table as expected based on the specification.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'COHORT_DEFINITION_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1676,7 +1676,7 @@ SELECT
   ,'A yes or no value indicating if COHORT_DEFINITION_SYNTAX is present in the COHORT_DEFINITION table as expected based on the specification.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'COHORT_DEFINITION_SYNTAX' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1745,7 +1745,7 @@ SELECT
   ,'A yes or no value indicating if COHORT_INITIATION_DATE is present in the COHORT_DEFINITION table as expected based on the specification.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'COHORT_INITIATION_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1814,7 +1814,7 @@ SELECT
   ,'A yes or no value indicating if DEFINITION_TYPE_CONCEPT_ID is present in the COHORT_DEFINITION table as expected based on the specification.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'DEFINITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1883,7 +1883,7 @@ SELECT
   ,'A yes or no value indicating if SUBJECT_CONCEPT_ID is present in the COHORT_DEFINITION table as expected based on the specification.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'SUBJECT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -1952,7 +1952,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_CLASS_ID is present in the CONCEPT table as expected based on the specification.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_CLASS_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2021,7 +2021,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_CODE is present in the CONCEPT table as expected based on the specification.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_CODE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2090,7 +2090,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_ID is present in the CONCEPT table as expected based on the specification.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2159,7 +2159,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_NAME is present in the CONCEPT table as expected based on the specification.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2228,7 +2228,7 @@ SELECT
   ,'A yes or no value indicating if DOMAIN_ID is present in the CONCEPT table as expected based on the specification.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'DOMAIN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2297,7 +2297,7 @@ SELECT
   ,'A yes or no value indicating if INVALID_REASON is present in the CONCEPT table as expected based on the specification.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'INVALID_REASON' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2366,7 +2366,7 @@ SELECT
   ,'A yes or no value indicating if STANDARD_CONCEPT is present in the CONCEPT table as expected based on the specification.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'STANDARD_CONCEPT' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2435,7 +2435,7 @@ SELECT
   ,'A yes or no value indicating if VALID_END_DATE is present in the CONCEPT table as expected based on the specification.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'VALID_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2504,7 +2504,7 @@ SELECT
   ,'A yes or no value indicating if VALID_START_DATE is present in the CONCEPT table as expected based on the specification.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'VALID_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2573,7 +2573,7 @@ SELECT
   ,'A yes or no value indicating if VOCABULARY_ID is present in the CONCEPT table as expected based on the specification.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2642,7 +2642,7 @@ SELECT
   ,'A yes or no value indicating if ANCESTOR_CONCEPT_ID is present in the CONCEPT_ANCESTOR table as expected based on the specification.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'ANCESTOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2711,7 +2711,7 @@ SELECT
   ,'A yes or no value indicating if DESCENDANT_CONCEPT_ID is present in the CONCEPT_ANCESTOR table as expected based on the specification.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'DESCENDANT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2780,7 +2780,7 @@ SELECT
   ,'A yes or no value indicating if MAX_LEVELS_OF_SEPARATION is present in the CONCEPT_ANCESTOR table as expected based on the specification.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'MAX_LEVELS_OF_SEPARATION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2849,7 +2849,7 @@ SELECT
   ,'A yes or no value indicating if MIN_LEVELS_OF_SEPARATION is present in the CONCEPT_ANCESTOR table as expected based on the specification.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'MIN_LEVELS_OF_SEPARATION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2918,7 +2918,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_CLASS_CONCEPT_ID is present in the CONCEPT_CLASS table as expected based on the specification.' as check_description
   ,'CONCEPT_CLASS' as cdm_table_name
   ,'CONCEPT_CLASS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -2987,7 +2987,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_CLASS_ID is present in the CONCEPT_CLASS table as expected based on the specification.' as check_description
   ,'CONCEPT_CLASS' as cdm_table_name
   ,'CONCEPT_CLASS_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3056,7 +3056,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_CLASS_NAME is present in the CONCEPT_CLASS table as expected based on the specification.' as check_description
   ,'CONCEPT_CLASS' as cdm_table_name
   ,'CONCEPT_CLASS_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3125,7 +3125,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_ID_1 is present in the CONCEPT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'CONCEPT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3194,7 +3194,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_ID_2 is present in the CONCEPT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'CONCEPT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3263,7 +3263,7 @@ SELECT
   ,'A yes or no value indicating if INVALID_REASON is present in the CONCEPT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'INVALID_REASON' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3332,7 +3332,7 @@ SELECT
   ,'A yes or no value indicating if RELATIONSHIP_ID is present in the CONCEPT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3401,7 +3401,7 @@ SELECT
   ,'A yes or no value indicating if VALID_END_DATE is present in the CONCEPT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'VALID_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3470,7 +3470,7 @@ SELECT
   ,'A yes or no value indicating if VALID_START_DATE is present in the CONCEPT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'VALID_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3539,7 +3539,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_ID is present in the CONCEPT_SYNONYM table as expected based on the specification.' as check_description
   ,'CONCEPT_SYNONYM' as cdm_table_name
   ,'CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3608,7 +3608,7 @@ SELECT
   ,'A yes or no value indicating if CONCEPT_SYNONYM_NAME is present in the CONCEPT_SYNONYM table as expected based on the specification.' as check_description
   ,'CONCEPT_SYNONYM' as cdm_table_name
   ,'CONCEPT_SYNONYM_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3677,7 +3677,7 @@ SELECT
   ,'A yes or no value indicating if LANGUAGE_CONCEPT_ID is present in the CONCEPT_SYNONYM table as expected based on the specification.' as check_description
   ,'CONCEPT_SYNONYM' as cdm_table_name
   ,'LANGUAGE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3746,7 +3746,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_CONCEPT_ID is present in the CONDITION_ERA table as expected based on the specification.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3815,7 +3815,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_ERA_END_DATE is present in the CONDITION_ERA table as expected based on the specification.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_ERA_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3884,7 +3884,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_ERA_ID is present in the CONDITION_ERA table as expected based on the specification.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -3953,7 +3953,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_ERA_START_DATE is present in the CONDITION_ERA table as expected based on the specification.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_ERA_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4022,7 +4022,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_OCCURRENCE_COUNT is present in the CONDITION_ERA table as expected based on the specification.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_OCCURRENCE_COUNT' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4091,7 +4091,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the CONDITION_ERA table as expected based on the specification.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4160,7 +4160,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_CONCEPT_ID is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4229,7 +4229,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_END_DATE is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4298,7 +4298,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_END_DATETIME is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_END_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4367,7 +4367,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_OCCURRENCE_ID is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4436,7 +4436,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_SOURCE_CONCEPT_ID is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4505,7 +4505,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_SOURCE_VALUE is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4574,7 +4574,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_START_DATE is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4643,7 +4643,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_START_DATETIME is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_START_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4712,7 +4712,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_STATUS_CONCEPT_ID is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_STATUS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4781,7 +4781,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_STATUS_SOURCE_VALUE is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_STATUS_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4850,7 +4850,7 @@ SELECT
   ,'A yes or no value indicating if CONDITION_TYPE_CONCEPT_ID is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4919,7 +4919,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -4988,7 +4988,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_ID is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5057,7 +5057,7 @@ SELECT
   ,'A yes or no value indicating if STOP_REASON is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'STOP_REASON' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5126,7 +5126,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_ID is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5195,7 +5195,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_OCCURRENCE_ID is present in the CONDITION_OCCURRENCE table as expected based on the specification.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5264,7 +5264,7 @@ SELECT
   ,'A yes or no value indicating if AMOUNT_ALLOWED is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'AMOUNT_ALLOWED' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5333,7 +5333,7 @@ SELECT
   ,'A yes or no value indicating if COST_DOMAIN_ID is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_DOMAIN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5402,7 +5402,7 @@ SELECT
   ,'A yes or no value indicating if COST_EVENT_ID is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_EVENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5471,7 +5471,7 @@ SELECT
   ,'A yes or no value indicating if COST_ID is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5540,7 +5540,7 @@ SELECT
   ,'A yes or no value indicating if COST_TYPE_CONCEPT_ID is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5609,7 +5609,7 @@ SELECT
   ,'A yes or no value indicating if CURRENCY_CONCEPT_ID is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'CURRENCY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5678,7 +5678,7 @@ SELECT
   ,'A yes or no value indicating if DRG_CONCEPT_ID is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'DRG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5747,7 +5747,7 @@ SELECT
   ,'A yes or no value indicating if DRG_SOURCE_VALUE is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'DRG_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5816,7 +5816,7 @@ SELECT
   ,'A yes or no value indicating if PAID_BY_PATIENT is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'PAID_BY_PATIENT' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5885,7 +5885,7 @@ SELECT
   ,'A yes or no value indicating if PAID_BY_PAYER is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'PAID_BY_PAYER' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -5954,7 +5954,7 @@ SELECT
   ,'A yes or no value indicating if PAID_BY_PRIMARY is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'PAID_BY_PRIMARY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6023,7 +6023,7 @@ SELECT
   ,'A yes or no value indicating if PAID_DISPENSING_FEE is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'PAID_DISPENSING_FEE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6092,7 +6092,7 @@ SELECT
   ,'A yes or no value indicating if PAID_INGREDIENT_COST is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'PAID_INGREDIENT_COST' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6161,7 +6161,7 @@ SELECT
   ,'A yes or no value indicating if PAID_PATIENT_COINSURANCE is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'PAID_PATIENT_COINSURANCE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6230,7 +6230,7 @@ SELECT
   ,'A yes or no value indicating if PAID_PATIENT_COPAY is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'PAID_PATIENT_COPAY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6299,7 +6299,7 @@ SELECT
   ,'A yes or no value indicating if PAID_PATIENT_DEDUCTIBLE is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'PAID_PATIENT_DEDUCTIBLE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6368,7 +6368,7 @@ SELECT
   ,'A yes or no value indicating if PAYER_PLAN_PERIOD_ID is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6437,7 +6437,7 @@ SELECT
   ,'A yes or no value indicating if REVENUE_CODE_CONCEPT_ID is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'REVENUE_CODE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6506,7 +6506,7 @@ SELECT
   ,'A yes or no value indicating if REVENUE_CODE_SOURCE_VALUE is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'REVENUE_CODE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6575,7 +6575,7 @@ SELECT
   ,'A yes or no value indicating if TOTAL_CHARGE is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'TOTAL_CHARGE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6644,7 +6644,7 @@ SELECT
   ,'A yes or no value indicating if TOTAL_COST is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'TOTAL_COST' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6713,7 +6713,7 @@ SELECT
   ,'A yes or no value indicating if TOTAL_PAID is present in the COST table as expected based on the specification.' as check_description
   ,'COST' as cdm_table_name
   ,'TOTAL_PAID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6782,7 +6782,7 @@ SELECT
   ,'A yes or no value indicating if CAUSE_CONCEPT_ID is present in the DEATH table as expected based on the specification.' as check_description
   ,'DEATH' as cdm_table_name
   ,'CAUSE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6851,7 +6851,7 @@ SELECT
   ,'A yes or no value indicating if CAUSE_SOURCE_CONCEPT_ID is present in the DEATH table as expected based on the specification.' as check_description
   ,'DEATH' as cdm_table_name
   ,'CAUSE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6920,7 +6920,7 @@ SELECT
   ,'A yes or no value indicating if CAUSE_SOURCE_VALUE is present in the DEATH table as expected based on the specification.' as check_description
   ,'DEATH' as cdm_table_name
   ,'CAUSE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -6989,7 +6989,7 @@ SELECT
   ,'A yes or no value indicating if DEATH_DATE is present in the DEATH table as expected based on the specification.' as check_description
   ,'DEATH' as cdm_table_name
   ,'DEATH_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7058,7 +7058,7 @@ SELECT
   ,'A yes or no value indicating if DEATH_DATETIME is present in the DEATH table as expected based on the specification.' as check_description
   ,'DEATH' as cdm_table_name
   ,'DEATH_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7127,7 +7127,7 @@ SELECT
   ,'A yes or no value indicating if DEATH_TYPE_CONCEPT_ID is present in the DEATH table as expected based on the specification.' as check_description
   ,'DEATH' as cdm_table_name
   ,'DEATH_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7196,7 +7196,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the DEATH table as expected based on the specification.' as check_description
   ,'DEATH' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7265,7 +7265,7 @@ SELECT
   ,'A yes or no value indicating if DEVICE_CONCEPT_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7334,7 +7334,7 @@ SELECT
   ,'A yes or no value indicating if DEVICE_EXPOSURE_END_DATE is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7403,7 +7403,7 @@ SELECT
   ,'A yes or no value indicating if DEVICE_EXPOSURE_END_DATETIME is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_END_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7472,7 +7472,7 @@ SELECT
   ,'A yes or no value indicating if DEVICE_EXPOSURE_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7541,7 +7541,7 @@ SELECT
   ,'A yes or no value indicating if DEVICE_EXPOSURE_START_DATE is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7610,7 +7610,7 @@ SELECT
   ,'A yes or no value indicating if DEVICE_EXPOSURE_START_DATETIME is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_START_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7679,7 +7679,7 @@ SELECT
   ,'A yes or no value indicating if DEVICE_SOURCE_CONCEPT_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7748,7 +7748,7 @@ SELECT
   ,'A yes or no value indicating if DEVICE_SOURCE_VALUE is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7817,7 +7817,7 @@ SELECT
   ,'A yes or no value indicating if DEVICE_TYPE_CONCEPT_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7886,7 +7886,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -7955,7 +7955,7 @@ SELECT
   ,'A yes or no value indicating if PRODUCTION_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'PRODUCTION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8024,7 +8024,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8093,7 +8093,7 @@ SELECT
   ,'A yes or no value indicating if QUANTITY is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'QUANTITY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8162,7 +8162,7 @@ SELECT
   ,'A yes or no value indicating if UNIQUE_DEVICE_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'UNIQUE_DEVICE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8231,7 +8231,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_CONCEPT_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8300,7 +8300,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_SOURCE_CONCEPT_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'UNIT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8369,7 +8369,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_SOURCE_VALUE is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'UNIT_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8438,7 +8438,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8507,7 +8507,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_OCCURRENCE_ID is present in the DEVICE_EXPOSURE table as expected based on the specification.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8576,7 +8576,7 @@ SELECT
   ,'A yes or no value indicating if DOMAIN_CONCEPT_ID is present in the DOMAIN table as expected based on the specification.' as check_description
   ,'DOMAIN' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8645,7 +8645,7 @@ SELECT
   ,'A yes or no value indicating if DOMAIN_ID is present in the DOMAIN table as expected based on the specification.' as check_description
   ,'DOMAIN' as cdm_table_name
   ,'DOMAIN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8714,7 +8714,7 @@ SELECT
   ,'A yes or no value indicating if DOMAIN_NAME is present in the DOMAIN table as expected based on the specification.' as check_description
   ,'DOMAIN' as cdm_table_name
   ,'DOMAIN_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8783,7 +8783,7 @@ SELECT
   ,'A yes or no value indicating if DOSE_ERA_END_DATE is present in the DOSE_ERA table as expected based on the specification.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8852,7 +8852,7 @@ SELECT
   ,'A yes or no value indicating if DOSE_ERA_ID is present in the DOSE_ERA table as expected based on the specification.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8921,7 +8921,7 @@ SELECT
   ,'A yes or no value indicating if DOSE_ERA_START_DATE is present in the DOSE_ERA table as expected based on the specification.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -8990,7 +8990,7 @@ SELECT
   ,'A yes or no value indicating if DOSE_VALUE is present in the DOSE_ERA table as expected based on the specification.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9059,7 +9059,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_CONCEPT_ID is present in the DOSE_ERA table as expected based on the specification.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9128,7 +9128,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the DOSE_ERA table as expected based on the specification.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9197,7 +9197,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_CONCEPT_ID is present in the DOSE_ERA table as expected based on the specification.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9266,7 +9266,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_CONCEPT_ID is present in the DRUG_ERA table as expected based on the specification.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9335,7 +9335,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_ERA_END_DATE is present in the DRUG_ERA table as expected based on the specification.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_ERA_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9404,7 +9404,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_ERA_ID is present in the DRUG_ERA table as expected based on the specification.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9473,7 +9473,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_ERA_START_DATE is present in the DRUG_ERA table as expected based on the specification.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_ERA_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9542,7 +9542,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_EXPOSURE_COUNT is present in the DRUG_ERA table as expected based on the specification.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_EXPOSURE_COUNT' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9611,7 +9611,7 @@ SELECT
   ,'A yes or no value indicating if GAP_DAYS is present in the DRUG_ERA table as expected based on the specification.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'GAP_DAYS' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9680,7 +9680,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the DRUG_ERA table as expected based on the specification.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9749,7 +9749,7 @@ SELECT
   ,'A yes or no value indicating if DAYS_SUPPLY is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DAYS_SUPPLY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9818,7 +9818,7 @@ SELECT
   ,'A yes or no value indicating if DOSE_UNIT_SOURCE_VALUE is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DOSE_UNIT_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9887,7 +9887,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_CONCEPT_ID is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -9956,7 +9956,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_EXPOSURE_END_DATE is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10025,7 +10025,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_EXPOSURE_END_DATETIME is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_END_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10094,7 +10094,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_EXPOSURE_ID is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10163,7 +10163,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_EXPOSURE_START_DATE is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10232,7 +10232,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_EXPOSURE_START_DATETIME is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_START_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10301,7 +10301,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_SOURCE_CONCEPT_ID is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10370,7 +10370,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_SOURCE_VALUE is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10439,7 +10439,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_TYPE_CONCEPT_ID is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10508,7 +10508,7 @@ SELECT
   ,'A yes or no value indicating if LOT_NUMBER is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'LOT_NUMBER' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10577,7 +10577,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10646,7 +10646,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_ID is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10715,7 +10715,7 @@ SELECT
   ,'A yes or no value indicating if QUANTITY is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'QUANTITY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10784,7 +10784,7 @@ SELECT
   ,'A yes or no value indicating if REFILLS is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'REFILLS' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10853,7 +10853,7 @@ SELECT
   ,'A yes or no value indicating if ROUTE_CONCEPT_ID is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'ROUTE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10922,7 +10922,7 @@ SELECT
   ,'A yes or no value indicating if ROUTE_SOURCE_VALUE is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'ROUTE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -10991,7 +10991,7 @@ SELECT
   ,'A yes or no value indicating if SIG is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'SIG' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11060,7 +11060,7 @@ SELECT
   ,'A yes or no value indicating if STOP_REASON is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'STOP_REASON' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11129,7 +11129,7 @@ SELECT
   ,'A yes or no value indicating if VERBATIM_END_DATE is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'VERBATIM_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11198,7 +11198,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_ID is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11267,7 +11267,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_OCCURRENCE_ID is present in the DRUG_EXPOSURE table as expected based on the specification.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11336,7 +11336,7 @@ SELECT
   ,'A yes or no value indicating if AMOUNT_UNIT_CONCEPT_ID is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'AMOUNT_UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11405,7 +11405,7 @@ SELECT
   ,'A yes or no value indicating if AMOUNT_VALUE is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'AMOUNT_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11474,7 +11474,7 @@ SELECT
   ,'A yes or no value indicating if BOX_SIZE is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'BOX_SIZE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11543,7 +11543,7 @@ SELECT
   ,'A yes or no value indicating if DENOMINATOR_UNIT_CONCEPT_ID is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'DENOMINATOR_UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11612,7 +11612,7 @@ SELECT
   ,'A yes or no value indicating if DENOMINATOR_VALUE is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'DENOMINATOR_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11681,7 +11681,7 @@ SELECT
   ,'A yes or no value indicating if DRUG_CONCEPT_ID is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11750,7 +11750,7 @@ SELECT
   ,'A yes or no value indicating if INGREDIENT_CONCEPT_ID is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'INGREDIENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11819,7 +11819,7 @@ SELECT
   ,'A yes or no value indicating if INVALID_REASON is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'INVALID_REASON' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11888,7 +11888,7 @@ SELECT
   ,'A yes or no value indicating if NUMERATOR_UNIT_CONCEPT_ID is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'NUMERATOR_UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -11957,7 +11957,7 @@ SELECT
   ,'A yes or no value indicating if NUMERATOR_VALUE is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'NUMERATOR_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12026,7 +12026,7 @@ SELECT
   ,'A yes or no value indicating if VALID_END_DATE is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'VALID_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12095,7 +12095,7 @@ SELECT
   ,'A yes or no value indicating if VALID_START_DATE is present in the DRUG_STRENGTH table as expected based on the specification.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'VALID_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12164,7 +12164,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_CONCEPT_ID is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12233,7 +12233,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_END_DATE is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12302,7 +12302,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_END_DATETIME is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_END_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12371,7 +12371,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_ID is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12440,7 +12440,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_NUMBER is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_NUMBER' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12509,7 +12509,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_OBJECT_CONCEPT_ID is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_OBJECT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12578,7 +12578,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_PARENT_ID is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_PARENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12647,7 +12647,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_SOURCE_CONCEPT_ID is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12716,7 +12716,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_SOURCE_VALUE is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12785,7 +12785,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_START_DATE is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12854,7 +12854,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_START_DATETIME is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_START_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12923,7 +12923,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_TYPE_CONCEPT_ID is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -12992,7 +12992,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the EPISODE table as expected based on the specification.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13061,7 +13061,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_EVENT_FIELD_CONCEPT_ID is present in the EPISODE_EVENT table as expected based on the specification.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EPISODE_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13130,7 +13130,7 @@ SELECT
   ,'A yes or no value indicating if EPISODE_ID is present in the EPISODE_EVENT table as expected based on the specification.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EPISODE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13199,7 +13199,7 @@ SELECT
   ,'A yes or no value indicating if EVENT_ID is present in the EPISODE_EVENT table as expected based on the specification.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EVENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13268,7 +13268,7 @@ SELECT
   ,'A yes or no value indicating if DOMAIN_CONCEPT_ID_1 is present in the FACT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13337,7 +13337,7 @@ SELECT
   ,'A yes or no value indicating if DOMAIN_CONCEPT_ID_2 is present in the FACT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13406,7 +13406,7 @@ SELECT
   ,'A yes or no value indicating if FACT_ID_1 is present in the FACT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'FACT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13475,7 +13475,7 @@ SELECT
   ,'A yes or no value indicating if FACT_ID_2 is present in the FACT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'FACT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13544,7 +13544,7 @@ SELECT
   ,'A yes or no value indicating if RELATIONSHIP_CONCEPT_ID is present in the FACT_RELATIONSHIP table as expected based on the specification.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13613,7 +13613,7 @@ SELECT
   ,'A yes or no value indicating if ADDRESS_1 is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'ADDRESS_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13682,7 +13682,7 @@ SELECT
   ,'A yes or no value indicating if ADDRESS_2 is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'ADDRESS_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13751,7 +13751,7 @@ SELECT
   ,'A yes or no value indicating if CITY is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'CITY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13820,7 +13820,7 @@ SELECT
   ,'A yes or no value indicating if COUNTRY_CONCEPT_ID is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'COUNTRY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13889,7 +13889,7 @@ SELECT
   ,'A yes or no value indicating if COUNTRY_SOURCE_VALUE is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'COUNTRY_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -13958,7 +13958,7 @@ SELECT
   ,'A yes or no value indicating if COUNTY is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'COUNTY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14027,7 +14027,7 @@ SELECT
   ,'A yes or no value indicating if LATITUDE is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'LATITUDE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14096,7 +14096,7 @@ SELECT
   ,'A yes or no value indicating if LOCATION_ID is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14165,7 +14165,7 @@ SELECT
   ,'A yes or no value indicating if LOCATION_SOURCE_VALUE is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'LOCATION_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14234,7 +14234,7 @@ SELECT
   ,'A yes or no value indicating if LONGITUDE is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'LONGITUDE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14303,7 +14303,7 @@ SELECT
   ,'A yes or no value indicating if STATE is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'STATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14372,7 +14372,7 @@ SELECT
   ,'A yes or no value indicating if ZIP is present in the LOCATION table as expected based on the specification.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'ZIP' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14441,7 +14441,7 @@ SELECT
   ,'A yes or no value indicating if MEAS_EVENT_FIELD_CONCEPT_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEAS_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14510,7 +14510,7 @@ SELECT
   ,'A yes or no value indicating if MEASUREMENT_CONCEPT_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14579,7 +14579,7 @@ SELECT
   ,'A yes or no value indicating if MEASUREMENT_DATE is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14648,7 +14648,7 @@ SELECT
   ,'A yes or no value indicating if MEASUREMENT_DATETIME is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14717,7 +14717,7 @@ SELECT
   ,'A yes or no value indicating if MEASUREMENT_EVENT_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_EVENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14786,7 +14786,7 @@ SELECT
   ,'A yes or no value indicating if MEASUREMENT_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14855,7 +14855,7 @@ SELECT
   ,'A yes or no value indicating if MEASUREMENT_SOURCE_CONCEPT_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14924,7 +14924,7 @@ SELECT
   ,'A yes or no value indicating if MEASUREMENT_SOURCE_VALUE is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -14993,7 +14993,7 @@ SELECT
   ,'A yes or no value indicating if MEASUREMENT_TIME is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_TIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15062,7 +15062,7 @@ SELECT
   ,'A yes or no value indicating if MEASUREMENT_TYPE_CONCEPT_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15131,7 +15131,7 @@ SELECT
   ,'A yes or no value indicating if OPERATOR_CONCEPT_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'OPERATOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15200,7 +15200,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15269,7 +15269,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15338,7 +15338,7 @@ SELECT
   ,'A yes or no value indicating if RANGE_HIGH is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'RANGE_HIGH' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15407,7 +15407,7 @@ SELECT
   ,'A yes or no value indicating if RANGE_LOW is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'RANGE_LOW' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15476,7 +15476,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_CONCEPT_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15545,7 +15545,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_SOURCE_CONCEPT_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'UNIT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15614,7 +15614,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_SOURCE_VALUE is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'UNIT_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15683,7 +15683,7 @@ SELECT
   ,'A yes or no value indicating if VALUE_AS_CONCEPT_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VALUE_AS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15752,7 +15752,7 @@ SELECT
   ,'A yes or no value indicating if VALUE_AS_NUMBER is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VALUE_AS_NUMBER' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15821,7 +15821,7 @@ SELECT
   ,'A yes or no value indicating if VALUE_SOURCE_VALUE is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VALUE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15890,7 +15890,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -15959,7 +15959,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_OCCURRENCE_ID is present in the MEASUREMENT table as expected based on the specification.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16028,7 +16028,7 @@ SELECT
   ,'A yes or no value indicating if METADATA_CONCEPT_ID is present in the METADATA table as expected based on the specification.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16097,7 +16097,7 @@ SELECT
   ,'A yes or no value indicating if METADATA_DATE is present in the METADATA table as expected based on the specification.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16166,7 +16166,7 @@ SELECT
   ,'A yes or no value indicating if METADATA_DATETIME is present in the METADATA table as expected based on the specification.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16235,7 +16235,7 @@ SELECT
   ,'A yes or no value indicating if METADATA_ID is present in the METADATA table as expected based on the specification.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16304,7 +16304,7 @@ SELECT
   ,'A yes or no value indicating if METADATA_TYPE_CONCEPT_ID is present in the METADATA table as expected based on the specification.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16373,7 +16373,7 @@ SELECT
   ,'A yes or no value indicating if NAME is present in the METADATA table as expected based on the specification.' as check_description
   ,'METADATA' as cdm_table_name
   ,'NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16442,7 +16442,7 @@ SELECT
   ,'A yes or no value indicating if VALUE_AS_CONCEPT_ID is present in the METADATA table as expected based on the specification.' as check_description
   ,'METADATA' as cdm_table_name
   ,'VALUE_AS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16511,7 +16511,7 @@ SELECT
   ,'A yes or no value indicating if VALUE_AS_NUMBER is present in the METADATA table as expected based on the specification.' as check_description
   ,'METADATA' as cdm_table_name
   ,'VALUE_AS_NUMBER' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16580,7 +16580,7 @@ SELECT
   ,'A yes or no value indicating if VALUE_AS_STRING is present in the METADATA table as expected based on the specification.' as check_description
   ,'METADATA' as cdm_table_name
   ,'VALUE_AS_STRING' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16649,7 +16649,7 @@ SELECT
   ,'A yes or no value indicating if ENCODING_CONCEPT_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'ENCODING_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16718,7 +16718,7 @@ SELECT
   ,'A yes or no value indicating if LANGUAGE_CONCEPT_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'LANGUAGE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16787,7 +16787,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_CLASS_CONCEPT_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_CLASS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16856,7 +16856,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_DATE is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16925,7 +16925,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_DATETIME is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -16994,7 +16994,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_EVENT_FIELD_CONCEPT_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17063,7 +17063,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_EVENT_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_EVENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17132,7 +17132,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17201,7 +17201,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_SOURCE_VALUE is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17270,7 +17270,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_TEXT is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_TEXT' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17339,7 +17339,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_TITLE is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_TITLE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17408,7 +17408,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_TYPE_CONCEPT_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17477,7 +17477,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17546,7 +17546,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17615,7 +17615,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17684,7 +17684,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_OCCURRENCE_ID is present in the NOTE table as expected based on the specification.' as check_description
   ,'NOTE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17753,7 +17753,7 @@ SELECT
   ,'A yes or no value indicating if LEXICAL_VARIANT is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'LEXICAL_VARIANT' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17822,7 +17822,7 @@ SELECT
   ,'A yes or no value indicating if NLP_DATE is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NLP_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17891,7 +17891,7 @@ SELECT
   ,'A yes or no value indicating if NLP_DATETIME is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NLP_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -17960,7 +17960,7 @@ SELECT
   ,'A yes or no value indicating if NLP_SYSTEM is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NLP_SYSTEM' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18029,7 +18029,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_ID is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18098,7 +18098,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_NLP_CONCEPT_ID is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18167,7 +18167,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_NLP_ID is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18236,7 +18236,7 @@ SELECT
   ,'A yes or no value indicating if NOTE_NLP_SOURCE_CONCEPT_ID is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18305,7 +18305,7 @@ SELECT
   ,'A yes or no value indicating if SECTION_CONCEPT_ID is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'SECTION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18374,7 +18374,7 @@ SELECT
   ,'A yes or no value indicating if SNIPPET is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'SNIPPET' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18443,7 +18443,7 @@ SELECT
   ,'A yes or no value indicating if TERM_EXISTS is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'TERM_EXISTS' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18512,7 +18512,7 @@ SELECT
   ,'A yes or no value indicating if TERM_MODIFIERS is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'TERM_MODIFIERS' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18581,7 +18581,7 @@ SELECT
   ,'A yes or no value indicating if TERM_TEMPORAL is present in the NOTE_NLP table as expected based on the specification.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'TERM_TEMPORAL' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18650,7 +18650,7 @@ SELECT
   ,'A yes or no value indicating if OBS_EVENT_FIELD_CONCEPT_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBS_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18719,7 +18719,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_CONCEPT_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18788,7 +18788,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_DATE is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18857,7 +18857,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_DATETIME is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18926,7 +18926,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_EVENT_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_EVENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -18995,7 +18995,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19064,7 +19064,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_SOURCE_CONCEPT_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19133,7 +19133,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_SOURCE_VALUE is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19202,7 +19202,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_TYPE_CONCEPT_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19271,7 +19271,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19340,7 +19340,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19409,7 +19409,7 @@ SELECT
   ,'A yes or no value indicating if QUALIFIER_CONCEPT_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'QUALIFIER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19478,7 +19478,7 @@ SELECT
   ,'A yes or no value indicating if QUALIFIER_SOURCE_VALUE is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'QUALIFIER_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19547,7 +19547,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_CONCEPT_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19616,7 +19616,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_SOURCE_VALUE is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'UNIT_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19685,7 +19685,7 @@ SELECT
   ,'A yes or no value indicating if VALUE_AS_CONCEPT_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VALUE_AS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19754,7 +19754,7 @@ SELECT
   ,'A yes or no value indicating if VALUE_AS_NUMBER is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VALUE_AS_NUMBER' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19823,7 +19823,7 @@ SELECT
   ,'A yes or no value indicating if VALUE_AS_STRING is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VALUE_AS_STRING' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19892,7 +19892,7 @@ SELECT
   ,'A yes or no value indicating if VALUE_SOURCE_VALUE is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VALUE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -19961,7 +19961,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20030,7 +20030,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_OCCURRENCE_ID is present in the OBSERVATION table as expected based on the specification.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20099,7 +20099,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_PERIOD_END_DATE is present in the OBSERVATION_PERIOD table as expected based on the specification.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20168,7 +20168,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_PERIOD_ID is present in the OBSERVATION_PERIOD table as expected based on the specification.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20237,7 +20237,7 @@ SELECT
   ,'A yes or no value indicating if OBSERVATION_PERIOD_START_DATE is present in the OBSERVATION_PERIOD table as expected based on the specification.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20306,7 +20306,7 @@ SELECT
   ,'A yes or no value indicating if PERIOD_TYPE_CONCEPT_ID is present in the OBSERVATION_PERIOD table as expected based on the specification.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'PERIOD_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20375,7 +20375,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the OBSERVATION_PERIOD table as expected based on the specification.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20444,7 +20444,7 @@ SELECT
   ,'A yes or no value indicating if FAMILY_SOURCE_VALUE is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'FAMILY_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20513,7 +20513,7 @@ SELECT
   ,'A yes or no value indicating if PAYER_CONCEPT_ID is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20582,7 +20582,7 @@ SELECT
   ,'A yes or no value indicating if PAYER_PLAN_PERIOD_END_DATE is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20651,7 +20651,7 @@ SELECT
   ,'A yes or no value indicating if PAYER_PLAN_PERIOD_ID is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20720,7 +20720,7 @@ SELECT
   ,'A yes or no value indicating if PAYER_PLAN_PERIOD_START_DATE is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20789,7 +20789,7 @@ SELECT
   ,'A yes or no value indicating if PAYER_SOURCE_CONCEPT_ID is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20858,7 +20858,7 @@ SELECT
   ,'A yes or no value indicating if PAYER_SOURCE_VALUE is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20927,7 +20927,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -20996,7 +20996,7 @@ SELECT
   ,'A yes or no value indicating if PLAN_CONCEPT_ID is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PLAN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21065,7 +21065,7 @@ SELECT
   ,'A yes or no value indicating if PLAN_SOURCE_CONCEPT_ID is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PLAN_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21134,7 +21134,7 @@ SELECT
   ,'A yes or no value indicating if PLAN_SOURCE_VALUE is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PLAN_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21203,7 +21203,7 @@ SELECT
   ,'A yes or no value indicating if SPONSOR_CONCEPT_ID is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'SPONSOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21272,7 +21272,7 @@ SELECT
   ,'A yes or no value indicating if SPONSOR_SOURCE_CONCEPT_ID is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'SPONSOR_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21341,7 +21341,7 @@ SELECT
   ,'A yes or no value indicating if SPONSOR_SOURCE_VALUE is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'SPONSOR_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21410,7 +21410,7 @@ SELECT
   ,'A yes or no value indicating if STOP_REASON_CONCEPT_ID is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'STOP_REASON_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21479,7 +21479,7 @@ SELECT
   ,'A yes or no value indicating if STOP_REASON_SOURCE_CONCEPT_ID is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'STOP_REASON_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21548,7 +21548,7 @@ SELECT
   ,'A yes or no value indicating if STOP_REASON_SOURCE_VALUE is present in the PAYER_PLAN_PERIOD table as expected based on the specification.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'STOP_REASON_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21614,10 +21614,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if BIRTH_DATETIME is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if BIRTH_DATETIME is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'BIRTH_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21642,7 +21642,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = BIRTH_DATETIME
 
 **********/
@@ -21661,7 +21661,7 @@ FROM (
                 WHEN COUNT_BIG(BIRTH_DATETIME) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -21683,10 +21683,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if CARE_SITE_ID is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if CARE_SITE_ID is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21711,7 +21711,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = CARE_SITE_ID
 
 **********/
@@ -21730,7 +21730,7 @@ FROM (
                 WHEN COUNT_BIG(CARE_SITE_ID) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -21752,10 +21752,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if DAY_OF_BIRTH is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if DAY_OF_BIRTH is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'DAY_OF_BIRTH' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21780,7 +21780,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = DAY_OF_BIRTH
 
 **********/
@@ -21799,7 +21799,7 @@ FROM (
                 WHEN COUNT_BIG(DAY_OF_BIRTH) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -21821,10 +21821,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if ETHNICITY_CONCEPT_ID is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if ETHNICITY_CONCEPT_ID is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21849,7 +21849,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_CONCEPT_ID
 
 **********/
@@ -21868,7 +21868,7 @@ FROM (
                 WHEN COUNT_BIG(ETHNICITY_CONCEPT_ID) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -21890,10 +21890,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if ETHNICITY_SOURCE_CONCEPT_ID is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if ETHNICITY_SOURCE_CONCEPT_ID is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21918,7 +21918,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_SOURCE_CONCEPT_ID
 
 **********/
@@ -21937,7 +21937,7 @@ FROM (
                 WHEN COUNT_BIG(ETHNICITY_SOURCE_CONCEPT_ID) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -21959,10 +21959,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if ETHNICITY_SOURCE_VALUE is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if ETHNICITY_SOURCE_VALUE is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -21987,7 +21987,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_SOURCE_VALUE
 
 **********/
@@ -22006,7 +22006,7 @@ FROM (
                 WHEN COUNT_BIG(ETHNICITY_SOURCE_VALUE) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22028,10 +22028,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if GENDER_CONCEPT_ID is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if GENDER_CONCEPT_ID is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22056,7 +22056,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_CONCEPT_ID
 
 **********/
@@ -22075,7 +22075,7 @@ FROM (
                 WHEN COUNT_BIG(GENDER_CONCEPT_ID) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22097,10 +22097,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if GENDER_SOURCE_CONCEPT_ID is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if GENDER_SOURCE_CONCEPT_ID is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22125,7 +22125,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_SOURCE_CONCEPT_ID
 
 **********/
@@ -22144,7 +22144,7 @@ FROM (
                 WHEN COUNT_BIG(GENDER_SOURCE_CONCEPT_ID) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22166,10 +22166,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if GENDER_SOURCE_VALUE is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if GENDER_SOURCE_VALUE is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22194,7 +22194,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_SOURCE_VALUE
 
 **********/
@@ -22213,7 +22213,7 @@ FROM (
                 WHEN COUNT_BIG(GENDER_SOURCE_VALUE) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22235,10 +22235,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if LOCATION_ID is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if LOCATION_ID is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22263,7 +22263,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = LOCATION_ID
 
 **********/
@@ -22282,7 +22282,7 @@ FROM (
                 WHEN COUNT_BIG(LOCATION_ID) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22304,10 +22304,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if MONTH_OF_BIRTH is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if MONTH_OF_BIRTH is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'MONTH_OF_BIRTH' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22332,7 +22332,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = MONTH_OF_BIRTH
 
 **********/
@@ -22351,7 +22351,7 @@ FROM (
                 WHEN COUNT_BIG(MONTH_OF_BIRTH) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22373,10 +22373,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if PERSON_ID is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if PERSON_ID is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22401,7 +22401,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PERSON_ID
 
 **********/
@@ -22420,7 +22420,7 @@ FROM (
                 WHEN COUNT_BIG(PERSON_ID) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22442,10 +22442,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if PERSON_SOURCE_VALUE is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if PERSON_SOURCE_VALUE is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'PERSON_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22470,7 +22470,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PERSON_SOURCE_VALUE
 
 **********/
@@ -22489,7 +22489,7 @@ FROM (
                 WHEN COUNT_BIG(PERSON_SOURCE_VALUE) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22511,10 +22511,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if PROVIDER_ID is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if PROVIDER_ID is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22539,7 +22539,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PROVIDER_ID
 
 **********/
@@ -22558,7 +22558,7 @@ FROM (
                 WHEN COUNT_BIG(PROVIDER_ID) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22580,10 +22580,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if RACE_CONCEPT_ID is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if RACE_CONCEPT_ID is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22608,7 +22608,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_CONCEPT_ID
 
 **********/
@@ -22627,7 +22627,7 @@ FROM (
                 WHEN COUNT_BIG(RACE_CONCEPT_ID) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22649,10 +22649,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if RACE_SOURCE_CONCEPT_ID is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if RACE_SOURCE_CONCEPT_ID is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22677,7 +22677,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_SOURCE_CONCEPT_ID
 
 **********/
@@ -22696,7 +22696,7 @@ FROM (
                 WHEN COUNT_BIG(RACE_SOURCE_CONCEPT_ID) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22718,10 +22718,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if RACE_SOURCE_VALUE is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if RACE_SOURCE_VALUE is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22746,7 +22746,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_SOURCE_VALUE
 
 **********/
@@ -22765,7 +22765,7 @@ FROM (
                 WHEN COUNT_BIG(RACE_SOURCE_VALUE) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22787,10 +22787,10 @@ SELECT
   ,'' as query_text
   ,'cdmField' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if YEAR_OF_BIRTH is present in the PERSON table as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if YEAR_OF_BIRTH is present in the person table as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'YEAR_OF_BIRTH' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22815,7 +22815,7 @@ Verify the field exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = YEAR_OF_BIRTH
 
 **********/
@@ -22834,7 +22834,7 @@ FROM (
                 WHEN COUNT_BIG(YEAR_OF_BIRTH) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 
@@ -22859,7 +22859,7 @@ SELECT
   ,'A yes or no value indicating if MODIFIER_CONCEPT_ID is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'MODIFIER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22928,7 +22928,7 @@ SELECT
   ,'A yes or no value indicating if MODIFIER_SOURCE_VALUE is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'MODIFIER_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -22997,7 +22997,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23066,7 +23066,7 @@ SELECT
   ,'A yes or no value indicating if PROCEDURE_CONCEPT_ID is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23135,7 +23135,7 @@ SELECT
   ,'A yes or no value indicating if PROCEDURE_DATE is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23204,7 +23204,7 @@ SELECT
   ,'A yes or no value indicating if PROCEDURE_DATETIME is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23273,7 +23273,7 @@ SELECT
   ,'A yes or no value indicating if PROCEDURE_END_DATE is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23342,7 +23342,7 @@ SELECT
   ,'A yes or no value indicating if PROCEDURE_END_DATETIME is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_END_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23411,7 +23411,7 @@ SELECT
   ,'A yes or no value indicating if PROCEDURE_OCCURRENCE_ID is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23480,7 +23480,7 @@ SELECT
   ,'A yes or no value indicating if PROCEDURE_SOURCE_CONCEPT_ID is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23549,7 +23549,7 @@ SELECT
   ,'A yes or no value indicating if PROCEDURE_SOURCE_VALUE is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23618,7 +23618,7 @@ SELECT
   ,'A yes or no value indicating if PROCEDURE_TYPE_CONCEPT_ID is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23687,7 +23687,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_ID is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23756,7 +23756,7 @@ SELECT
   ,'A yes or no value indicating if QUANTITY is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'QUANTITY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23825,7 +23825,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_ID is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23894,7 +23894,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_OCCURRENCE_ID is present in the PROCEDURE_OCCURRENCE table as expected based on the specification.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -23963,7 +23963,7 @@ SELECT
   ,'A yes or no value indicating if CARE_SITE_ID is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24032,7 +24032,7 @@ SELECT
   ,'A yes or no value indicating if DEA is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'DEA' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24101,7 +24101,7 @@ SELECT
   ,'A yes or no value indicating if GENDER_CONCEPT_ID is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24170,7 +24170,7 @@ SELECT
   ,'A yes or no value indicating if GENDER_SOURCE_CONCEPT_ID is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'GENDER_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24239,7 +24239,7 @@ SELECT
   ,'A yes or no value indicating if GENDER_SOURCE_VALUE is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'GENDER_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24308,7 +24308,7 @@ SELECT
   ,'A yes or no value indicating if NPI is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'NPI' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24377,7 +24377,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_ID is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24446,7 +24446,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_NAME is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'PROVIDER_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24515,7 +24515,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_SOURCE_VALUE is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'PROVIDER_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24584,7 +24584,7 @@ SELECT
   ,'A yes or no value indicating if SPECIALTY_CONCEPT_ID is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'SPECIALTY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24653,7 +24653,7 @@ SELECT
   ,'A yes or no value indicating if SPECIALTY_SOURCE_CONCEPT_ID is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'SPECIALTY_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24722,7 +24722,7 @@ SELECT
   ,'A yes or no value indicating if SPECIALTY_SOURCE_VALUE is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'SPECIALTY_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24791,7 +24791,7 @@ SELECT
   ,'A yes or no value indicating if YEAR_OF_BIRTH is present in the PROVIDER table as expected based on the specification.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'YEAR_OF_BIRTH' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24860,7 +24860,7 @@ SELECT
   ,'A yes or no value indicating if DEFINES_ANCESTRY is present in the RELATIONSHIP table as expected based on the specification.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'DEFINES_ANCESTRY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24929,7 +24929,7 @@ SELECT
   ,'A yes or no value indicating if IS_HIERARCHICAL is present in the RELATIONSHIP table as expected based on the specification.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'IS_HIERARCHICAL' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -24998,7 +24998,7 @@ SELECT
   ,'A yes or no value indicating if RELATIONSHIP_CONCEPT_ID is present in the RELATIONSHIP table as expected based on the specification.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25067,7 +25067,7 @@ SELECT
   ,'A yes or no value indicating if RELATIONSHIP_ID is present in the RELATIONSHIP table as expected based on the specification.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25136,7 +25136,7 @@ SELECT
   ,'A yes or no value indicating if RELATIONSHIP_NAME is present in the RELATIONSHIP table as expected based on the specification.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25205,7 +25205,7 @@ SELECT
   ,'A yes or no value indicating if REVERSE_RELATIONSHIP_ID is present in the RELATIONSHIP table as expected based on the specification.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'REVERSE_RELATIONSHIP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25274,7 +25274,7 @@ SELECT
   ,'A yes or no value indicating if INVALID_REASON is present in the SOURCE_TO_CONCEPT_MAP table as expected based on the specification.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'INVALID_REASON' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25343,7 +25343,7 @@ SELECT
   ,'A yes or no value indicating if SOURCE_CODE is present in the SOURCE_TO_CONCEPT_MAP table as expected based on the specification.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'SOURCE_CODE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25412,7 +25412,7 @@ SELECT
   ,'A yes or no value indicating if SOURCE_CODE_DESCRIPTION is present in the SOURCE_TO_CONCEPT_MAP table as expected based on the specification.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'SOURCE_CODE_DESCRIPTION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25481,7 +25481,7 @@ SELECT
   ,'A yes or no value indicating if SOURCE_CONCEPT_ID is present in the SOURCE_TO_CONCEPT_MAP table as expected based on the specification.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25550,7 +25550,7 @@ SELECT
   ,'A yes or no value indicating if SOURCE_VOCABULARY_ID is present in the SOURCE_TO_CONCEPT_MAP table as expected based on the specification.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'SOURCE_VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25619,7 +25619,7 @@ SELECT
   ,'A yes or no value indicating if TARGET_CONCEPT_ID is present in the SOURCE_TO_CONCEPT_MAP table as expected based on the specification.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'TARGET_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25688,7 +25688,7 @@ SELECT
   ,'A yes or no value indicating if TARGET_VOCABULARY_ID is present in the SOURCE_TO_CONCEPT_MAP table as expected based on the specification.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'TARGET_VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25757,7 +25757,7 @@ SELECT
   ,'A yes or no value indicating if VALID_END_DATE is present in the SOURCE_TO_CONCEPT_MAP table as expected based on the specification.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'VALID_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25826,7 +25826,7 @@ SELECT
   ,'A yes or no value indicating if VALID_START_DATE is present in the SOURCE_TO_CONCEPT_MAP table as expected based on the specification.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'VALID_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25895,7 +25895,7 @@ SELECT
   ,'A yes or no value indicating if ANATOMIC_SITE_CONCEPT_ID is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'ANATOMIC_SITE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -25964,7 +25964,7 @@ SELECT
   ,'A yes or no value indicating if ANATOMIC_SITE_SOURCE_VALUE is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'ANATOMIC_SITE_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26033,7 +26033,7 @@ SELECT
   ,'A yes or no value indicating if DISEASE_STATUS_CONCEPT_ID is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'DISEASE_STATUS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26102,7 +26102,7 @@ SELECT
   ,'A yes or no value indicating if DISEASE_STATUS_SOURCE_VALUE is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'DISEASE_STATUS_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26171,7 +26171,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26240,7 +26240,7 @@ SELECT
   ,'A yes or no value indicating if QUANTITY is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'QUANTITY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26309,7 +26309,7 @@ SELECT
   ,'A yes or no value indicating if SPECIMEN_CONCEPT_ID is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26378,7 +26378,7 @@ SELECT
   ,'A yes or no value indicating if SPECIMEN_DATE is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26447,7 +26447,7 @@ SELECT
   ,'A yes or no value indicating if SPECIMEN_DATETIME is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26516,7 +26516,7 @@ SELECT
   ,'A yes or no value indicating if SPECIMEN_ID is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26585,7 +26585,7 @@ SELECT
   ,'A yes or no value indicating if SPECIMEN_SOURCE_ID is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_SOURCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26654,7 +26654,7 @@ SELECT
   ,'A yes or no value indicating if SPECIMEN_SOURCE_VALUE is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26723,7 +26723,7 @@ SELECT
   ,'A yes or no value indicating if SPECIMEN_TYPE_CONCEPT_ID is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26792,7 +26792,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_CONCEPT_ID is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26861,7 +26861,7 @@ SELECT
   ,'A yes or no value indicating if UNIT_SOURCE_VALUE is present in the SPECIMEN table as expected based on the specification.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'UNIT_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26930,7 +26930,7 @@ SELECT
   ,'A yes or no value indicating if ADMITTED_FROM_CONCEPT_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'ADMITTED_FROM_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -26999,7 +26999,7 @@ SELECT
   ,'A yes or no value indicating if ADMITTED_FROM_SOURCE_VALUE is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'ADMITTED_FROM_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27068,7 +27068,7 @@ SELECT
   ,'A yes or no value indicating if CARE_SITE_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27137,7 +27137,7 @@ SELECT
   ,'A yes or no value indicating if DISCHARGED_TO_CONCEPT_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'DISCHARGED_TO_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27206,7 +27206,7 @@ SELECT
   ,'A yes or no value indicating if DISCHARGED_TO_SOURCE_VALUE is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'DISCHARGED_TO_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27275,7 +27275,7 @@ SELECT
   ,'A yes or no value indicating if PARENT_VISIT_DETAIL_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PARENT_VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27344,7 +27344,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27413,7 +27413,7 @@ SELECT
   ,'A yes or no value indicating if PRECEDING_VISIT_DETAIL_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PRECEDING_VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27482,7 +27482,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27551,7 +27551,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_CONCEPT_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27620,7 +27620,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_END_DATE is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27689,7 +27689,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_END_DATETIME is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_END_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27758,7 +27758,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27827,7 +27827,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_SOURCE_CONCEPT_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27896,7 +27896,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_SOURCE_VALUE is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -27965,7 +27965,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_START_DATE is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28034,7 +28034,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_START_DATETIME is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_START_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28103,7 +28103,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_DETAIL_TYPE_CONCEPT_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28172,7 +28172,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_OCCURRENCE_ID is present in the VISIT_DETAIL table as expected based on the specification.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28241,7 +28241,7 @@ SELECT
   ,'A yes or no value indicating if ADMITTED_FROM_CONCEPT_ID is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'ADMITTED_FROM_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28310,7 +28310,7 @@ SELECT
   ,'A yes or no value indicating if ADMITTED_FROM_SOURCE_VALUE is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'ADMITTED_FROM_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28379,7 +28379,7 @@ SELECT
   ,'A yes or no value indicating if CARE_SITE_ID is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28448,7 +28448,7 @@ SELECT
   ,'A yes or no value indicating if DISCHARGED_TO_CONCEPT_ID is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'DISCHARGED_TO_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28517,7 +28517,7 @@ SELECT
   ,'A yes or no value indicating if DISCHARGED_TO_SOURCE_VALUE is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'DISCHARGED_TO_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28586,7 +28586,7 @@ SELECT
   ,'A yes or no value indicating if PERSON_ID is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28655,7 +28655,7 @@ SELECT
   ,'A yes or no value indicating if PRECEDING_VISIT_OCCURRENCE_ID is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'PRECEDING_VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28724,7 +28724,7 @@ SELECT
   ,'A yes or no value indicating if PROVIDER_ID is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28793,7 +28793,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_CONCEPT_ID is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28862,7 +28862,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_END_DATE is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_END_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -28931,7 +28931,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_END_DATETIME is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_END_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29000,7 +29000,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_OCCURRENCE_ID is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29069,7 +29069,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_SOURCE_CONCEPT_ID is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29138,7 +29138,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_SOURCE_VALUE is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_SOURCE_VALUE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29207,7 +29207,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_START_DATE is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_START_DATE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29276,7 +29276,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_START_DATETIME is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_START_DATETIME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29345,7 +29345,7 @@ SELECT
   ,'A yes or no value indicating if VISIT_TYPE_CONCEPT_ID is present in the VISIT_OCCURRENCE table as expected based on the specification.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29414,7 +29414,7 @@ SELECT
   ,'A yes or no value indicating if VOCABULARY_CONCEPT_ID is present in the VOCABULARY table as expected based on the specification.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29483,7 +29483,7 @@ SELECT
   ,'A yes or no value indicating if VOCABULARY_ID is present in the VOCABULARY table as expected based on the specification.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29552,7 +29552,7 @@ SELECT
   ,'A yes or no value indicating if VOCABULARY_NAME is present in the VOCABULARY table as expected based on the specification.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_NAME' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29621,7 +29621,7 @@ SELECT
   ,'A yes or no value indicating if VOCABULARY_REFERENCE is present in the VOCABULARY table as expected based on the specification.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_REFERENCE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category
@@ -29690,7 +29690,7 @@ SELECT
   ,'A yes or no value indicating if VOCABULARY_VERSION is present in the VOCABULARY table as expected based on the specification.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_VERSION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_field.sql' as sql_file
   ,'Conformance' as category

@@ -20,7 +20,7 @@ SELECT
   ,'The number and percent of records that have a value in the CDM_VERSION_CONCEPT_ID field in the CDM_SOURCE table that do not conform to the METADATA domain.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_VERSION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -41,7 +41,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -68,11 +68,11 @@ FROM (
             'CDM_SOURCE.CDM_VERSION_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.CDM_SOURCE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.CDM_VERSION_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.CDM_VERSION_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Metadata')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Metadata')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -101,7 +101,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONDITION_CONCEPT_ID field in the CONDITION_ERA table that do not conform to the CONDITION domain.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -122,7 +122,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -149,11 +149,11 @@ FROM (
             'CONDITION_ERA.CONDITION_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.CONDITION_ERA cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.CONDITION_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.CONDITION_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Condition')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Condition')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -182,7 +182,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONDITION_CONCEPT_ID field in the CONDITION_OCCURRENCE table that do not conform to the CONDITION domain.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -203,7 +203,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -230,11 +230,11 @@ FROM (
             'CONDITION_OCCURRENCE.CONDITION_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.CONDITION_OCCURRENCE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.CONDITION_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.CONDITION_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Condition')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Condition')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -263,7 +263,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONDITION_STATUS_CONCEPT_ID field in the CONDITION_OCCURRENCE table that do not conform to the CONDITION STATUS domain.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_STATUS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -284,7 +284,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -311,11 +311,11 @@ FROM (
             'CONDITION_OCCURRENCE.CONDITION_STATUS_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.CONDITION_OCCURRENCE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.CONDITION_STATUS_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.CONDITION_STATUS_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Condition Status')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Condition Status')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -344,7 +344,7 @@ SELECT
   ,'The number and percent of records that have a value in the CONDITION_TYPE_CONCEPT_ID field in the CONDITION_OCCURRENCE table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -365,7 +365,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -392,11 +392,11 @@ FROM (
             'CONDITION_OCCURRENCE.CONDITION_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.CONDITION_OCCURRENCE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.CONDITION_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.CONDITION_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -425,7 +425,7 @@ SELECT
   ,'The number and percent of records that have a value in the DEATH_TYPE_CONCEPT_ID field in the DEATH table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'DEATH' as cdm_table_name
   ,'DEATH_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -446,7 +446,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -473,11 +473,11 @@ FROM (
             'DEATH.DEATH_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DEATH cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.DEATH_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.DEATH_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -506,7 +506,7 @@ SELECT
   ,'The number and percent of records that have a value in the DEVICE_CONCEPT_ID field in the DEVICE_EXPOSURE table that do not conform to the DEVICE domain.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -527,7 +527,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -554,11 +554,11 @@ FROM (
             'DEVICE_EXPOSURE.DEVICE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DEVICE_EXPOSURE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.DEVICE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.DEVICE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Device')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Device')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -587,7 +587,7 @@ SELECT
   ,'The number and percent of records that have a value in the DEVICE_TYPE_CONCEPT_ID field in the DEVICE_EXPOSURE table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -608,7 +608,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -635,11 +635,11 @@ FROM (
             'DEVICE_EXPOSURE.DEVICE_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DEVICE_EXPOSURE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.DEVICE_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.DEVICE_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -668,7 +668,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_CONCEPT_ID field in the DEVICE_EXPOSURE table that do not conform to the UNIT domain.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -689,7 +689,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -716,11 +716,11 @@ FROM (
             'DEVICE_EXPOSURE.UNIT_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DEVICE_EXPOSURE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.UNIT_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.UNIT_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Unit')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Unit')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -749,7 +749,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_CONCEPT_ID field in the DOSE_ERA table that do not conform to the DRUG domain.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -770,7 +770,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -797,11 +797,11 @@ FROM (
             'DOSE_ERA.DRUG_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DOSE_ERA cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.DRUG_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.DRUG_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Drug')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Drug')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -830,7 +830,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_CONCEPT_ID field in the DOSE_ERA table that do not conform to the UNIT domain.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -851,7 +851,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -878,11 +878,11 @@ FROM (
             'DOSE_ERA.UNIT_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DOSE_ERA cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.UNIT_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.UNIT_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Unit')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Unit')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -911,7 +911,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_CONCEPT_ID field in the DRUG_ERA table that do not conform to the DRUG domain.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -932,7 +932,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -959,11 +959,11 @@ FROM (
             'DRUG_ERA.DRUG_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DRUG_ERA cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.DRUG_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.DRUG_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Drug')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Drug')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -992,7 +992,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_CONCEPT_ID field in the DRUG_EXPOSURE table that do not conform to the DRUG domain.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1013,7 +1013,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1040,11 +1040,11 @@ FROM (
             'DRUG_EXPOSURE.DRUG_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DRUG_EXPOSURE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.DRUG_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.DRUG_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Drug')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Drug')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1073,7 +1073,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_TYPE_CONCEPT_ID field in the DRUG_EXPOSURE table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1094,7 +1094,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1121,11 +1121,11 @@ FROM (
             'DRUG_EXPOSURE.DRUG_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DRUG_EXPOSURE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.DRUG_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.DRUG_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1154,7 +1154,7 @@ SELECT
   ,'The number and percent of records that have a value in the ROUTE_CONCEPT_ID field in the DRUG_EXPOSURE table that do not conform to the ROUTE domain.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'ROUTE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1175,7 +1175,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1202,11 +1202,11 @@ FROM (
             'DRUG_EXPOSURE.ROUTE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DRUG_EXPOSURE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.ROUTE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.ROUTE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Route')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Route')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1235,7 +1235,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_CONCEPT_ID field in the DRUG_STRENGTH table that do not conform to the DRUG domain.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1256,7 +1256,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1283,11 +1283,11 @@ FROM (
             'DRUG_STRENGTH.DRUG_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DRUG_STRENGTH cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.DRUG_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.DRUG_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Drug')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Drug')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1316,7 +1316,7 @@ SELECT
   ,'The number and percent of records that have a value in the EPISODE_CONCEPT_ID field in the EPISODE table that do not conform to the EPISODE domain.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1337,7 +1337,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1364,11 +1364,11 @@ FROM (
             'EPISODE.EPISODE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.EPISODE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.EPISODE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.EPISODE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Episode')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Episode')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1397,7 +1397,7 @@ SELECT
   ,'The number and percent of records that have a value in the EPISODE_OBJECT_CONCEPT_ID field in the EPISODE table that do not conform to the PROCEDURE OR REGIMEN domain.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_OBJECT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1418,7 +1418,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1445,11 +1445,11 @@ FROM (
             'EPISODE.EPISODE_OBJECT_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.EPISODE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.EPISODE_OBJECT_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.EPISODE_OBJECT_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Procedure OR Regimen')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Procedure OR Regimen')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1478,7 +1478,7 @@ SELECT
   ,'The number and percent of records that have a value in the EPISODE_TYPE_CONCEPT_ID field in the EPISODE table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1499,7 +1499,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1526,11 +1526,11 @@ FROM (
             'EPISODE.EPISODE_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.EPISODE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.EPISODE_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.EPISODE_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1559,7 +1559,7 @@ SELECT
   ,'The number and percent of records that have a value in the EPISODE_EVENT_FIELD_CONCEPT_ID field in the EPISODE_EVENT table that do not conform to the METADATA domain.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EPISODE_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1580,7 +1580,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1607,11 +1607,11 @@ FROM (
             'EPISODE_EVENT.EPISODE_EVENT_FIELD_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.EPISODE_EVENT cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.EPISODE_EVENT_FIELD_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.EPISODE_EVENT_FIELD_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Metadata')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Metadata')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1640,7 +1640,7 @@ SELECT
   ,'The number and percent of records that have a value in the COUNTRY_CONCEPT_ID field in the LOCATION table that do not conform to the GEOGRAPHY domain.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'COUNTRY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1661,7 +1661,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1688,11 +1688,11 @@ FROM (
             'LOCATION.COUNTRY_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.LOCATION cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.COUNTRY_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.COUNTRY_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Geography')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Geography')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1721,7 +1721,7 @@ SELECT
   ,'The number and percent of records that have a value in the MEASUREMENT_CONCEPT_ID field in the MEASUREMENT table that do not conform to the MEASUREMENT domain.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1742,7 +1742,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1769,11 +1769,11 @@ FROM (
             'MEASUREMENT.MEASUREMENT_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.MEASUREMENT cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.MEASUREMENT_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.MEASUREMENT_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Measurement')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Measurement')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1802,7 +1802,7 @@ SELECT
   ,'The number and percent of records that have a value in the MEASUREMENT_TYPE_CONCEPT_ID field in the MEASUREMENT table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1823,7 +1823,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1850,11 +1850,11 @@ FROM (
             'MEASUREMENT.MEASUREMENT_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.MEASUREMENT cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.MEASUREMENT_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.MEASUREMENT_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1883,7 +1883,7 @@ SELECT
   ,'The number and percent of records that have a value in the OPERATOR_CONCEPT_ID field in the MEASUREMENT table that do not conform to the MEAS VALUE OPERATOR domain.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'OPERATOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1904,7 +1904,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -1931,11 +1931,11 @@ FROM (
             'MEASUREMENT.OPERATOR_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.MEASUREMENT cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.OPERATOR_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.OPERATOR_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Meas Value Operator')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Meas Value Operator')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1964,7 +1964,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_CONCEPT_ID field in the MEASUREMENT table that do not conform to the UNIT domain.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -1985,7 +1985,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -2012,11 +2012,11 @@ FROM (
             'MEASUREMENT.UNIT_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.MEASUREMENT cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.UNIT_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.UNIT_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Unit')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Unit')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2045,7 +2045,7 @@ SELECT
   ,'The number and percent of records that have a value in the VALUE_AS_CONCEPT_ID field in the MEASUREMENT table that do not conform to the MEAS VALUE domain.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VALUE_AS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2066,7 +2066,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -2093,11 +2093,11 @@ FROM (
             'MEASUREMENT.VALUE_AS_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.MEASUREMENT cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.VALUE_AS_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.VALUE_AS_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Meas Value')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Meas Value')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2126,7 +2126,7 @@ SELECT
   ,'The number and percent of records that have a value in the NOTE_TYPE_CONCEPT_ID field in the NOTE table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2147,7 +2147,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -2174,11 +2174,11 @@ FROM (
             'NOTE.NOTE_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.NOTE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.NOTE_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.NOTE_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2207,7 +2207,7 @@ SELECT
   ,'The number and percent of records that have a value in the OBSERVATION_TYPE_CONCEPT_ID field in the OBSERVATION table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2228,7 +2228,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -2255,11 +2255,11 @@ FROM (
             'OBSERVATION.OBSERVATION_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.OBSERVATION cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.OBSERVATION_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.OBSERVATION_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2288,7 +2288,7 @@ SELECT
   ,'The number and percent of records that have a value in the UNIT_CONCEPT_ID field in the OBSERVATION table that do not conform to the UNIT domain.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2309,7 +2309,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -2336,11 +2336,11 @@ FROM (
             'OBSERVATION.UNIT_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.OBSERVATION cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.UNIT_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.UNIT_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Unit')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Unit')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2369,7 +2369,7 @@ SELECT
   ,'The number and percent of records that have a value in the PERIOD_TYPE_CONCEPT_ID field in the OBSERVATION_PERIOD table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'PERIOD_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2390,7 +2390,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -2417,11 +2417,11 @@ FROM (
             'OBSERVATION_PERIOD.PERIOD_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.OBSERVATION_PERIOD cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.PERIOD_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.PERIOD_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2447,10 +2447,10 @@ SELECT
   ,'' as query_text
   ,'fkDomain' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the ETHNICITY_CONCEPT_ID field in the PERSON table that do not conform to the ETHNICITY domain.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the ETHNICITY_CONCEPT_ID field in the person table that do not conform to the ETHNICITY domain.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2471,12 +2471,12 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_CONCEPT_ID
 fkDomain = Ethnicity
 
@@ -2495,21 +2495,21 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.ETHNICITY_CONCEPT_ID' AS violating_field, 
+            'person.ETHNICITY_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.ETHNICITY_CONCEPT_ID = co.concept_id
+        FROM dbo.person cdmTable
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.ETHNICITY_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Ethnicity')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Ethnicity')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
 ( 
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
 ) denominator
 
@@ -2528,10 +2528,10 @@ SELECT
   ,'' as query_text
   ,'fkDomain' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the GENDER_CONCEPT_ID field in the PERSON table that do not conform to the GENDER domain.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the GENDER_CONCEPT_ID field in the person table that do not conform to the GENDER domain.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2552,12 +2552,12 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_CONCEPT_ID
 fkDomain = Gender
 
@@ -2576,21 +2576,21 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.GENDER_CONCEPT_ID' AS violating_field, 
+            'person.GENDER_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.GENDER_CONCEPT_ID = co.concept_id
+        FROM dbo.person cdmTable
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.GENDER_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Gender')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Gender')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
 ( 
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
 ) denominator
 
@@ -2609,10 +2609,10 @@ SELECT
   ,'' as query_text
   ,'fkDomain' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a value in the RACE_CONCEPT_ID field in the PERSON table that do not conform to the RACE domain.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a value in the RACE_CONCEPT_ID field in the person table that do not conform to the RACE domain.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2633,12 +2633,12 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
 vocabDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_CONCEPT_ID
 fkDomain = Race
 
@@ -2657,21 +2657,21 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.RACE_CONCEPT_ID' AS violating_field, 
+            'person.RACE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.RACE_CONCEPT_ID = co.concept_id
+        FROM dbo.person cdmTable
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.RACE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Race')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Race')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
 ( 
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
 ) denominator
 
@@ -2693,7 +2693,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROCEDURE_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table that do not conform to the PROCEDURE domain.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2714,7 +2714,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -2741,11 +2741,11 @@ FROM (
             'PROCEDURE_OCCURRENCE.PROCEDURE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.PROCEDURE_OCCURRENCE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.PROCEDURE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.PROCEDURE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Procedure')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Procedure')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2774,7 +2774,7 @@ SELECT
   ,'The number and percent of records that have a value in the PROCEDURE_TYPE_CONCEPT_ID field in the PROCEDURE_OCCURRENCE table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2795,7 +2795,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -2822,11 +2822,11 @@ FROM (
             'PROCEDURE_OCCURRENCE.PROCEDURE_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.PROCEDURE_OCCURRENCE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.PROCEDURE_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.PROCEDURE_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2855,7 +2855,7 @@ SELECT
   ,'The number and percent of records that have a value in the GENDER_CONCEPT_ID field in the PROVIDER table that do not conform to the GENDER domain.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2876,7 +2876,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -2903,11 +2903,11 @@ FROM (
             'PROVIDER.GENDER_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.PROVIDER cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.GENDER_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.GENDER_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Gender')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Gender')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2936,7 +2936,7 @@ SELECT
   ,'The number and percent of records that have a value in the SPECIMEN_TYPE_CONCEPT_ID field in the SPECIMEN table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -2957,7 +2957,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -2984,11 +2984,11 @@ FROM (
             'SPECIMEN.SPECIMEN_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.SPECIMEN cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.SPECIMEN_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.SPECIMEN_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -3017,7 +3017,7 @@ SELECT
   ,'The number and percent of records that have a value in the ADMITTED_FROM_CONCEPT_ID field in the VISIT_DETAIL table that do not conform to the VISIT domain.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'ADMITTED_FROM_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -3038,7 +3038,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -3065,11 +3065,11 @@ FROM (
             'VISIT_DETAIL.ADMITTED_FROM_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.VISIT_DETAIL cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.ADMITTED_FROM_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.ADMITTED_FROM_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Visit')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Visit')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -3098,7 +3098,7 @@ SELECT
   ,'The number and percent of records that have a value in the DISCHARGED_TO_CONCEPT_ID field in the VISIT_DETAIL table that do not conform to the VISIT domain.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'DISCHARGED_TO_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -3119,7 +3119,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -3146,11 +3146,11 @@ FROM (
             'VISIT_DETAIL.DISCHARGED_TO_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.VISIT_DETAIL cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.DISCHARGED_TO_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.DISCHARGED_TO_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Visit')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Visit')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -3179,7 +3179,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_CONCEPT_ID field in the VISIT_DETAIL table that do not conform to the VISIT domain.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -3200,7 +3200,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -3227,11 +3227,11 @@ FROM (
             'VISIT_DETAIL.VISIT_DETAIL_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.VISIT_DETAIL cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.VISIT_DETAIL_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.VISIT_DETAIL_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Visit')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Visit')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -3260,7 +3260,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_DETAIL_TYPE_CONCEPT_ID field in the VISIT_DETAIL table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -3281,7 +3281,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -3308,11 +3308,11 @@ FROM (
             'VISIT_DETAIL.VISIT_DETAIL_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.VISIT_DETAIL cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.VISIT_DETAIL_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.VISIT_DETAIL_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -3341,7 +3341,7 @@ SELECT
   ,'The number and percent of records that have a value in the ADMITTED_FROM_CONCEPT_ID field in the VISIT_OCCURRENCE table that do not conform to the VISIT domain.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'ADMITTED_FROM_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -3362,7 +3362,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -3389,11 +3389,11 @@ FROM (
             'VISIT_OCCURRENCE.ADMITTED_FROM_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.VISIT_OCCURRENCE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.ADMITTED_FROM_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.ADMITTED_FROM_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Visit')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Visit')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -3422,7 +3422,7 @@ SELECT
   ,'The number and percent of records that have a value in the DISCHARGED_TO_CONCEPT_ID field in the VISIT_OCCURRENCE table that do not conform to the VISIT domain.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'DISCHARGED_TO_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -3443,7 +3443,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -3470,11 +3470,11 @@ FROM (
             'VISIT_OCCURRENCE.DISCHARGED_TO_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.VISIT_OCCURRENCE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.DISCHARGED_TO_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.DISCHARGED_TO_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Visit')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Visit')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -3503,7 +3503,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_CONCEPT_ID field in the VISIT_OCCURRENCE table that do not conform to the VISIT domain.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -3524,7 +3524,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -3551,11 +3551,11 @@ FROM (
             'VISIT_OCCURRENCE.VISIT_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.VISIT_OCCURRENCE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.VISIT_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.VISIT_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Visit')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Visit')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -3584,7 +3584,7 @@ SELECT
   ,'The number and percent of records that have a value in the VISIT_TYPE_CONCEPT_ID field in the VISIT_OCCURRENCE table that do not conform to the TYPE CONCEPT domain.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_domain.sql' as sql_file
   ,'Conformance' as category
@@ -3605,7 +3605,7 @@ FROM (
 /*********
 FIELD_FK_DOMAIN
 
-Check that all standard concept IDs belong to the appropriate domain for a given table and field.
+Check that all standard CONCEPT IDs belong to the appropriate domain for a given table and field.
 
 Parameters used in this template:
 schema = dbo
@@ -3632,11 +3632,11 @@ FROM (
             'VISIT_OCCURRENCE.VISIT_TYPE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.VISIT_OCCURRENCE cdmTable
-            LEFT JOIN dbo.concept co
-            ON cdmTable.VISIT_TYPE_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+            ON cdmTable.VISIT_TYPE_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND co.domain_id NOT IN ('Type Concept')
+        WHERE co.CONCEPT_ID != 0 
+            AND co.DOMAIN_ID NOT IN ('Type Concept')
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,

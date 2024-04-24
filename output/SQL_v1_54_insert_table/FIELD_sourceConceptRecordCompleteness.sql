@@ -483,7 +483,7 @@ SELECT
 FROM (
   /*********
 CONCEPT_RECORD_COMPLETENESS
-number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where value_as_number IS NOT NULL
+number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where VALUE_AS_NUMBER IS NOT NULL
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -557,7 +557,7 @@ SELECT
 FROM (
   /*********
 CONCEPT_RECORD_COMPLETENESS
-number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where value_as_number IS NOT NULL
+number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where VALUE_AS_NUMBER IS NOT NULL
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -631,7 +631,7 @@ SELECT
 FROM (
   /*********
 CONCEPT_RECORD_COMPLETENESS
-number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where value_as_number IS NOT NULL
+number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where VALUE_AS_NUMBER IS NOT NULL
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo

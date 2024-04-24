@@ -3761,8 +3761,8 @@ SELECT
   ,'' as query_text
   ,'plausibleValueLow' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the BIRTH_DATETIME field of the PERSON table less than ''18500101''.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a value in the BIRTH_DATETIME field of the person table less than ''18500101''.' as check_description
+  ,'person' as cdm_table_name
   ,'BIRTH_DATETIME' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -3788,7 +3788,7 @@ get number of records and the proportion to total number of eligible records tha
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = BIRTH_DATETIME
 plausibleValueLow = '18500101'
 
@@ -3806,9 +3806,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.BIRTH_DATETIME' AS violating_field, 
+            'person.BIRTH_DATETIME' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
         
         
             WHERE CAST(cdmTable.BIRTH_DATETIME AS DATE) < CAST('18500101' AS DATE)
@@ -3819,7 +3819,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
     WHERE BIRTH_DATETIME IS NOT NULL
 ) denominator
@@ -3839,8 +3839,8 @@ SELECT
   ,'' as query_text
   ,'plausibleValueLow' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the DAY_OF_BIRTH field of the PERSON table less than 1.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a value in the DAY_OF_BIRTH field of the person table less than 1.' as check_description
+  ,'person' as cdm_table_name
   ,'DAY_OF_BIRTH' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -3866,7 +3866,7 @@ get number of records and the proportion to total number of eligible records tha
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = DAY_OF_BIRTH
 plausibleValueLow = 1
 
@@ -3884,9 +3884,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.DAY_OF_BIRTH' AS violating_field, 
+            'person.DAY_OF_BIRTH' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
         
         
             WHERE cdmTable.DAY_OF_BIRTH < 1
@@ -3897,7 +3897,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
     WHERE DAY_OF_BIRTH IS NOT NULL
 ) denominator
@@ -3917,8 +3917,8 @@ SELECT
   ,'' as query_text
   ,'plausibleValueLow' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the MONTH_OF_BIRTH field of the PERSON table less than 1.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a value in the MONTH_OF_BIRTH field of the person table less than 1.' as check_description
+  ,'person' as cdm_table_name
   ,'MONTH_OF_BIRTH' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -3944,7 +3944,7 @@ get number of records and the proportion to total number of eligible records tha
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = MONTH_OF_BIRTH
 plausibleValueLow = 1
 
@@ -3962,9 +3962,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.MONTH_OF_BIRTH' AS violating_field, 
+            'person.MONTH_OF_BIRTH' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
         
         
             WHERE cdmTable.MONTH_OF_BIRTH < 1
@@ -3975,7 +3975,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
     WHERE MONTH_OF_BIRTH IS NOT NULL
 ) denominator
@@ -3995,8 +3995,8 @@ SELECT
   ,'' as query_text
   ,'plausibleValueLow' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value in the YEAR_OF_BIRTH field of the PERSON table less than 1850.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a value in the YEAR_OF_BIRTH field of the person table less than 1850.' as check_description
+  ,'person' as cdm_table_name
   ,'YEAR_OF_BIRTH' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -4022,7 +4022,7 @@ get number of records and the proportion to total number of eligible records tha
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = YEAR_OF_BIRTH
 plausibleValueLow = 1850
 
@@ -4040,9 +4040,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.YEAR_OF_BIRTH' AS violating_field, 
+            'person.YEAR_OF_BIRTH' AS violating_field, 
             cdmTable.*
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
         
         
             WHERE cdmTable.YEAR_OF_BIRTH < 1850
@@ -4053,7 +4053,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
     WHERE YEAR_OF_BIRTH IS NOT NULL
 ) denominator

@@ -17,7 +17,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the CONDITION_ERA_START_DATE field of the CONDITION_ERA table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the CONDITION_ERA_START_DATE field of the CONDITION_ERA table that occurs after DEATH.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_ERA_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -40,7 +40,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -69,9 +69,9 @@ FROM
             cdmTable.*
         FROM dbo.CONDITION_ERA cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.CONDITION_ERA_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.CONDITION_ERA_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -80,10 +80,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.CONDITION_ERA cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -101,7 +101,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the CONDITION_END_DATE field of the CONDITION_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the CONDITION_END_DATE field of the CONDITION_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_END_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -124,7 +124,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -153,9 +153,9 @@ FROM
             cdmTable.*
         FROM dbo.CONDITION_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.CONDITION_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.CONDITION_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -164,10 +164,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.CONDITION_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -185,7 +185,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the CONDITION_END_DATETIME field of the CONDITION_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the CONDITION_END_DATETIME field of the CONDITION_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_END_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -208,7 +208,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -237,9 +237,9 @@ FROM
             cdmTable.*
         FROM dbo.CONDITION_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.CONDITION_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.CONDITION_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -248,10 +248,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.CONDITION_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -269,7 +269,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the CONDITION_START_DATE field of the CONDITION_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the CONDITION_START_DATE field of the CONDITION_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -292,7 +292,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -321,9 +321,9 @@ FROM
             cdmTable.*
         FROM dbo.CONDITION_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.CONDITION_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.CONDITION_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -332,10 +332,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.CONDITION_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -353,7 +353,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the CONDITION_START_DATETIME field of the CONDITION_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the CONDITION_START_DATETIME field of the CONDITION_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -376,7 +376,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -405,9 +405,9 @@ FROM
             cdmTable.*
         FROM dbo.CONDITION_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.CONDITION_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.CONDITION_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -416,10 +416,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.CONDITION_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -437,7 +437,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the DEVICE_EXPOSURE_END_DATE field of the DEVICE_EXPOSURE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the DEVICE_EXPOSURE_END_DATE field of the DEVICE_EXPOSURE table that occurs after DEATH.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_END_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -460,7 +460,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -489,9 +489,9 @@ FROM
             cdmTable.*
         FROM dbo.DEVICE_EXPOSURE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.DEVICE_EXPOSURE_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.DEVICE_EXPOSURE_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -500,10 +500,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DEVICE_EXPOSURE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -521,7 +521,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the DEVICE_EXPOSURE_END_DATETIME field of the DEVICE_EXPOSURE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the DEVICE_EXPOSURE_END_DATETIME field of the DEVICE_EXPOSURE table that occurs after DEATH.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_END_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -544,7 +544,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -573,9 +573,9 @@ FROM
             cdmTable.*
         FROM dbo.DEVICE_EXPOSURE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.DEVICE_EXPOSURE_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.DEVICE_EXPOSURE_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -584,10 +584,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DEVICE_EXPOSURE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -605,7 +605,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the DEVICE_EXPOSURE_START_DATE field of the DEVICE_EXPOSURE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the DEVICE_EXPOSURE_START_DATE field of the DEVICE_EXPOSURE table that occurs after DEATH.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -628,7 +628,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -657,9 +657,9 @@ FROM
             cdmTable.*
         FROM dbo.DEVICE_EXPOSURE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.DEVICE_EXPOSURE_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.DEVICE_EXPOSURE_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -668,10 +668,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DEVICE_EXPOSURE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -689,7 +689,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the DEVICE_EXPOSURE_START_DATETIME field of the DEVICE_EXPOSURE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the DEVICE_EXPOSURE_START_DATETIME field of the DEVICE_EXPOSURE table that occurs after DEATH.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -712,7 +712,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -741,9 +741,9 @@ FROM
             cdmTable.*
         FROM dbo.DEVICE_EXPOSURE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.DEVICE_EXPOSURE_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.DEVICE_EXPOSURE_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -752,10 +752,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DEVICE_EXPOSURE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -773,7 +773,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the DOSE_ERA_START_DATE field of the DOSE_ERA table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the DOSE_ERA_START_DATE field of the DOSE_ERA table that occurs after DEATH.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -796,7 +796,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -825,9 +825,9 @@ FROM
             cdmTable.*
         FROM dbo.DOSE_ERA cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.DOSE_ERA_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.DOSE_ERA_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -836,10 +836,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DOSE_ERA cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -857,7 +857,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the DRUG_ERA_START_DATE field of the DRUG_ERA table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the DRUG_ERA_START_DATE field of the DRUG_ERA table that occurs after DEATH.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_ERA_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -880,7 +880,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -909,9 +909,9 @@ FROM
             cdmTable.*
         FROM dbo.DRUG_ERA cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.DRUG_ERA_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.DRUG_ERA_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -920,10 +920,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DRUG_ERA cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -941,7 +941,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the DRUG_EXPOSURE_END_DATE field of the DRUG_EXPOSURE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the DRUG_EXPOSURE_END_DATE field of the DRUG_EXPOSURE table that occurs after DEATH.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_END_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -964,7 +964,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -993,9 +993,9 @@ FROM
             cdmTable.*
         FROM dbo.DRUG_EXPOSURE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.DRUG_EXPOSURE_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.DRUG_EXPOSURE_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1004,10 +1004,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DRUG_EXPOSURE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1025,7 +1025,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the DRUG_EXPOSURE_END_DATETIME field of the DRUG_EXPOSURE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the DRUG_EXPOSURE_END_DATETIME field of the DRUG_EXPOSURE table that occurs after DEATH.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_END_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -1048,7 +1048,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1077,9 +1077,9 @@ FROM
             cdmTable.*
         FROM dbo.DRUG_EXPOSURE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.DRUG_EXPOSURE_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.DRUG_EXPOSURE_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1088,10 +1088,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DRUG_EXPOSURE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1109,7 +1109,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the DRUG_EXPOSURE_START_DATE field of the DRUG_EXPOSURE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the DRUG_EXPOSURE_START_DATE field of the DRUG_EXPOSURE table that occurs after DEATH.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1132,7 +1132,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1161,9 +1161,9 @@ FROM
             cdmTable.*
         FROM dbo.DRUG_EXPOSURE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.DRUG_EXPOSURE_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.DRUG_EXPOSURE_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1172,10 +1172,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DRUG_EXPOSURE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1193,7 +1193,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the DRUG_EXPOSURE_START_DATETIME field of the DRUG_EXPOSURE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the DRUG_EXPOSURE_START_DATETIME field of the DRUG_EXPOSURE table that occurs after DEATH.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -1216,7 +1216,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1245,9 +1245,9 @@ FROM
             cdmTable.*
         FROM dbo.DRUG_EXPOSURE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.DRUG_EXPOSURE_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.DRUG_EXPOSURE_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1256,10 +1256,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DRUG_EXPOSURE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1277,7 +1277,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the VERBATIM_END_DATE field of the DRUG_EXPOSURE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the VERBATIM_END_DATE field of the DRUG_EXPOSURE table that occurs after DEATH.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'VERBATIM_END_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1300,7 +1300,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1329,9 +1329,9 @@ FROM
             cdmTable.*
         FROM dbo.DRUG_EXPOSURE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.VERBATIM_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.VERBATIM_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1340,10 +1340,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.DRUG_EXPOSURE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1361,7 +1361,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the EPISODE_END_DATE field of the EPISODE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the EPISODE_END_DATE field of the EPISODE table that occurs after DEATH.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_END_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1384,7 +1384,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1413,9 +1413,9 @@ FROM
             cdmTable.*
         FROM dbo.EPISODE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.EPISODE_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.EPISODE_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1424,10 +1424,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.EPISODE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1445,7 +1445,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the EPISODE_END_DATETIME field of the EPISODE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the EPISODE_END_DATETIME field of the EPISODE table that occurs after DEATH.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_END_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -1468,7 +1468,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1497,9 +1497,9 @@ FROM
             cdmTable.*
         FROM dbo.EPISODE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.EPISODE_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.EPISODE_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1508,10 +1508,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.EPISODE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1529,7 +1529,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the EPISODE_START_DATE field of the EPISODE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the EPISODE_START_DATE field of the EPISODE table that occurs after DEATH.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1552,7 +1552,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1581,9 +1581,9 @@ FROM
             cdmTable.*
         FROM dbo.EPISODE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.EPISODE_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.EPISODE_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1592,10 +1592,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.EPISODE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1613,7 +1613,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the EPISODE_START_DATETIME field of the EPISODE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the EPISODE_START_DATETIME field of the EPISODE table that occurs after DEATH.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -1636,7 +1636,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1665,9 +1665,9 @@ FROM
             cdmTable.*
         FROM dbo.EPISODE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.EPISODE_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.EPISODE_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1676,10 +1676,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.EPISODE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1697,7 +1697,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the OBSERVATION_PERIOD_END_DATE field of the OBSERVATION_PERIOD table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the OBSERVATION_PERIOD_END_DATE field of the OBSERVATION_PERIOD table that occurs after DEATH.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_END_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1720,7 +1720,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1749,9 +1749,9 @@ FROM
             cdmTable.*
         FROM dbo.OBSERVATION_PERIOD cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.OBSERVATION_PERIOD_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.OBSERVATION_PERIOD_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1760,10 +1760,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.OBSERVATION_PERIOD cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1781,7 +1781,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the OBSERVATION_PERIOD_START_DATE field of the OBSERVATION_PERIOD table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the OBSERVATION_PERIOD_START_DATE field of the OBSERVATION_PERIOD table that occurs after DEATH.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1804,7 +1804,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1833,9 +1833,9 @@ FROM
             cdmTable.*
         FROM dbo.OBSERVATION_PERIOD cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.OBSERVATION_PERIOD_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.OBSERVATION_PERIOD_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1844,10 +1844,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.OBSERVATION_PERIOD cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1865,7 +1865,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the PROCEDURE_DATE field of the PROCEDURE_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the PROCEDURE_DATE field of the PROCEDURE_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -1888,7 +1888,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1917,9 +1917,9 @@ FROM
             cdmTable.*
         FROM dbo.PROCEDURE_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.PROCEDURE_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.PROCEDURE_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1928,10 +1928,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.PROCEDURE_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -1949,7 +1949,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the PROCEDURE_DATETIME field of the PROCEDURE_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the PROCEDURE_DATETIME field of the PROCEDURE_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -1972,7 +1972,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2001,9 +2001,9 @@ FROM
             cdmTable.*
         FROM dbo.PROCEDURE_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.PROCEDURE_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.PROCEDURE_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2012,10 +2012,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.PROCEDURE_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -2033,7 +2033,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the PROCEDURE_END_DATE field of the PROCEDURE_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the PROCEDURE_END_DATE field of the PROCEDURE_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_END_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -2056,7 +2056,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2085,9 +2085,9 @@ FROM
             cdmTable.*
         FROM dbo.PROCEDURE_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.PROCEDURE_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.PROCEDURE_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2096,10 +2096,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.PROCEDURE_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -2117,7 +2117,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the PROCEDURE_END_DATETIME field of the PROCEDURE_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the PROCEDURE_END_DATETIME field of the PROCEDURE_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_END_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -2140,7 +2140,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2169,9 +2169,9 @@ FROM
             cdmTable.*
         FROM dbo.PROCEDURE_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.PROCEDURE_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.PROCEDURE_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2180,10 +2180,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.PROCEDURE_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -2201,7 +2201,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the VISIT_DETAIL_END_DATE field of the VISIT_DETAIL table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the VISIT_DETAIL_END_DATE field of the VISIT_DETAIL table that occurs after DEATH.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_END_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -2224,7 +2224,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2253,9 +2253,9 @@ FROM
             cdmTable.*
         FROM dbo.VISIT_DETAIL cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.VISIT_DETAIL_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.VISIT_DETAIL_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2264,10 +2264,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.VISIT_DETAIL cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -2285,7 +2285,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the VISIT_DETAIL_END_DATETIME field of the VISIT_DETAIL table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the VISIT_DETAIL_END_DATETIME field of the VISIT_DETAIL table that occurs after DEATH.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_END_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -2308,7 +2308,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2337,9 +2337,9 @@ FROM
             cdmTable.*
         FROM dbo.VISIT_DETAIL cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.VISIT_DETAIL_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.VISIT_DETAIL_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2348,10 +2348,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.VISIT_DETAIL cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -2369,7 +2369,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the VISIT_DETAIL_START_DATE field of the VISIT_DETAIL table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the VISIT_DETAIL_START_DATE field of the VISIT_DETAIL table that occurs after DEATH.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -2392,7 +2392,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2421,9 +2421,9 @@ FROM
             cdmTable.*
         FROM dbo.VISIT_DETAIL cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.VISIT_DETAIL_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.VISIT_DETAIL_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2432,10 +2432,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.VISIT_DETAIL cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -2453,7 +2453,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the VISIT_DETAIL_START_DATETIME field of the VISIT_DETAIL table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the VISIT_DETAIL_START_DATETIME field of the VISIT_DETAIL table that occurs after DEATH.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -2476,7 +2476,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2505,9 +2505,9 @@ FROM
             cdmTable.*
         FROM dbo.VISIT_DETAIL cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.VISIT_DETAIL_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.VISIT_DETAIL_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2516,10 +2516,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.VISIT_DETAIL cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -2537,7 +2537,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the VISIT_END_DATE field of the VISIT_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the VISIT_END_DATE field of the VISIT_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_END_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -2560,7 +2560,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2589,9 +2589,9 @@ FROM
             cdmTable.*
         FROM dbo.VISIT_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.VISIT_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.VISIT_END_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2600,10 +2600,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.VISIT_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -2621,7 +2621,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the VISIT_END_DATETIME field of the VISIT_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the VISIT_END_DATETIME field of the VISIT_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_END_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -2644,7 +2644,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2673,9 +2673,9 @@ FROM
             cdmTable.*
         FROM dbo.VISIT_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.VISIT_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.VISIT_END_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2684,10 +2684,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.VISIT_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -2705,7 +2705,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the VISIT_START_DATE field of the VISIT_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the VISIT_START_DATE field of the VISIT_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_START_DATE' as cdm_field_name
   ,'NA' as concept_id
@@ -2728,7 +2728,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2757,9 +2757,9 @@ FROM
             cdmTable.*
         FROM dbo.VISIT_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.VISIT_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.VISIT_START_DATE AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2768,10 +2768,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.VISIT_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 
@@ -2789,7 +2789,7 @@ SELECT
   ,'' as query_text
   ,'plausibleDuringLife' as check_name
   ,'FIELD' as check_level
-  ,'If yes, the number and percent of records with a date value in the VISIT_START_DATETIME field of the VISIT_OCCURRENCE table that occurs after death.' as check_description
+  ,'If yes, the number and percent of records with a date value in the VISIT_START_DATETIME field of the VISIT_OCCURRENCE table that occurs after DEATH.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_START_DATETIME' as cdm_field_name
   ,'NA' as concept_id
@@ -2812,7 +2812,7 @@ FROM (
   
 /*********
 PLAUSIBLE_DURING_LIFE
-get number of events that occur after death event (PLAUSIBLE_DURING_LIFE == Yes)
+get number of events that occur after DEATH event (PLAUSIBLE_DURING_LIFE == Yes)
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2841,9 +2841,9 @@ FROM
             cdmTable.*
         FROM dbo.VISIT_OCCURRENCE cdmTable
             
-        JOIN dbo.death de 
-            ON cdmTable.person_id = de.person_id
-        WHERE CAST(cdmTable.VISIT_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.death_date AS DATE))
+        JOIN dbo.DEATH de 
+            ON cdmTable.PERSON_ID = de.PERSON_ID
+        WHERE CAST(cdmTable.VISIT_START_DATETIME AS DATE) > DATEADD(day, 60, CAST(de.DEATH_DATE AS DATE))
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2852,10 +2852,10 @@ FROM
         COUNT_BIG(*) AS num_rows
     FROM dbo.VISIT_OCCURRENCE cdmTable
     
-    WHERE person_id IN
+    WHERE PERSON_ID IN
         (SELECT 
-            person_id 
-        FROM dbo.death)
+            PERSON_ID 
+        FROM dbo.DEATH)
 ) denominator
 
 

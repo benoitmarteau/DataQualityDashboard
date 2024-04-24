@@ -17,7 +17,7 @@ SELECT
   ,'' as query_text
   ,'measureConditionEraCompleteness' as check_name
   ,'TABLE' as check_level
-  ,'The number and Percent of persons that does not have condition_era built successfully  for all persons in condition_occurrence' as check_description
+  ,'The number and Percent of persons that does not have condition_era built successfully  for all persons in CONDITION_OCCURRENCE' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'NA' as cdm_field_name
   ,'NA' as concept_id
@@ -41,7 +41,7 @@ FROM (
 Table Level:  
 MEASURE_CONDITION_ERA_COMPLETENESS
 Determine what #/% of persons have condition_era built successfully 
-for persons in condition_occurrence table
+for persons in CONDITION_OCCURRENCE table
 
 Parameters used in this template:
 cdmTableName = CONDITION_ERA
@@ -59,22 +59,22 @@ SELECT
 FROM
 (
 	SELECT 
-		COUNT_BIG(violated_rows.person_id) AS num_violated_rows
+		COUNT_BIG(violated_rows.PERSON_ID) AS num_violated_rows
 	FROM
 	(
 		SELECT DISTINCT 
-		    co.person_id
-		FROM dbo.condition_occurrence co
+		    co.PERSON_ID
+		FROM dbo.CONDITION_OCCURRENCE co
 		
 		LEFT JOIN dbo.CONDITION_ERA cdmTable 
-		    ON co.person_id = cdmTable.person_id
-  	    WHERE cdmTable.person_id IS NULL
+		    ON co.PERSON_ID = cdmTable.PERSON_ID
+  	    WHERE cdmTable.PERSON_ID IS NULL
 	) violated_rows
 ) violated_row_count,
 ( 
 	SELECT 
-		COUNT_BIG(DISTINCT person_id) AS num_rows
-	FROM dbo.condition_occurrence co
+		COUNT_BIG(DISTINCT PERSON_ID) AS num_rows
+	FROM dbo.CONDITION_OCCURRENCE co
 	
 ) denominator
 

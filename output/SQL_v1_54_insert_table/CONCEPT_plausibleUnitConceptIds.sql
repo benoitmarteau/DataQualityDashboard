@@ -20,7 +20,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3006315 (BASOPHILS [#/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3006315' as concept_id
+  ,'3006315' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -102,7 +102,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3004410 (HEMOGLOBIN A1C/HEMOGLOBIN.TOTAL IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,8737,9225,9579)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3004410' as concept_id
+  ,'3004410' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -184,7 +184,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 40487382 (TOTAL LYMPHOCYTE COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8848,8961)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'40487382' as concept_id
+  ,'40487382' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -266,7 +266,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3013721 (ASPARTATE AMINOTRANSFERASE [ENZYMATIC ACTIVITY/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8645,8923)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3013721' as concept_id
+  ,'3013721' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -348,7 +348,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3019198 (LYMPHOCYTES [#/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3019198' as concept_id
+  ,'3019198' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -430,7 +430,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3034426 (PROTHROMBIN TIME (PT)) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8555)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3034426' as concept_id
+  ,'3034426' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -512,7 +512,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3043688 (HEMOGLOBIN [MASS/VOLUME] IN BODY FLUID) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8713)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3043688' as concept_id
+  ,'3043688' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -594,7 +594,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3046485 (UREA NITROGEN/CREATININE [MASS RATIO] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8523,8554,8596,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3046485' as concept_id
+  ,'3046485' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -676,7 +676,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4216098 (EOSINOPHIL COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4216098' as concept_id
+  ,'4216098' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -758,7 +758,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4245152 (POTASSIUM MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8736,8753,9557)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4245152' as concept_id
+  ,'4245152' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -840,7 +840,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 43055141 (PAIN SEVERITY - 0-10 VERBAL NUMERIC RATING [SCORE] - REPORTED) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'43055141' as concept_id
+  ,'43055141' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -922,7 +922,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3006923 (ALANINE AMINOTRANSFERASE [ENZYMATIC ACTIVITY/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8645,8923)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3006923' as concept_id
+  ,'3006923' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1004,7 +1004,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3021044 (IRON BINDING CAPACITY [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8837)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3021044' as concept_id
+  ,'3021044' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1086,7 +1086,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3024171 (RESPIRATORY RATE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8483,8541)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3024171' as concept_id
+  ,'3024171' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1168,7 +1168,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3027114 (CHOLESTEROL [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3027114' as concept_id
+  ,'3027114' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1250,7 +1250,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 40762499 (OXYGEN SATURATION IN ARTERIAL BLOOD BY PULSE OXIMETRY) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'40762499' as concept_id
+  ,'40762499' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1332,7 +1332,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3000963 (HEMOGLOBIN [MASS/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8636,8713)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3000963' as concept_id
+  ,'3000963' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1414,7 +1414,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3001604 (MONOCYTES [#/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3001604' as concept_id
+  ,'3001604' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1496,7 +1496,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3019069 (MONOCYTES/100 LEUKOCYTES IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3019069' as concept_id
+  ,'3019069' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1578,7 +1578,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3022509 (HYALINE CASTS [#/AREA] IN URINE SEDIMENT BY MICROSCOPY LOW POWER FIELD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8765)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3022509' as concept_id
+  ,'3022509' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1660,7 +1660,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3028288 (CHOLESTEROL IN LDL [MASS/VOLUME] IN SERUM OR PLASMA BY CALCULATION) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840,9028)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3028288' as concept_id
+  ,'3028288' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1742,7 +1742,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4148615 (NEUTROPHIL COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8848,8961)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4148615' as concept_id
+  ,'4148615' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1824,7 +1824,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 44806420 (ESTIMATION OF GLOMERULAR FILTRATION RATE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (720870,8795)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'44806420' as concept_id
+  ,'44806420' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1906,7 +1906,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3028437 (CHOLESTEROL IN LDL [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840,9028)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3028437' as concept_id
+  ,'3028437' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -1988,7 +1988,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3016991 (THYROXINE (T4) [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8837)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3016991' as concept_id
+  ,'3016991' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2070,7 +2070,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3026925 (TRIIODOTHYRONINE (T3) FREE [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8820,8845)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3026925' as concept_id
+  ,'3026925' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2152,7 +2152,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3028615 (EOSINOPHILS [#/VOLUME] IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8816,8848,8961,9436,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3028615' as concept_id
+  ,'3028615' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2234,7 +2234,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3051205 (CRYSTALS [#/AREA] IN URINE SEDIMENT BY MICROSCOPY HIGH POWER FIELD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8786)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3051205' as concept_id
+  ,'3051205' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2316,7 +2316,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4098046 (PULSE OXIMETRY) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4098046' as concept_id
+  ,'4098046' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2398,7 +2398,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3005131 (GLUCOSE MEAN VALUE [MASS/VOLUME] IN BLOOD ESTIMATED FROM GLYCATED HEMOGLOBIN) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840,9028)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3005131' as concept_id
+  ,'3005131' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2480,7 +2480,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3011163 (CHOLESTEROL.TOTAL/CHOLESTEROL IN HDL [MASS RATIO] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8523,8529,8554,8596,8606,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3011163' as concept_id
+  ,'3011163' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2562,7 +2562,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3044491 (CHOLESTEROL NON HDL [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8576,8840,9028)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3044491' as concept_id
+  ,'3044491' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2644,7 +2644,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4017361 (BLOOD UREA NITROGEN MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8753,8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4017361' as concept_id
+  ,'4017361' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2726,7 +2726,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3006504 (EOSINOPHILS/100 LEUKOCYTES IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3006504' as concept_id
+  ,'3006504' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2808,7 +2808,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3000483 (GLUCOSE [MASS/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3000483' as concept_id
+  ,'3000483' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2890,7 +2890,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3033543 (SPECIFIC GRAVITY OF URINE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8523,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3033543' as concept_id
+  ,'3033543' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -2972,7 +2972,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3045716 (ANION GAP IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8753,9557)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3045716' as concept_id
+  ,'3045716' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3054,7 +3054,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4101713 (HIGH DENSITY LIPOPROTEIN CHOLESTEROL MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8636,8736,8753,8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4101713' as concept_id
+  ,'4101713' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3136,7 +3136,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4103762 (ANION GAP MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8753,9557)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4103762' as concept_id
+  ,'4103762' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3218,7 +3218,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3001008 (EPITHELIAL CELLS.SQUAMOUS [#/AREA] IN URINE SEDIMENT BY MICROSCOPY HIGH POWER FIELD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8765,8786,8889)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3001008' as concept_id
+  ,'3001008' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3300,7 +3300,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3009744 (MCHC [MASS/VOLUME] BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8564,8636,8713)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3009744' as concept_id
+  ,'3009744' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3382,7 +3382,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3013115 (EOSINOPHILS [#/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3013115' as concept_id
+  ,'3013115' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3464,7 +3464,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3019550 (SODIUM [MOLES/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8753,9557)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3019550' as concept_id
+  ,'3019550' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3546,7 +3546,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3020416 (ERYTHROCYTES [#/VOLUME] IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (44777575,8734,8815)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3020416' as concept_id
+  ,'3020416' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3628,7 +3628,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3035583 (LEUKOCYTES [#/AREA] IN URINE SEDIMENT BY MICROSCOPY HIGH POWER FIELD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8786,8889)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3035583' as concept_id
+  ,'3035583' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3710,7 +3710,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3035995 (ALKALINE PHOSPHATASE [ENZYMATIC ACTIVITY/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8645,8923)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3035995' as concept_id
+  ,'3035995' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3792,7 +3792,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3038553 (BODY MASS INDEX (BMI) [RATIO]) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (9531)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3038553' as concept_id
+  ,'3038553' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3874,7 +3874,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 35610320 (DIASTOLIC ARTERIAL PRESSURE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8876)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'35610320' as concept_id
+  ,'35610320' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -3956,7 +3956,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3001490 (NUCLEATED ERYTHROCYTES [#/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3001490' as concept_id
+  ,'3001490' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4038,7 +4038,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4195214 (CHOLESTEROL/HDL RATIO MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8523,8554,8596,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4195214' as concept_id
+  ,'4195214' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4120,7 +4120,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 36306178 (GLOMERULAR FILTRATION RATE/1.73 SQ M.PREDICTED AMONG BLACKS [VOLUME RATE/AREA] IN SERUM, PLASMA OR BLOOD BY CREATININE-BASED FORMULA (CKD-EPI)) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (720870,8795)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'36306178' as concept_id
+  ,'36306178' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4202,7 +4202,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 37393850 (MCHC - MEAN CORPUSCULAR HAEMOGLOBIN CONCENTRATION) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8636,8713)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'37393850' as concept_id
+  ,'37393850' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4284,7 +4284,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3004501 (GLUCOSE [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3004501' as concept_id
+  ,'3004501' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4366,7 +4366,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3008598 (THYROXINE (T4) FREE [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8817)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3008598' as concept_id
+  ,'3008598' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4448,7 +4448,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3018010 (NEUTROPHILS/100 LEUKOCYTES IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3018010' as concept_id
+  ,'3018010' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4530,7 +4530,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3022192 (TRIGLYCERIDE [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3022192' as concept_id
+  ,'3022192' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4612,7 +4612,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4151768 (PACK YEARS) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (9448,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4151768' as concept_id
+  ,'4151768' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4694,7 +4694,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4197602 (SERUM TSH MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8719,9040,9093)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4197602' as concept_id
+  ,'4197602' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4776,7 +4776,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 46236952 (GLOMERULAR FILTRATION RATE/1.73 SQ M.PREDICTED [VOLUME RATE/AREA] IN SERUM, PLASMA OR BLOOD BY CREATININE-BASED FORMULA (MDRD)) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (720870,8795)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'46236952' as concept_id
+  ,'46236952' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4858,7 +4858,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3006906 (CALCIUM [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3006906' as concept_id
+  ,'3006906' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -4940,7 +4940,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3007070 (CHOLESTEROL IN HDL [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3007070' as concept_id
+  ,'3007070' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5022,7 +5022,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3020460 (C REACTIVE PROTEIN [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8751,8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3020460' as concept_id
+  ,'3020460' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5104,7 +5104,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3023314 (HEMATOCRIT [VOLUME FRACTION] OF BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (44777604,8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3023314' as concept_id
+  ,'3023314' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5186,7 +5186,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3035941 (MCH [ENTITIC MASS]) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8564,9655)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3035941' as concept_id
+  ,'3035941' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5268,7 +5268,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3037072 (UROBILINOGEN [MASS/VOLUME] IN URINE BY TEST STRIP) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3037072' as concept_id
+  ,'3037072' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5350,7 +5350,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4151358 (HEMATOCRIT DETERMINATION) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (44777604,8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4151358' as concept_id
+  ,'4151358' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5432,7 +5432,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4194332 (MONOCYTE COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4194332' as concept_id
+  ,'4194332' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5514,7 +5514,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3001123 (PLATELET MEAN VOLUME [ENTITIC VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8583)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3001123' as concept_id
+  ,'3001123' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5596,7 +5596,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3012888 (DIASTOLIC BLOOD PRESSURE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8876)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3012888' as concept_id
+  ,'3012888' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5678,7 +5678,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3013707 (ERYTHROCYTE SEDIMENTATION RATE BY WESTERGREN METHOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8752)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3013707' as concept_id
+  ,'3013707' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5760,7 +5760,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3037511 (LYMPHOCYTES/100 LEUKOCYTES IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3037511' as concept_id
+  ,'3037511' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5842,7 +5842,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3040168 (IMMATURE GRANULOCYTES [#/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3040168' as concept_id
+  ,'3040168' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -5924,7 +5924,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4097430 (SODIUM MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8753,9557)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4097430' as concept_id
+  ,'4097430' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6006,7 +6006,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3005424 (BODY SURFACE AREA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8617)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3005424' as concept_id
+  ,'3005424' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6088,7 +6088,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3013603 (PROSTATE SPECIFIC AG [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8748,8842)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3013603' as concept_id
+  ,'3013603' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6170,7 +6170,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3020509 (ALBUMIN/GLOBULIN [MASS RATIO] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8523,8554,8596,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3020509' as concept_id
+  ,'3020509' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6252,7 +6252,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3036277 (BODY HEIGHT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8582,9327,9330,9546)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3036277' as concept_id
+  ,'3036277' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6334,7 +6334,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4301868 (PULSE RATE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8483,8541,8581)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4301868' as concept_id
+  ,'4301868' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6416,7 +6416,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 40762636 (BODY MASS INDEX (BMI) [PERCENTILE]) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'40762636' as concept_id
+  ,'40762636' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6498,7 +6498,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 40765040 (25-HYDROXYVITAMIN D3+25-HYDROXYVITAMIN D2 [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8842,8845)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'40765040' as concept_id
+  ,'40765040' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6580,7 +6580,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3024386 (PLATELET MEAN VOLUME [ENTITIC VOLUME] IN BLOOD BY REES-ECKER) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8583)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3024386' as concept_id
+  ,'3024386' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6662,7 +6662,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3009201 (THYROTROPIN [UNITS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (44777578,8719,9040,9093)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3009201' as concept_id
+  ,'3009201' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6744,7 +6744,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3024731 (MCV [ENTITIC VOLUME]) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8583)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3024731' as concept_id
+  ,'3024731' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6826,7 +6826,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3050479 (IMMATURE GRANULOCYTES/100 LEUKOCYTES IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3050479' as concept_id
+  ,'3050479' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6908,7 +6908,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4012479 (LOW DENSITY LIPOPROTEIN CHOLESTEROL MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8636,8753,8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4012479' as concept_id
+  ,'4012479' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -6990,7 +6990,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4152194 (SYSTOLIC BLOOD PRESSURE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8876)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4152194' as concept_id
+  ,'4152194' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7072,7 +7072,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 37393840 (HAEMATOCRIT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (44777604,8523,8554,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'37393840' as concept_id
+  ,'37393840' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7154,7 +7154,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3000593 (COBALAMIN (VITAMIN B12) [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8845)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3000593' as concept_id
+  ,'3000593' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7236,7 +7236,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3002888 (ERYTHROCYTE DISTRIBUTION WIDTH [ENTITIC VOLUME]) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8583)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3002888' as concept_id
+  ,'3002888' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7318,7 +7318,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3010910 (ERYTHROCYTES [#/VOLUME] IN BODY FLUID) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8647,8785,8815,8931)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3010910' as concept_id
+  ,'3010910' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7400,7 +7400,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3013290 (CARBON DIOXIDE [PARTIAL PRESSURE] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8876)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3013290' as concept_id
+  ,'3013290' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7482,7 +7482,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3027970 (GLOBULIN [MASS/VOLUME] IN SERUM BY CALCULATION) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8636,8713,8950)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3027970' as concept_id
+  ,'3027970' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7564,7 +7564,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4239408 (HEART RATE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8483,8541,8581)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4239408' as concept_id
+  ,'4239408' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7646,7 +7646,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3010813 (LEUKOCYTES [#/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (44777588,8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3010813' as concept_id
+  ,'3010813' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7728,7 +7728,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3023103 (POTASSIUM [MOLES/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8753,9557)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3023103' as concept_id
+  ,'3023103' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7810,7 +7810,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4030871 (RED BLOOD CELL COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8734,8815,8931,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4030871' as concept_id
+  ,'4030871' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7892,7 +7892,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4154790 (DIASTOLIC BLOOD PRESSURE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8876)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4154790' as concept_id
+  ,'4154790' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -7974,7 +7974,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4217013 (SYSTOLIC ARTERIAL PRESSURE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8876)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4217013' as concept_id
+  ,'4217013' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8056,7 +8056,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3001318 (CHOLESTEROL.TOTAL/CHOLESTEROL IN HDL [PERCENTILE]) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,8596,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3001318' as concept_id
+  ,'3001318' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8138,7 +8138,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3004249 (SYSTOLIC BLOOD PRESSURE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8876)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3004249' as concept_id
+  ,'3004249' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8220,7 +8220,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3009596 (CHOLESTEROL IN VLDL [MASS/VOLUME] IN SERUM OR PLASMA BY CALCULATION) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8576,8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3009596' as concept_id
+  ,'3009596' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8302,7 +8302,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3025315 (BODY WEIGHT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8739,9346,9373,9529)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3025315' as concept_id
+  ,'3025315' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8384,7 +8384,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3053283 (GLOMERULAR FILTRATION RATE/1.73 SQ M.PREDICTED AMONG BLACKS [VOLUME RATE/AREA] IN SERUM, PLASMA OR BLOOD BY CREATININE-BASED FORMULA (MDRD)) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (720870,8795)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3053283' as concept_id
+  ,'3053283' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8466,7 +8466,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4008265 (TOTAL CHOLESTEROL MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8736,8753,8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4008265' as concept_id
+  ,'4008265' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8548,7 +8548,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 36303797 (GLOMERULAR FILTRATION RATE/1.73 SQ M.PREDICTED AMONG NON-BLACKS [VOLUME RATE/AREA] IN SERUM, PLASMA OR BLOOD BY CREATININE-BASED FORMULA (CKD-EPI)) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (720870,8795)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'36303797' as concept_id
+  ,'36303797' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8630,7 +8630,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 37398460 (SERUM ALKALINE PHOSPHATASE LEVEL) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (32995,8645,8923)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'37398460' as concept_id
+  ,'37398460' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8712,7 +8712,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3013682 (UREA NITROGEN [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3013682' as concept_id
+  ,'3013682' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8794,7 +8794,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3026361 (ERYTHROCYTES [#/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (32706,8785,8815,8931)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3026361' as concept_id
+  ,'3026361' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8876,7 +8876,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3027018 (HEART RATE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8483,8541,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3027018' as concept_id
+  ,'3027018' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -8958,7 +8958,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4013965 (OXYGEN SATURATION MEASUREMENT, ARTERIAL) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4013965' as concept_id
+  ,'4013965' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9040,7 +9040,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3013429 (BASOPHILS [#/VOLUME] IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8816,8848,8961,9436,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3013429' as concept_id
+  ,'3013429' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9122,7 +9122,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3023599 (MCV [ENTITIC VOLUME] BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8583)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3023599' as concept_id
+  ,'3023599' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9204,7 +9204,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3036588 (NEUTROPHIL CYTOPLASMIC AB.PERINUCLEAR [PRESENCE] IN SERUM) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8525,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3036588' as concept_id
+  ,'3036588' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9286,7 +9286,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4298431 (WHITE BLOOD CELL COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8848,8961)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4298431' as concept_id
+  ,'4298431' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9368,7 +9368,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3017732 (NEUTROPHILS [#/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3017732' as concept_id
+  ,'3017732' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9450,7 +9450,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3024561 (ALBUMIN [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8636,8713)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3024561' as concept_id
+  ,'3024561' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9532,7 +9532,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3034639 (HEMOGLOBIN A1C [MASS/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8713,8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3034639' as concept_id
+  ,'3034639' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9614,7 +9614,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3013650 (NEUTROPHILS [#/VOLUME] IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3013650' as concept_id
+  ,'3013650' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9696,7 +9696,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3021886 (GLOBULIN [MASS/VOLUME] IN SERUM) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8636,8713,8950)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3021886' as concept_id
+  ,'3021886' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9778,7 +9778,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4254663 (LYMPHOCYTE COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8848)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4254663' as concept_id
+  ,'4254663' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9860,7 +9860,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3001420 (MAGNESIUM [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3001420' as concept_id
+  ,'3001420' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -9942,7 +9942,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3007461 (PLATELETS [#/VOLUME] IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3007461' as concept_id
+  ,'3007461' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10024,7 +10024,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3012030 (MCH [ENTITIC MASS] BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8564)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3012030' as concept_id
+  ,'3012030' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10106,7 +10106,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 40764999 (GLOMERULAR FILTRATION RATE/1.73 SQ M.PREDICTED [VOLUME RATE/AREA] IN SERUM, PLASMA OR BLOOD BY CREATININE-BASED FORMULA (CKD-EPI)) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (720870,8795)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'40764999' as concept_id
+  ,'40764999' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10188,7 +10188,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3008893 (TESTOSTERONE [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8817)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3008893' as concept_id
+  ,'3008893' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10270,7 +10270,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3016723 (CREATININE [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3016723' as concept_id
+  ,'3016723' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10352,7 +10352,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3026910 (GAMMA GLUTAMYL TRANSFERASE [ENZYMATIC ACTIVITY/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8645,8923)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3026910' as concept_id
+  ,'3026910' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10434,7 +10434,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3033575 (MONOCYTES [#/VOLUME] IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8816,8848,8961,9436,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3033575' as concept_id
+  ,'3033575' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10516,7 +10516,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3041084 (IMMATURE GRANULOCYTES [#/VOLUME] IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3041084' as concept_id
+  ,'3041084' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10598,7 +10598,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4184637 (HEMOGLOBIN A1C MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,8632,8737)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4184637' as concept_id
+  ,'4184637' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10680,7 +10680,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4313591 (RESPIRATORY RATE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8483,8541)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4313591' as concept_id
+  ,'4313591' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10762,7 +10762,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 37393851 (MCV - MEAN CORPUSCULAR VOLUME) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8583)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'37393851' as concept_id
+  ,'37393851' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10844,7 +10844,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 1619025 (GLOMERULAR FILTRATION RATE/1.73 SQ M.PREDICTED [VOLUME RATE/AREA] IN SERUM, PLASMA OR BLOOD BY CREATININE-BASED FORMULA (CKD-EPI 2021)) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (720870,8795)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'1619025' as concept_id
+  ,'1619025' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -10926,7 +10926,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3013869 (BASOPHILS/100 LEUKOCYTES IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3013869' as concept_id
+  ,'3013869' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11008,7 +11008,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3035472 (ALBUMIN/PROTEIN.TOTAL IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3035472' as concept_id
+  ,'3035472' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11090,7 +11090,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3039000 (ANION GAP IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8753,9557)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3039000' as concept_id
+  ,'3039000' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11172,7 +11172,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3000905 (LEUKOCYTES [#/VOLUME] IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8816,8848,8961,9436,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3000905' as concept_id
+  ,'3000905' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11254,7 +11254,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3015632 (CARBON DIOXIDE, TOTAL [MOLES/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8753,9557)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3015632' as concept_id
+  ,'3015632' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11336,7 +11336,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3032710 (CALCIUM.IONIZED/CALCIUM.TOTAL CORRECTED FOR ALBUMIN IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3032710' as concept_id
+  ,'3032710' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11418,7 +11418,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4197971 (HBA1C MEASUREMENT (DCCT ALIGNED)) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,8632,8737)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4197971' as concept_id
+  ,'4197971' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11500,7 +11500,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 42869452 (IMMATURE GRANULOCYTES/100 LEUKOCYTES IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'42869452' as concept_id
+  ,'42869452' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11582,7 +11582,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3002109 (CHOLESTEROL IN LDL/CHOLESTEROL IN HDL [MASS RATIO] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8523,8596,8606,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3002109' as concept_id
+  ,'3002109' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11664,7 +11664,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3004327 (LYMPHOCYTES [#/VOLUME] IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8784,8816,8848,8961,9436,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3004327' as concept_id
+  ,'3004327' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11746,7 +11746,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3006322 (ORAL TEMPERATURE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (586323)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3006322' as concept_id
+  ,'3006322' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11828,7 +11828,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3008342 (NEUTROPHILS/100 LEUKOCYTES IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3008342' as concept_id
+  ,'3008342' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11910,7 +11910,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3020630 (PROTEIN [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8636,8713)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3020630' as concept_id
+  ,'3020630' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -11992,7 +11992,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3001122 (FERRITIN [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8748,8842)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3001122' as concept_id
+  ,'3001122' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12074,7 +12074,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3009542 (HEMATOCRIT [VOLUME FRACTION] OF BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3009542' as concept_id
+  ,'3009542' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12156,7 +12156,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3010189 (EPITHELIAL CELLS [#/AREA] IN URINE SEDIMENT BY MICROSCOPY HIGH POWER FIELD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8765,8786)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3010189' as concept_id
+  ,'3010189' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12238,7 +12238,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3010457 (EOSINOPHILS/100 LEUKOCYTES IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3010457' as concept_id
+  ,'3010457' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12320,7 +12320,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4192368 (PLATELET MEAN VOLUME DETERMINATION) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8583)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4192368' as concept_id
+  ,'4192368' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12402,7 +12402,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3014576 (CHLORIDE [MOLES/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8753,9557)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3014576' as concept_id
+  ,'3014576' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12484,7 +12484,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3024128 (BILIRUBIN.TOTAL [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3024128' as concept_id
+  ,'3024128' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12566,7 +12566,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3018311 (UREA NITROGEN/CREATININE [MASS RATIO] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8523,8554,8596,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3018311' as concept_id
+  ,'3018311' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12648,7 +12648,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3020891 (BODY TEMPERATURE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (586323,9289)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3020891' as concept_id
+  ,'3020891' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12730,7 +12730,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3037556 (URATE [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3037556' as concept_id
+  ,'3037556' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12812,7 +12812,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 37399332 (SERUM TSH (THYROID STIMULATING HORMONE) LEVEL) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (44777578,9040)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'37399332' as concept_id
+  ,'37399332' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12894,7 +12894,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3011904 (PHOSPHATE [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3011904' as concept_id
+  ,'3011904' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -12976,7 +12976,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3019897 (ERYTHROCYTE DISTRIBUTION WIDTH [RATIO] BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3019897' as concept_id
+  ,'3019897' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13058,7 +13058,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3025255 (BACTERIA [#/AREA] IN URINE SEDIMENT BY MICROSCOPY HIGH POWER FIELD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8786)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3025255' as concept_id
+  ,'3025255' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13140,7 +13140,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4076704 (HIGH DENSITY LIPOPROTEIN MEASUREMENT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8753,8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4076704' as concept_id
+  ,'4076704' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13222,7 +13222,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4172647 (BASOPHIL COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8848,8961,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4172647' as concept_id
+  ,'4172647' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13304,7 +13304,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 37393531 (SERUM ALANINE AMINOTRANSFERASE LEVEL) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (32995,8645,8923)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'37393531' as concept_id
+  ,'37393531' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13386,7 +13386,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 40771529 (IMMATURE GRANULOCYTES/100 LEUKOCYTES IN BODY FLUID) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'40771529' as concept_id
+  ,'40771529' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13468,7 +13468,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3000034 (MICROALBUMIN [MASS/VOLUME] IN URINE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8576,8723,8751,8840,8859)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3000034' as concept_id
+  ,'3000034' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13550,7 +13550,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3035124 (ERYTHROCYTES [#/AREA] IN URINE SEDIMENT BY MICROSCOPY HIGH POWER FIELD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8786,8889)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3035124' as concept_id
+  ,'3035124' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13632,7 +13632,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3002030 (LYMPHOCYTES/100 LEUKOCYTES IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554,8848)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3002030' as concept_id
+  ,'3002030' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13714,7 +13714,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3019170 (THYROTROPIN [UNITS/VOLUME] IN SERUM OR PLASMA BY DETECTION LIMIT <= 0.005 MIU/L) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (44777578,8719,8860,9040,9093,9550)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3019170' as concept_id
+  ,'3019170' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13796,7 +13796,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3020149 (25-HYDROXYVITAMIN D3 [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8842)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3020149' as concept_id
+  ,'3020149' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13878,7 +13878,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3022174 (LEUKOCYTES [#/VOLUME] IN BODY FLUID) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8647,8784,8785,8848,8961)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3022174' as concept_id
+  ,'3022174' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -13960,7 +13960,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3024929 (PLATELETS [#/VOLUME] IN BLOOD BY AUTOMATED COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8816,8848,8961,9436,9444)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3024929' as concept_id
+  ,'3024929' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -14042,7 +14042,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3049187 (GLOMERULAR FILTRATION RATE/1.73 SQ M.PREDICTED AMONG NON-BLACKS [VOLUME RATE/AREA] IN SERUM, PLASMA OR BLOOD BY CREATININE-BASED FORMULA (MDRD)) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (720870,8795)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3049187' as concept_id
+  ,'3049187' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -14124,7 +14124,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 37398676 (BASOPHIL COUNT) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8848)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'37398676' as concept_id
+  ,'37398676' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -14206,7 +14206,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4112223 (BUN/CREATININE RATIO) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8523,8596,-1)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4112223' as concept_id
+  ,'4112223' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -14288,7 +14288,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3017250 (CREATININE [MASS/VOLUME] IN URINE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8576,8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3017250' as concept_id
+  ,'3017250' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -14370,7 +14370,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 4191837 (CALCULATED LDL CHOLESTEROL LEVEL) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8840)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'4191837' as concept_id
+  ,'4191837' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -14452,7 +14452,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3022096 (BASOPHILS/100 LEUKOCYTES IN BLOOD) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8554)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3022096' as concept_id
+  ,'3022096' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -14534,7 +14534,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3034485 (ALBUMIN/CREATININE [MASS RATIO] IN URINE) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8523,8723,8838,9017,9072)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3034485' as concept_id
+  ,'3034485' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -14616,7 +14616,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 44790183 (GLOMERULAR FILTRATION RATE TESTING) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (720870,8795)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'44790183' as concept_id
+  ,'44790183' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -14698,7 +14698,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3002400 (IRON [MASS/VOLUME] IN SERUM OR PLASMA) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8749,8837)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3002400' as concept_id
+  ,'3002400' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category
@@ -14780,7 +14780,7 @@ SELECT
   ,'The number and percent of records for a given CONCEPT_ID 3003338 (MCHC [MASS/VOLUME]) with implausible units (i.e., UNIT_CONCEPT_ID NOT IN  (8713)).' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'3003338' as concept_id
+  ,'3003338' as CONCEPT_ID
   ,'NA' as UNIT_CONCEPT_ID
   ,'concept_plausible_UNIT_CONCEPT_IDs.sql' as sql_file
   ,'Plausibility' as category

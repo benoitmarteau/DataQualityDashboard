@@ -17,8 +17,8 @@ SELECT
   ,'' as query_text
   ,'cdmTable' as check_name
   ,'TABLE' as check_level
-  ,'A yes or no value indicating if PERSON table is present as expected based on the specification.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if person table is present as expected based on the specification.' as check_description
+  ,'person' as cdm_table_name
   ,'NA' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -45,7 +45,7 @@ Verify the table exists.
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 
 **********/
 
@@ -68,7 +68,7 @@ FROM
                 WHEN COUNT_BIG(*) = 0 THEN 0
                 ELSE 0
             END AS num_violated_rows
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
     ) violated_rows
 ) violated_row_count,
 ( 

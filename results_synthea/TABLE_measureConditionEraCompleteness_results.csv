@@ -1,0 +1,1 @@
+﻿0,0.00000000000000000,1141,,,measureConditionEraCompleteness,TABLE,The number and Percent of persons that does not have condition_era built successfully  for all persons in CONDITION_OCCURRENCE,CONDITION_ERA,NA,NA,NA,table_condition_era_completeness.sql,Completeness,NA,Validation,,,table_measureconditioneracompleteness_condition_era,0,0,0,1,NULL,0,NULL

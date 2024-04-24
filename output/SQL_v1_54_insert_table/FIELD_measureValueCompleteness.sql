@@ -20375,8 +20375,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the BIRTH_DATETIME of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the BIRTH_DATETIME of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'BIRTH_DATETIME' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -20402,7 +20402,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = BIRTH_DATETIME
 
 **********/
@@ -20423,9 +20423,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.BIRTH_DATETIME' AS violating_field, 
+			'person.BIRTH_DATETIME' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.BIRTH_DATETIME IS NULL
 		/*violatedRowsEnd*/
@@ -20434,7 +20434,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -20453,8 +20453,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the CARE_SITE_ID of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the CARE_SITE_ID of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -20480,7 +20480,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = CARE_SITE_ID
 
 **********/
@@ -20501,9 +20501,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.CARE_SITE_ID' AS violating_field, 
+			'person.CARE_SITE_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.CARE_SITE_ID IS NULL
 		/*violatedRowsEnd*/
@@ -20512,7 +20512,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -20531,8 +20531,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the DAY_OF_BIRTH of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the DAY_OF_BIRTH of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'DAY_OF_BIRTH' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -20558,7 +20558,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = DAY_OF_BIRTH
 
 **********/
@@ -20579,9 +20579,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.DAY_OF_BIRTH' AS violating_field, 
+			'person.DAY_OF_BIRTH' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.DAY_OF_BIRTH IS NULL
 		/*violatedRowsEnd*/
@@ -20590,7 +20590,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -20609,8 +20609,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the ETHNICITY_CONCEPT_ID of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the ETHNICITY_CONCEPT_ID of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_CONCEPT_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -20636,7 +20636,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_CONCEPT_ID
 
 **********/
@@ -20657,9 +20657,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.ETHNICITY_CONCEPT_ID' AS violating_field, 
+			'person.ETHNICITY_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.ETHNICITY_CONCEPT_ID IS NULL
 		/*violatedRowsEnd*/
@@ -20668,7 +20668,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -20687,8 +20687,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the ETHNICITY_SOURCE_CONCEPT_ID of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the ETHNICITY_SOURCE_CONCEPT_ID of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_SOURCE_CONCEPT_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -20714,7 +20714,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_SOURCE_CONCEPT_ID
 
 **********/
@@ -20735,9 +20735,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.ETHNICITY_SOURCE_CONCEPT_ID' AS violating_field, 
+			'person.ETHNICITY_SOURCE_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.ETHNICITY_SOURCE_CONCEPT_ID IS NULL
 		/*violatedRowsEnd*/
@@ -20746,7 +20746,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -20765,8 +20765,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the ETHNICITY_SOURCE_VALUE of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the ETHNICITY_SOURCE_VALUE of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_SOURCE_VALUE' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -20792,7 +20792,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_SOURCE_VALUE
 
 **********/
@@ -20813,9 +20813,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.ETHNICITY_SOURCE_VALUE' AS violating_field, 
+			'person.ETHNICITY_SOURCE_VALUE' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.ETHNICITY_SOURCE_VALUE IS NULL
 		/*violatedRowsEnd*/
@@ -20824,7 +20824,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -20843,8 +20843,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the GENDER_CONCEPT_ID of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the GENDER_CONCEPT_ID of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -20870,7 +20870,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_CONCEPT_ID
 
 **********/
@@ -20891,9 +20891,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.GENDER_CONCEPT_ID' AS violating_field, 
+			'person.GENDER_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.GENDER_CONCEPT_ID IS NULL
 		/*violatedRowsEnd*/
@@ -20902,7 +20902,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -20921,8 +20921,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the GENDER_SOURCE_CONCEPT_ID of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the GENDER_SOURCE_CONCEPT_ID of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_SOURCE_CONCEPT_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -20948,7 +20948,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_SOURCE_CONCEPT_ID
 
 **********/
@@ -20969,9 +20969,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.GENDER_SOURCE_CONCEPT_ID' AS violating_field, 
+			'person.GENDER_SOURCE_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.GENDER_SOURCE_CONCEPT_ID IS NULL
 		/*violatedRowsEnd*/
@@ -20980,7 +20980,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -20999,8 +20999,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the GENDER_SOURCE_VALUE of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the GENDER_SOURCE_VALUE of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_SOURCE_VALUE' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -21026,7 +21026,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_SOURCE_VALUE
 
 **********/
@@ -21047,9 +21047,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.GENDER_SOURCE_VALUE' AS violating_field, 
+			'person.GENDER_SOURCE_VALUE' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.GENDER_SOURCE_VALUE IS NULL
 		/*violatedRowsEnd*/
@@ -21058,7 +21058,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -21077,8 +21077,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the LOCATION_ID of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the LOCATION_ID of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -21104,7 +21104,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = LOCATION_ID
 
 **********/
@@ -21125,9 +21125,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.LOCATION_ID' AS violating_field, 
+			'person.LOCATION_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.LOCATION_ID IS NULL
 		/*violatedRowsEnd*/
@@ -21136,7 +21136,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -21155,8 +21155,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the MONTH_OF_BIRTH of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the MONTH_OF_BIRTH of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'MONTH_OF_BIRTH' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -21182,7 +21182,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = MONTH_OF_BIRTH
 
 **********/
@@ -21203,9 +21203,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.MONTH_OF_BIRTH' AS violating_field, 
+			'person.MONTH_OF_BIRTH' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.MONTH_OF_BIRTH IS NULL
 		/*violatedRowsEnd*/
@@ -21214,7 +21214,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -21233,8 +21233,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the PERSON_ID of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the PERSON_ID of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -21260,7 +21260,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PERSON_ID
 
 **********/
@@ -21281,9 +21281,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.PERSON_ID' AS violating_field, 
+			'person.PERSON_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.PERSON_ID IS NULL
 		/*violatedRowsEnd*/
@@ -21292,7 +21292,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -21311,8 +21311,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the PERSON_SOURCE_VALUE of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the PERSON_SOURCE_VALUE of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'PERSON_SOURCE_VALUE' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -21338,7 +21338,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PERSON_SOURCE_VALUE
 
 **********/
@@ -21359,9 +21359,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.PERSON_SOURCE_VALUE' AS violating_field, 
+			'person.PERSON_SOURCE_VALUE' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.PERSON_SOURCE_VALUE IS NULL
 		/*violatedRowsEnd*/
@@ -21370,7 +21370,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -21389,8 +21389,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the PROVIDER_ID of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the PROVIDER_ID of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -21416,7 +21416,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PROVIDER_ID
 
 **********/
@@ -21437,9 +21437,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.PROVIDER_ID' AS violating_field, 
+			'person.PROVIDER_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.PROVIDER_ID IS NULL
 		/*violatedRowsEnd*/
@@ -21448,7 +21448,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -21467,8 +21467,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the RACE_CONCEPT_ID of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the RACE_CONCEPT_ID of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_CONCEPT_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -21494,7 +21494,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_CONCEPT_ID
 
 **********/
@@ -21515,9 +21515,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.RACE_CONCEPT_ID' AS violating_field, 
+			'person.RACE_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.RACE_CONCEPT_ID IS NULL
 		/*violatedRowsEnd*/
@@ -21526,7 +21526,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -21545,8 +21545,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the RACE_SOURCE_CONCEPT_ID of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the RACE_SOURCE_CONCEPT_ID of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_SOURCE_CONCEPT_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -21572,7 +21572,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_SOURCE_CONCEPT_ID
 
 **********/
@@ -21593,9 +21593,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.RACE_SOURCE_CONCEPT_ID' AS violating_field, 
+			'person.RACE_SOURCE_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.RACE_SOURCE_CONCEPT_ID IS NULL
 		/*violatedRowsEnd*/
@@ -21604,7 +21604,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -21623,8 +21623,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the RACE_SOURCE_VALUE of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the RACE_SOURCE_VALUE of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_SOURCE_VALUE' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -21650,7 +21650,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_SOURCE_VALUE
 
 **********/
@@ -21671,9 +21671,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.RACE_SOURCE_VALUE' AS violating_field, 
+			'person.RACE_SOURCE_VALUE' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.RACE_SOURCE_VALUE IS NULL
 		/*violatedRowsEnd*/
@@ -21682,7 +21682,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 
@@ -21701,8 +21701,8 @@ SELECT
   ,'' as query_text
   ,'measureValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a NULL value in the YEAR_OF_BIRTH of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a NULL value in the YEAR_OF_BIRTH of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'YEAR_OF_BIRTH' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -21728,7 +21728,7 @@ Computing number of null values and the proportion to total records per field
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = YEAR_OF_BIRTH
 
 **********/
@@ -21749,9 +21749,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.YEAR_OF_BIRTH' AS violating_field, 
+			'person.YEAR_OF_BIRTH' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 			
 		WHERE cdmTable.YEAR_OF_BIRTH IS NULL
 		/*violatedRowsEnd*/
@@ -21760,7 +21760,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON cdmTable
+	FROM dbo.person cdmTable
 	  
 ) denominator
 

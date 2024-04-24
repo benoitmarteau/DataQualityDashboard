@@ -20,7 +20,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_CONCEPT_ID field in the DOSE_ERA table that do not conform to the INGREDIENT class.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_class.sql' as sql_file
   ,'Conformance' as category
@@ -70,11 +70,11 @@ FROM (
             'DOSE_ERA.DRUG_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DOSE_ERA cdmTable
-            LEFT JOIN dbo.concept co
-                ON cdmTable.DRUG_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+                ON cdmTable.DRUG_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND (co.concept_class_id != 'Ingredient') 
+        WHERE co.CONCEPT_ID != 0 
+            AND (co.CONCEPT_CLASS_ID != 'Ingredient') 
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -103,7 +103,7 @@ SELECT
   ,'The number and percent of records that have a value in the DRUG_CONCEPT_ID field in the DRUG_ERA table that do not conform to the INGREDIENT class.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_class.sql' as sql_file
   ,'Conformance' as category
@@ -153,11 +153,11 @@ FROM (
             'DRUG_ERA.DRUG_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DRUG_ERA cdmTable
-            LEFT JOIN dbo.concept co
-                ON cdmTable.DRUG_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+                ON cdmTable.DRUG_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND (co.concept_class_id != 'Ingredient') 
+        WHERE co.CONCEPT_ID != 0 
+            AND (co.CONCEPT_CLASS_ID != 'Ingredient') 
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -186,7 +186,7 @@ SELECT
   ,'The number and percent of records that have a value in the INGREDIENT_CONCEPT_ID field in the DRUG_STRENGTH table that do not conform to the INGREDIENT class.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'INGREDIENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_fk_class.sql' as sql_file
   ,'Conformance' as category
@@ -236,11 +236,11 @@ FROM (
             'DRUG_STRENGTH.INGREDIENT_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
         FROM dbo.DRUG_STRENGTH cdmTable
-            LEFT JOIN dbo.concept co
-                ON cdmTable.INGREDIENT_CONCEPT_ID = co.concept_id
+            LEFT JOIN dbo.CONCEPT co
+                ON cdmTable.INGREDIENT_CONCEPT_ID = co.CONCEPT_ID
             
-        WHERE co.concept_id != 0 
-            AND (co.concept_class_id != 'Ingredient') 
+        WHERE co.CONCEPT_ID != 0 
+            AND (co.CONCEPT_CLASS_ID != 'Ingredient') 
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,

@@ -20,7 +20,7 @@ SELECT
   ,'A yes or no value indicating if the CARE_SITE_ID in the CARE_SITE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -101,7 +101,7 @@ SELECT
   ,'A yes or no value indicating if the LOCATION_ID in the CARE_SITE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -182,7 +182,7 @@ SELECT
   ,'A yes or no value indicating if the PLACE_OF_SERVICE_CONCEPT_ID in the CARE_SITE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'PLACE_OF_SERVICE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -263,7 +263,7 @@ SELECT
   ,'A yes or no value indicating if the CDM_VERSION_CONCEPT_ID in the CDM_SOURCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CDM_SOURCE' as cdm_table_name
   ,'CDM_VERSION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -344,7 +344,7 @@ SELECT
   ,'A yes or no value indicating if the COHORT_DEFINITION_ID in the COHORT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COHORT' as cdm_table_name
   ,'COHORT_DEFINITION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -425,7 +425,7 @@ SELECT
   ,'A yes or no value indicating if the SUBJECT_ID in the COHORT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COHORT' as cdm_table_name
   ,'SUBJECT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -506,7 +506,7 @@ SELECT
   ,'A yes or no value indicating if the COHORT_DEFINITION_ID in the COHORT_DEFINITION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'COHORT_DEFINITION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -587,7 +587,7 @@ SELECT
   ,'A yes or no value indicating if the DEFINITION_TYPE_CONCEPT_ID in the COHORT_DEFINITION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'DEFINITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -668,7 +668,7 @@ SELECT
   ,'A yes or no value indicating if the SUBJECT_CONCEPT_ID in the COHORT_DEFINITION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COHORT_DEFINITION' as cdm_table_name
   ,'SUBJECT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -749,7 +749,7 @@ SELECT
   ,'A yes or no value indicating if the CONCEPT_ID in the CONCEPT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -830,7 +830,7 @@ SELECT
   ,'A yes or no value indicating if the ANCESTOR_CONCEPT_ID in the CONCEPT_ANCESTOR is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'ANCESTOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -911,7 +911,7 @@ SELECT
   ,'A yes or no value indicating if the DESCENDANT_CONCEPT_ID in the CONCEPT_ANCESTOR is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'DESCENDANT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -992,7 +992,7 @@ SELECT
   ,'A yes or no value indicating if the MAX_LEVELS_OF_SEPARATION in the CONCEPT_ANCESTOR is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'MAX_LEVELS_OF_SEPARATION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1073,7 +1073,7 @@ SELECT
   ,'A yes or no value indicating if the MIN_LEVELS_OF_SEPARATION in the CONCEPT_ANCESTOR is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONCEPT_ANCESTOR' as cdm_table_name
   ,'MIN_LEVELS_OF_SEPARATION' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1154,7 +1154,7 @@ SELECT
   ,'A yes or no value indicating if the CONCEPT_CLASS_CONCEPT_ID in the CONCEPT_CLASS is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONCEPT_CLASS' as cdm_table_name
   ,'CONCEPT_CLASS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1235,7 +1235,7 @@ SELECT
   ,'A yes or no value indicating if the CONCEPT_ID_1 in the CONCEPT_RELATIONSHIP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'CONCEPT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1316,7 +1316,7 @@ SELECT
   ,'A yes or no value indicating if the CONCEPT_ID_2 in the CONCEPT_RELATIONSHIP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONCEPT_RELATIONSHIP' as cdm_table_name
   ,'CONCEPT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1397,7 +1397,7 @@ SELECT
   ,'A yes or no value indicating if the CONCEPT_ID in the CONCEPT_SYNONYM is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONCEPT_SYNONYM' as cdm_table_name
   ,'CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1478,7 +1478,7 @@ SELECT
   ,'A yes or no value indicating if the LANGUAGE_CONCEPT_ID in the CONCEPT_SYNONYM is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONCEPT_SYNONYM' as cdm_table_name
   ,'LANGUAGE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1559,7 +1559,7 @@ SELECT
   ,'A yes or no value indicating if the CONDITION_CONCEPT_ID in the CONDITION_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1640,7 +1640,7 @@ SELECT
   ,'A yes or no value indicating if the CONDITION_ERA_ID in the CONDITION_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1721,7 +1721,7 @@ SELECT
   ,'A yes or no value indicating if the CONDITION_OCCURRENCE_COUNT in the CONDITION_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_OCCURRENCE_COUNT' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1802,7 +1802,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the CONDITION_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1883,7 +1883,7 @@ SELECT
   ,'A yes or no value indicating if the CONDITION_CONCEPT_ID in the CONDITION_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -1964,7 +1964,7 @@ SELECT
   ,'A yes or no value indicating if the CONDITION_OCCURRENCE_ID in the CONDITION_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2045,7 +2045,7 @@ SELECT
   ,'A yes or no value indicating if the CONDITION_SOURCE_CONCEPT_ID in the CONDITION_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2126,7 +2126,7 @@ SELECT
   ,'A yes or no value indicating if the CONDITION_STATUS_CONCEPT_ID in the CONDITION_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_STATUS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2207,7 +2207,7 @@ SELECT
   ,'A yes or no value indicating if the CONDITION_TYPE_CONCEPT_ID in the CONDITION_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2288,7 +2288,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the CONDITION_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2369,7 +2369,7 @@ SELECT
   ,'A yes or no value indicating if the PROVIDER_ID in the CONDITION_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2450,7 +2450,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_DETAIL_ID in the CONDITION_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2531,7 +2531,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_OCCURRENCE_ID in the CONDITION_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2612,7 +2612,7 @@ SELECT
   ,'A yes or no value indicating if the COST_EVENT_ID in the COST is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_EVENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2693,7 +2693,7 @@ SELECT
   ,'A yes or no value indicating if the COST_ID in the COST is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2774,7 +2774,7 @@ SELECT
   ,'A yes or no value indicating if the COST_TYPE_CONCEPT_ID in the COST is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2855,7 +2855,7 @@ SELECT
   ,'A yes or no value indicating if the CURRENCY_CONCEPT_ID in the COST is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COST' as cdm_table_name
   ,'CURRENCY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -2936,7 +2936,7 @@ SELECT
   ,'A yes or no value indicating if the DRG_CONCEPT_ID in the COST is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COST' as cdm_table_name
   ,'DRG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3017,7 +3017,7 @@ SELECT
   ,'A yes or no value indicating if the PAYER_PLAN_PERIOD_ID in the COST is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COST' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3098,7 +3098,7 @@ SELECT
   ,'A yes or no value indicating if the REVENUE_CODE_CONCEPT_ID in the COST is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'COST' as cdm_table_name
   ,'REVENUE_CODE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3179,7 +3179,7 @@ SELECT
   ,'A yes or no value indicating if the CAUSE_CONCEPT_ID in the DEATH is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEATH' as cdm_table_name
   ,'CAUSE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3260,7 +3260,7 @@ SELECT
   ,'A yes or no value indicating if the CAUSE_SOURCE_CONCEPT_ID in the DEATH is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEATH' as cdm_table_name
   ,'CAUSE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3341,7 +3341,7 @@ SELECT
   ,'A yes or no value indicating if the DEATH_TYPE_CONCEPT_ID in the DEATH is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEATH' as cdm_table_name
   ,'DEATH_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3422,7 +3422,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the DEATH is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEATH' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3503,7 +3503,7 @@ SELECT
   ,'A yes or no value indicating if the DEVICE_CONCEPT_ID in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3584,7 +3584,7 @@ SELECT
   ,'A yes or no value indicating if the DEVICE_EXPOSURE_ID in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3665,7 +3665,7 @@ SELECT
   ,'A yes or no value indicating if the DEVICE_SOURCE_CONCEPT_ID in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3746,7 +3746,7 @@ SELECT
   ,'A yes or no value indicating if the DEVICE_TYPE_CONCEPT_ID in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3827,7 +3827,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3908,7 +3908,7 @@ SELECT
   ,'A yes or no value indicating if the PROVIDER_ID in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -3989,7 +3989,7 @@ SELECT
   ,'A yes or no value indicating if the QUANTITY in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'QUANTITY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4070,7 +4070,7 @@ SELECT
   ,'A yes or no value indicating if the UNIT_CONCEPT_ID in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4151,7 +4151,7 @@ SELECT
   ,'A yes or no value indicating if the UNIT_SOURCE_CONCEPT_ID in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'UNIT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4232,7 +4232,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_DETAIL_ID in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4313,7 +4313,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_OCCURRENCE_ID in the DEVICE_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4394,7 +4394,7 @@ SELECT
   ,'A yes or no value indicating if the DOMAIN_CONCEPT_ID in the DOMAIN is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DOMAIN' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4475,7 +4475,7 @@ SELECT
   ,'A yes or no value indicating if the DOSE_ERA_ID in the DOSE_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4556,7 +4556,7 @@ SELECT
   ,'A yes or no value indicating if the DRUG_CONCEPT_ID in the DOSE_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4637,7 +4637,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the DOSE_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4718,7 +4718,7 @@ SELECT
   ,'A yes or no value indicating if the UNIT_CONCEPT_ID in the DOSE_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4799,7 +4799,7 @@ SELECT
   ,'A yes or no value indicating if the DRUG_CONCEPT_ID in the DRUG_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4880,7 +4880,7 @@ SELECT
   ,'A yes or no value indicating if the DRUG_ERA_ID in the DRUG_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -4961,7 +4961,7 @@ SELECT
   ,'A yes or no value indicating if the DRUG_EXPOSURE_COUNT in the DRUG_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_EXPOSURE_COUNT' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5042,7 +5042,7 @@ SELECT
   ,'A yes or no value indicating if the GAP_DAYS in the DRUG_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'GAP_DAYS' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5123,7 +5123,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the DRUG_ERA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5204,7 +5204,7 @@ SELECT
   ,'A yes or no value indicating if the DAYS_SUPPLY in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DAYS_SUPPLY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5285,7 +5285,7 @@ SELECT
   ,'A yes or no value indicating if the DRUG_CONCEPT_ID in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5366,7 +5366,7 @@ SELECT
   ,'A yes or no value indicating if the DRUG_EXPOSURE_ID in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5447,7 +5447,7 @@ SELECT
   ,'A yes or no value indicating if the DRUG_SOURCE_CONCEPT_ID in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5528,7 +5528,7 @@ SELECT
   ,'A yes or no value indicating if the DRUG_TYPE_CONCEPT_ID in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5609,7 +5609,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5690,7 +5690,7 @@ SELECT
   ,'A yes or no value indicating if the PROVIDER_ID in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5771,7 +5771,7 @@ SELECT
   ,'A yes or no value indicating if the REFILLS in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'REFILLS' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5852,7 +5852,7 @@ SELECT
   ,'A yes or no value indicating if the ROUTE_CONCEPT_ID in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'ROUTE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -5933,7 +5933,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_DETAIL_ID in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6014,7 +6014,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_OCCURRENCE_ID in the DRUG_EXPOSURE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6095,7 +6095,7 @@ SELECT
   ,'A yes or no value indicating if the AMOUNT_UNIT_CONCEPT_ID in the DRUG_STRENGTH is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'AMOUNT_UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6176,7 +6176,7 @@ SELECT
   ,'A yes or no value indicating if the BOX_SIZE in the DRUG_STRENGTH is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'BOX_SIZE' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6257,7 +6257,7 @@ SELECT
   ,'A yes or no value indicating if the DENOMINATOR_UNIT_CONCEPT_ID in the DRUG_STRENGTH is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'DENOMINATOR_UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6338,7 +6338,7 @@ SELECT
   ,'A yes or no value indicating if the DRUG_CONCEPT_ID in the DRUG_STRENGTH is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'DRUG_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6419,7 +6419,7 @@ SELECT
   ,'A yes or no value indicating if the INGREDIENT_CONCEPT_ID in the DRUG_STRENGTH is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'INGREDIENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6500,7 +6500,7 @@ SELECT
   ,'A yes or no value indicating if the NUMERATOR_UNIT_CONCEPT_ID in the DRUG_STRENGTH is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'DRUG_STRENGTH' as cdm_table_name
   ,'NUMERATOR_UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6581,7 +6581,7 @@ SELECT
   ,'A yes or no value indicating if the EPISODE_CONCEPT_ID in the EPISODE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6662,7 +6662,7 @@ SELECT
   ,'A yes or no value indicating if the EPISODE_NUMBER in the EPISODE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_NUMBER' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6743,7 +6743,7 @@ SELECT
   ,'A yes or no value indicating if the EPISODE_OBJECT_CONCEPT_ID in the EPISODE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_OBJECT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6824,7 +6824,7 @@ SELECT
   ,'A yes or no value indicating if the EPISODE_SOURCE_CONCEPT_ID in the EPISODE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6905,7 +6905,7 @@ SELECT
   ,'A yes or no value indicating if the EPISODE_TYPE_CONCEPT_ID in the EPISODE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -6986,7 +6986,7 @@ SELECT
   ,'A yes or no value indicating if the EPISODE_EVENT_FIELD_CONCEPT_ID in the EPISODE_EVENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'EPISODE_EVENT' as cdm_table_name
   ,'EPISODE_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7067,7 +7067,7 @@ SELECT
   ,'A yes or no value indicating if the DOMAIN_CONCEPT_ID_1 in the FACT_RELATIONSHIP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7148,7 +7148,7 @@ SELECT
   ,'A yes or no value indicating if the DOMAIN_CONCEPT_ID_2 in the FACT_RELATIONSHIP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'DOMAIN_CONCEPT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7229,7 +7229,7 @@ SELECT
   ,'A yes or no value indicating if the FACT_ID_1 in the FACT_RELATIONSHIP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'FACT_ID_1' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7310,7 +7310,7 @@ SELECT
   ,'A yes or no value indicating if the FACT_ID_2 in the FACT_RELATIONSHIP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'FACT_ID_2' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7391,7 +7391,7 @@ SELECT
   ,'A yes or no value indicating if the RELATIONSHIP_CONCEPT_ID in the FACT_RELATIONSHIP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'FACT_RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7472,7 +7472,7 @@ SELECT
   ,'A yes or no value indicating if the COUNTRY_CONCEPT_ID in the LOCATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'COUNTRY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7553,7 +7553,7 @@ SELECT
   ,'A yes or no value indicating if the LOCATION_ID in the LOCATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7634,7 +7634,7 @@ SELECT
   ,'A yes or no value indicating if the MEAS_EVENT_FIELD_CONCEPT_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEAS_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7715,7 +7715,7 @@ SELECT
   ,'A yes or no value indicating if the MEASUREMENT_CONCEPT_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7796,7 +7796,7 @@ SELECT
   ,'A yes or no value indicating if the MEASUREMENT_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7877,7 +7877,7 @@ SELECT
   ,'A yes or no value indicating if the MEASUREMENT_SOURCE_CONCEPT_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -7958,7 +7958,7 @@ SELECT
   ,'A yes or no value indicating if the MEASUREMENT_TYPE_CONCEPT_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8039,7 +8039,7 @@ SELECT
   ,'A yes or no value indicating if the OPERATOR_CONCEPT_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'OPERATOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8120,7 +8120,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8201,7 +8201,7 @@ SELECT
   ,'A yes or no value indicating if the PROVIDER_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8282,7 +8282,7 @@ SELECT
   ,'A yes or no value indicating if the UNIT_CONCEPT_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8363,7 +8363,7 @@ SELECT
   ,'A yes or no value indicating if the UNIT_SOURCE_CONCEPT_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'UNIT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8444,7 +8444,7 @@ SELECT
   ,'A yes or no value indicating if the VALUE_AS_CONCEPT_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VALUE_AS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8525,7 +8525,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_DETAIL_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8606,7 +8606,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_OCCURRENCE_ID in the MEASUREMENT is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8687,7 +8687,7 @@ SELECT
   ,'A yes or no value indicating if the METADATA_CONCEPT_ID in the METADATA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8768,7 +8768,7 @@ SELECT
   ,'A yes or no value indicating if the METADATA_ID in the METADATA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8849,7 +8849,7 @@ SELECT
   ,'A yes or no value indicating if the METADATA_TYPE_CONCEPT_ID in the METADATA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -8930,7 +8930,7 @@ SELECT
   ,'A yes or no value indicating if the VALUE_AS_CONCEPT_ID in the METADATA is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'METADATA' as cdm_table_name
   ,'VALUE_AS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9011,7 +9011,7 @@ SELECT
   ,'A yes or no value indicating if the ENCODING_CONCEPT_ID in the NOTE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE' as cdm_table_name
   ,'ENCODING_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9092,7 +9092,7 @@ SELECT
   ,'A yes or no value indicating if the LANGUAGE_CONCEPT_ID in the NOTE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE' as cdm_table_name
   ,'LANGUAGE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9173,7 +9173,7 @@ SELECT
   ,'A yes or no value indicating if the NOTE_CLASS_CONCEPT_ID in the NOTE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_CLASS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9254,7 +9254,7 @@ SELECT
   ,'A yes or no value indicating if the NOTE_EVENT_FIELD_CONCEPT_ID in the NOTE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9335,7 +9335,7 @@ SELECT
   ,'A yes or no value indicating if the NOTE_ID in the NOTE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9416,7 +9416,7 @@ SELECT
   ,'A yes or no value indicating if the NOTE_TYPE_CONCEPT_ID in the NOTE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9497,7 +9497,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the NOTE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9578,7 +9578,7 @@ SELECT
   ,'A yes or no value indicating if the PROVIDER_ID in the NOTE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9659,7 +9659,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_DETAIL_ID in the NOTE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9740,7 +9740,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_OCCURRENCE_ID in the NOTE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9821,7 +9821,7 @@ SELECT
   ,'A yes or no value indicating if the NOTE_ID in the NOTE_NLP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9902,7 +9902,7 @@ SELECT
   ,'A yes or no value indicating if the NOTE_NLP_CONCEPT_ID in the NOTE_NLP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -9983,7 +9983,7 @@ SELECT
   ,'A yes or no value indicating if the NOTE_NLP_ID in the NOTE_NLP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10064,7 +10064,7 @@ SELECT
   ,'A yes or no value indicating if the NOTE_NLP_SOURCE_CONCEPT_ID in the NOTE_NLP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10145,7 +10145,7 @@ SELECT
   ,'A yes or no value indicating if the SECTION_CONCEPT_ID in the NOTE_NLP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'SECTION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10226,7 +10226,7 @@ SELECT
   ,'A yes or no value indicating if the OBS_EVENT_FIELD_CONCEPT_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBS_EVENT_FIELD_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10307,7 +10307,7 @@ SELECT
   ,'A yes or no value indicating if the OBSERVATION_CONCEPT_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10388,7 +10388,7 @@ SELECT
   ,'A yes or no value indicating if the OBSERVATION_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10469,7 +10469,7 @@ SELECT
   ,'A yes or no value indicating if the OBSERVATION_SOURCE_CONCEPT_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10550,7 +10550,7 @@ SELECT
   ,'A yes or no value indicating if the OBSERVATION_TYPE_CONCEPT_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10631,7 +10631,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10712,7 +10712,7 @@ SELECT
   ,'A yes or no value indicating if the PROVIDER_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10793,7 +10793,7 @@ SELECT
   ,'A yes or no value indicating if the QUALIFIER_CONCEPT_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'QUALIFIER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10874,7 +10874,7 @@ SELECT
   ,'A yes or no value indicating if the UNIT_CONCEPT_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -10955,7 +10955,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_DETAIL_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11036,7 +11036,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_OCCURRENCE_ID in the OBSERVATION is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11117,7 +11117,7 @@ SELECT
   ,'A yes or no value indicating if the OBSERVATION_PERIOD_ID in the OBSERVATION_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11198,7 +11198,7 @@ SELECT
   ,'A yes or no value indicating if the PERIOD_TYPE_CONCEPT_ID in the OBSERVATION_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'PERIOD_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11279,7 +11279,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the OBSERVATION_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11360,7 +11360,7 @@ SELECT
   ,'A yes or no value indicating if the PAYER_CONCEPT_ID in the PAYER_PLAN_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11441,7 +11441,7 @@ SELECT
   ,'A yes or no value indicating if the PAYER_PLAN_PERIOD_ID in the PAYER_PLAN_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11522,7 +11522,7 @@ SELECT
   ,'A yes or no value indicating if the PAYER_SOURCE_CONCEPT_ID in the PAYER_PLAN_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11603,7 +11603,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the PAYER_PLAN_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11684,7 +11684,7 @@ SELECT
   ,'A yes or no value indicating if the PLAN_CONCEPT_ID in the PAYER_PLAN_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PLAN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11765,7 +11765,7 @@ SELECT
   ,'A yes or no value indicating if the PLAN_SOURCE_CONCEPT_ID in the PAYER_PLAN_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PLAN_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11846,7 +11846,7 @@ SELECT
   ,'A yes or no value indicating if the SPONSOR_CONCEPT_ID in the PAYER_PLAN_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'SPONSOR_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -11927,7 +11927,7 @@ SELECT
   ,'A yes or no value indicating if the SPONSOR_SOURCE_CONCEPT_ID in the PAYER_PLAN_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'SPONSOR_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12008,7 +12008,7 @@ SELECT
   ,'A yes or no value indicating if the STOP_REASON_CONCEPT_ID in the PAYER_PLAN_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'STOP_REASON_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12089,7 +12089,7 @@ SELECT
   ,'A yes or no value indicating if the STOP_REASON_SOURCE_CONCEPT_ID in the PAYER_PLAN_PERIOD is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'STOP_REASON_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12167,10 +12167,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the CARE_SITE_ID in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the CARE_SITE_ID in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12196,7 +12196,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = CARE_SITE_ID
 **********/
 
@@ -12216,9 +12216,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.CARE_SITE_ID' AS violating_field, 
+			'person.CARE_SITE_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.CARE_SITE_ID) = 0 
 			OR (ISNUMERIC(cdmTable.CARE_SITE_ID) = 1 
@@ -12230,7 +12230,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -12248,10 +12248,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the DAY_OF_BIRTH in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the DAY_OF_BIRTH in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'DAY_OF_BIRTH' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12277,7 +12277,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = DAY_OF_BIRTH
 **********/
 
@@ -12297,9 +12297,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.DAY_OF_BIRTH' AS violating_field, 
+			'person.DAY_OF_BIRTH' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.DAY_OF_BIRTH) = 0 
 			OR (ISNUMERIC(cdmTable.DAY_OF_BIRTH) = 1 
@@ -12311,7 +12311,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -12329,10 +12329,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the ETHNICITY_CONCEPT_ID in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the ETHNICITY_CONCEPT_ID in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12358,7 +12358,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_CONCEPT_ID
 **********/
 
@@ -12378,9 +12378,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.ETHNICITY_CONCEPT_ID' AS violating_field, 
+			'person.ETHNICITY_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.ETHNICITY_CONCEPT_ID) = 0 
 			OR (ISNUMERIC(cdmTable.ETHNICITY_CONCEPT_ID) = 1 
@@ -12392,7 +12392,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -12410,10 +12410,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the ETHNICITY_SOURCE_CONCEPT_ID in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the ETHNICITY_SOURCE_CONCEPT_ID in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12439,7 +12439,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_SOURCE_CONCEPT_ID
 **********/
 
@@ -12459,9 +12459,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.ETHNICITY_SOURCE_CONCEPT_ID' AS violating_field, 
+			'person.ETHNICITY_SOURCE_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.ETHNICITY_SOURCE_CONCEPT_ID) = 0 
 			OR (ISNUMERIC(cdmTable.ETHNICITY_SOURCE_CONCEPT_ID) = 1 
@@ -12473,7 +12473,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -12491,10 +12491,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the GENDER_CONCEPT_ID in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the GENDER_CONCEPT_ID in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12520,7 +12520,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_CONCEPT_ID
 **********/
 
@@ -12540,9 +12540,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.GENDER_CONCEPT_ID' AS violating_field, 
+			'person.GENDER_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.GENDER_CONCEPT_ID) = 0 
 			OR (ISNUMERIC(cdmTable.GENDER_CONCEPT_ID) = 1 
@@ -12554,7 +12554,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -12572,10 +12572,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the GENDER_SOURCE_CONCEPT_ID in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the GENDER_SOURCE_CONCEPT_ID in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12601,7 +12601,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_SOURCE_CONCEPT_ID
 **********/
 
@@ -12621,9 +12621,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.GENDER_SOURCE_CONCEPT_ID' AS violating_field, 
+			'person.GENDER_SOURCE_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.GENDER_SOURCE_CONCEPT_ID) = 0 
 			OR (ISNUMERIC(cdmTable.GENDER_SOURCE_CONCEPT_ID) = 1 
@@ -12635,7 +12635,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -12653,10 +12653,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the LOCATION_ID in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the LOCATION_ID in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12682,7 +12682,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = LOCATION_ID
 **********/
 
@@ -12702,9 +12702,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.LOCATION_ID' AS violating_field, 
+			'person.LOCATION_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.LOCATION_ID) = 0 
 			OR (ISNUMERIC(cdmTable.LOCATION_ID) = 1 
@@ -12716,7 +12716,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -12734,10 +12734,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the MONTH_OF_BIRTH in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the MONTH_OF_BIRTH in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'MONTH_OF_BIRTH' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12763,7 +12763,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = MONTH_OF_BIRTH
 **********/
 
@@ -12783,9 +12783,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.MONTH_OF_BIRTH' AS violating_field, 
+			'person.MONTH_OF_BIRTH' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.MONTH_OF_BIRTH) = 0 
 			OR (ISNUMERIC(cdmTable.MONTH_OF_BIRTH) = 1 
@@ -12797,7 +12797,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -12815,10 +12815,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the PERSON_ID in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the PERSON_ID in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12844,7 +12844,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PERSON_ID
 **********/
 
@@ -12864,9 +12864,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.PERSON_ID' AS violating_field, 
+			'person.PERSON_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.PERSON_ID) = 0 
 			OR (ISNUMERIC(cdmTable.PERSON_ID) = 1 
@@ -12878,7 +12878,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -12896,10 +12896,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the PROVIDER_ID in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the PROVIDER_ID in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -12925,7 +12925,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PROVIDER_ID
 **********/
 
@@ -12945,9 +12945,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.PROVIDER_ID' AS violating_field, 
+			'person.PROVIDER_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.PROVIDER_ID) = 0 
 			OR (ISNUMERIC(cdmTable.PROVIDER_ID) = 1 
@@ -12959,7 +12959,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -12977,10 +12977,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the RACE_CONCEPT_ID in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the RACE_CONCEPT_ID in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13006,7 +13006,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_CONCEPT_ID
 **********/
 
@@ -13026,9 +13026,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.RACE_CONCEPT_ID' AS violating_field, 
+			'person.RACE_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.RACE_CONCEPT_ID) = 0 
 			OR (ISNUMERIC(cdmTable.RACE_CONCEPT_ID) = 1 
@@ -13040,7 +13040,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -13058,10 +13058,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the RACE_SOURCE_CONCEPT_ID in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the RACE_SOURCE_CONCEPT_ID in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13087,7 +13087,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_SOURCE_CONCEPT_ID
 **********/
 
@@ -13107,9 +13107,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.RACE_SOURCE_CONCEPT_ID' AS violating_field, 
+			'person.RACE_SOURCE_CONCEPT_ID' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.RACE_SOURCE_CONCEPT_ID) = 0 
 			OR (ISNUMERIC(cdmTable.RACE_SOURCE_CONCEPT_ID) = 1 
@@ -13121,7 +13121,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -13139,10 +13139,10 @@ SELECT
   ,'' as query_text
   ,'cdmDatatype' as check_name
   ,'FIELD' as check_level
-  ,'A yes or no value indicating if the YEAR_OF_BIRTH in the PERSON is the expected data type based on the specification.  Only checks integer fields.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'A yes or no value indicating if the YEAR_OF_BIRTH in the person is the expected data type based on the specification.  Only checks integer fields.' as check_description
+  ,'person' as cdm_table_name
   ,'YEAR_OF_BIRTH' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13168,7 +13168,7 @@ In others, check that integer fields are numeric and contain no decimal points
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = YEAR_OF_BIRTH
 **********/
 
@@ -13188,9 +13188,9 @@ FROM
 	(
 		/*violatedRowsBegin*/
 		SELECT 
-			'PERSON.YEAR_OF_BIRTH' AS violating_field, 
+			'person.YEAR_OF_BIRTH' AS violating_field, 
 			cdmTable.* 
-		FROM dbo.PERSON cdmTable
+		FROM dbo.person cdmTable
 		WHERE 
 			(ISNUMERIC(cdmTable.YEAR_OF_BIRTH) = 0 
 			OR (ISNUMERIC(cdmTable.YEAR_OF_BIRTH) = 1 
@@ -13202,7 +13202,7 @@ FROM
 ( 
 	SELECT 
 		COUNT_BIG(*) AS num_rows
-	FROM dbo.PERSON
+	FROM dbo.person
 ) denominator
 
 
@@ -13223,7 +13223,7 @@ SELECT
   ,'A yes or no value indicating if the MODIFIER_CONCEPT_ID in the PROCEDURE_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'MODIFIER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13304,7 +13304,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the PROCEDURE_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13385,7 +13385,7 @@ SELECT
   ,'A yes or no value indicating if the PROCEDURE_CONCEPT_ID in the PROCEDURE_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13466,7 +13466,7 @@ SELECT
   ,'A yes or no value indicating if the PROCEDURE_OCCURRENCE_ID in the PROCEDURE_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13547,7 +13547,7 @@ SELECT
   ,'A yes or no value indicating if the PROCEDURE_SOURCE_CONCEPT_ID in the PROCEDURE_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13628,7 +13628,7 @@ SELECT
   ,'A yes or no value indicating if the PROCEDURE_TYPE_CONCEPT_ID in the PROCEDURE_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13709,7 +13709,7 @@ SELECT
   ,'A yes or no value indicating if the PROVIDER_ID in the PROCEDURE_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13790,7 +13790,7 @@ SELECT
   ,'A yes or no value indicating if the QUANTITY in the PROCEDURE_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'QUANTITY' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13871,7 +13871,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_DETAIL_ID in the PROCEDURE_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -13952,7 +13952,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_OCCURRENCE_ID in the PROCEDURE_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14033,7 +14033,7 @@ SELECT
   ,'A yes or no value indicating if the CARE_SITE_ID in the PROVIDER is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14114,7 +14114,7 @@ SELECT
   ,'A yes or no value indicating if the GENDER_CONCEPT_ID in the PROVIDER is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14195,7 +14195,7 @@ SELECT
   ,'A yes or no value indicating if the GENDER_SOURCE_CONCEPT_ID in the PROVIDER is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'GENDER_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14276,7 +14276,7 @@ SELECT
   ,'A yes or no value indicating if the PROVIDER_ID in the PROVIDER is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14357,7 +14357,7 @@ SELECT
   ,'A yes or no value indicating if the SPECIALTY_CONCEPT_ID in the PROVIDER is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'SPECIALTY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14438,7 +14438,7 @@ SELECT
   ,'A yes or no value indicating if the SPECIALTY_SOURCE_CONCEPT_ID in the PROVIDER is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'SPECIALTY_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14519,7 +14519,7 @@ SELECT
   ,'A yes or no value indicating if the YEAR_OF_BIRTH in the PROVIDER is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'YEAR_OF_BIRTH' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14600,7 +14600,7 @@ SELECT
   ,'A yes or no value indicating if the RELATIONSHIP_CONCEPT_ID in the RELATIONSHIP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14681,7 +14681,7 @@ SELECT
   ,'A yes or no value indicating if the SOURCE_CONCEPT_ID in the SOURCE_TO_CONCEPT_MAP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14762,7 +14762,7 @@ SELECT
   ,'A yes or no value indicating if the TARGET_CONCEPT_ID in the SOURCE_TO_CONCEPT_MAP is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'SOURCE_TO_CONCEPT_MAP' as cdm_table_name
   ,'TARGET_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14843,7 +14843,7 @@ SELECT
   ,'A yes or no value indicating if the ANATOMIC_SITE_CONCEPT_ID in the SPECIMEN is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'ANATOMIC_SITE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -14924,7 +14924,7 @@ SELECT
   ,'A yes or no value indicating if the DISEASE_STATUS_CONCEPT_ID in the SPECIMEN is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'DISEASE_STATUS_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15005,7 +15005,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the SPECIMEN is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15086,7 +15086,7 @@ SELECT
   ,'A yes or no value indicating if the SPECIMEN_CONCEPT_ID in the SPECIMEN is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15167,7 +15167,7 @@ SELECT
   ,'A yes or no value indicating if the SPECIMEN_ID in the SPECIMEN is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15248,7 +15248,7 @@ SELECT
   ,'A yes or no value indicating if the SPECIMEN_TYPE_CONCEPT_ID in the SPECIMEN is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15329,7 +15329,7 @@ SELECT
   ,'A yes or no value indicating if the UNIT_CONCEPT_ID in the SPECIMEN is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'UNIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15410,7 +15410,7 @@ SELECT
   ,'A yes or no value indicating if the CARE_SITE_ID in the VISIT_DETAIL is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15491,7 +15491,7 @@ SELECT
   ,'A yes or no value indicating if the DISCHARGED_TO_CONCEPT_ID in the VISIT_DETAIL is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'DISCHARGED_TO_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15572,7 +15572,7 @@ SELECT
   ,'A yes or no value indicating if the PARENT_VISIT_DETAIL_ID in the VISIT_DETAIL is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PARENT_VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15653,7 +15653,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the VISIT_DETAIL is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15734,7 +15734,7 @@ SELECT
   ,'A yes or no value indicating if the PRECEDING_VISIT_DETAIL_ID in the VISIT_DETAIL is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PRECEDING_VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15815,7 +15815,7 @@ SELECT
   ,'A yes or no value indicating if the PROVIDER_ID in the VISIT_DETAIL is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15896,7 +15896,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_DETAIL_CONCEPT_ID in the VISIT_DETAIL is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -15977,7 +15977,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_DETAIL_ID in the VISIT_DETAIL is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16058,7 +16058,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_DETAIL_TYPE_CONCEPT_ID in the VISIT_DETAIL is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_TYPE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16139,7 +16139,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_OCCURRENCE_ID in the VISIT_DETAIL is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16220,7 +16220,7 @@ SELECT
   ,'A yes or no value indicating if the ADMITTED_FROM_CONCEPT_ID in the VISIT_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'ADMITTED_FROM_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16301,7 +16301,7 @@ SELECT
   ,'A yes or no value indicating if the CARE_SITE_ID in the VISIT_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16382,7 +16382,7 @@ SELECT
   ,'A yes or no value indicating if the DISCHARGED_TO_CONCEPT_ID in the VISIT_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'DISCHARGED_TO_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16463,7 +16463,7 @@ SELECT
   ,'A yes or no value indicating if the PERSON_ID in the VISIT_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16544,7 +16544,7 @@ SELECT
   ,'A yes or no value indicating if the PRECEDING_VISIT_OCCURRENCE_ID in the VISIT_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'PRECEDING_VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16625,7 +16625,7 @@ SELECT
   ,'A yes or no value indicating if the PROVIDER_ID in the VISIT_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16706,7 +16706,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_CONCEPT_ID in the VISIT_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16787,7 +16787,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_OCCURRENCE_ID in the VISIT_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16868,7 +16868,7 @@ SELECT
   ,'A yes or no value indicating if the VISIT_SOURCE_CONCEPT_ID in the VISIT_OCCURRENCE is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_SOURCE_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category
@@ -16949,7 +16949,7 @@ SELECT
   ,'A yes or no value indicating if the VOCABULARY_CONCEPT_ID in the VOCABULARY is the expected data type based on the specification.  Only checks integer fields.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_cdm_datatype.sql' as sql_file
   ,'Conformance' as category

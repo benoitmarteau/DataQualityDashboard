@@ -1201,8 +1201,8 @@ SELECT
   ,'' as query_text
   ,'sourceValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of distinct source values in the ETHNICITY_SOURCE_VALUE field of the PERSON table mapped to 0.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of distinct source values in the ETHNICITY_SOURCE_VALUE field of the person table mapped to 0.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_SOURCE_VALUE' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -1227,7 +1227,7 @@ number of source values with 0 standard concept / number of distinct source valu
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_SOURCE_VALUE
 standardConceptFieldName = ETHNICITY_CONCEPT_ID
 
@@ -1245,9 +1245,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT DISTINCT 
-            'PERSON.ETHNICITY_SOURCE_VALUE' AS violating_field, 
+            'person.ETHNICITY_SOURCE_VALUE' AS violating_field, 
             cdmTable.ETHNICITY_SOURCE_VALUE
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
         
         WHERE cdmTable.ETHNICITY_CONCEPT_ID = 0
         /*violatedRowsEnd*/
@@ -1256,7 +1256,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(DISTINCT cdmTable.ETHNICITY_SOURCE_VALUE) + COUNT(DISTINCT CASE WHEN cdmTable.ETHNICITY_SOURCE_VALUE IS NULL THEN 1 END) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
 ) denominator
 
@@ -1275,8 +1275,8 @@ SELECT
   ,'' as query_text
   ,'sourceValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of distinct source values in the GENDER_SOURCE_VALUE field of the PERSON table mapped to 0.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of distinct source values in the GENDER_SOURCE_VALUE field of the person table mapped to 0.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_SOURCE_VALUE' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -1301,7 +1301,7 @@ number of source values with 0 standard concept / number of distinct source valu
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_SOURCE_VALUE
 standardConceptFieldName = GENDER_CONCEPT_ID
 
@@ -1319,9 +1319,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT DISTINCT 
-            'PERSON.GENDER_SOURCE_VALUE' AS violating_field, 
+            'person.GENDER_SOURCE_VALUE' AS violating_field, 
             cdmTable.GENDER_SOURCE_VALUE
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
         
         WHERE cdmTable.GENDER_CONCEPT_ID = 0
         /*violatedRowsEnd*/
@@ -1330,7 +1330,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(DISTINCT cdmTable.GENDER_SOURCE_VALUE) + COUNT(DISTINCT CASE WHEN cdmTable.GENDER_SOURCE_VALUE IS NULL THEN 1 END) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
 ) denominator
 
@@ -1349,8 +1349,8 @@ SELECT
   ,'' as query_text
   ,'sourceValueCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of distinct source values in the RACE_SOURCE_VALUE field of the PERSON table mapped to 0.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of distinct source values in the RACE_SOURCE_VALUE field of the person table mapped to 0.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_SOURCE_VALUE' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -1375,7 +1375,7 @@ number of source values with 0 standard concept / number of distinct source valu
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_SOURCE_VALUE
 standardConceptFieldName = RACE_CONCEPT_ID
 
@@ -1393,9 +1393,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT DISTINCT 
-            'PERSON.RACE_SOURCE_VALUE' AS violating_field, 
+            'person.RACE_SOURCE_VALUE' AS violating_field, 
             cdmTable.RACE_SOURCE_VALUE
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
         
         WHERE cdmTable.RACE_CONCEPT_ID = 0
         /*violatedRowsEnd*/
@@ -1404,7 +1404,7 @@ FROM (
 (
     SELECT 
         COUNT_BIG(DISTINCT cdmTable.RACE_SOURCE_VALUE) + COUNT(DISTINCT CASE WHEN cdmTable.RACE_SOURCE_VALUE IS NULL THEN 1 END) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
 ) denominator
 

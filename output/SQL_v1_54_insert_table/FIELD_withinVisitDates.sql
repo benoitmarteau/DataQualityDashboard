@@ -39,7 +39,7 @@ SELECT
 FROM (
   /*********
 FIELD LEVEL check:
-WITHIN_VISIT_DATES - find events that occur one week before the corresponding visit_start_date or one week after the corresponding visit_end_date
+WITHIN_VISIT_DATES - find events that occur one week before the corresponding VISIT_START_DATE or one week after the corresponding VISIT_END_DATE
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -65,10 +65,10 @@ FROM (
             cdmTable.*
         FROM dbo.CONDITION_OCCURRENCE cdmTable
         
-        JOIN dbo.visit_occurrence vo
-            ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
-        WHERE cdmTable.CONDITION_START_DATE < DATEADD(DAY, -7, vo.visit_start_date)
-            OR cdmTable.CONDITION_START_DATE > DATEADD(DAY, 7, vo.visit_end_date)
+        JOIN dbo.VISIT_OCCURRENCE vo
+            ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
+        WHERE cdmTable.CONDITION_START_DATE < DATEADD(DAY, -7, vo.VISIT_START_DATE)
+            OR cdmTable.CONDITION_START_DATE > DATEADD(DAY, 7, vo.VISIT_END_DATE)
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -77,8 +77,8 @@ FROM (
         COUNT_BIG(*) AS num_rows
     FROM dbo.CONDITION_OCCURRENCE cdmTable
     
-    JOIN dbo.visit_occurrence vo
-        ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
+    JOIN dbo.VISIT_OCCURRENCE vo
+        ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
 ) denominator
 
 
@@ -118,7 +118,7 @@ SELECT
 FROM (
   /*********
 FIELD LEVEL check:
-WITHIN_VISIT_DATES - find events that occur one week before the corresponding visit_start_date or one week after the corresponding visit_end_date
+WITHIN_VISIT_DATES - find events that occur one week before the corresponding VISIT_START_DATE or one week after the corresponding VISIT_END_DATE
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -144,10 +144,10 @@ FROM (
             cdmTable.*
         FROM dbo.DEVICE_EXPOSURE cdmTable
         
-        JOIN dbo.visit_occurrence vo
-            ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
-        WHERE cdmTable.DEVICE_EXPOSURE_START_DATE < DATEADD(DAY, -7, vo.visit_start_date)
-            OR cdmTable.DEVICE_EXPOSURE_START_DATE > DATEADD(DAY, 7, vo.visit_end_date)
+        JOIN dbo.VISIT_OCCURRENCE vo
+            ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
+        WHERE cdmTable.DEVICE_EXPOSURE_START_DATE < DATEADD(DAY, -7, vo.VISIT_START_DATE)
+            OR cdmTable.DEVICE_EXPOSURE_START_DATE > DATEADD(DAY, 7, vo.VISIT_END_DATE)
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -156,8 +156,8 @@ FROM (
         COUNT_BIG(*) AS num_rows
     FROM dbo.DEVICE_EXPOSURE cdmTable
     
-    JOIN dbo.visit_occurrence vo
-        ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
+    JOIN dbo.VISIT_OCCURRENCE vo
+        ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
 ) denominator
 
 
@@ -197,7 +197,7 @@ SELECT
 FROM (
   /*********
 FIELD LEVEL check:
-WITHIN_VISIT_DATES - find events that occur one week before the corresponding visit_start_date or one week after the corresponding visit_end_date
+WITHIN_VISIT_DATES - find events that occur one week before the corresponding VISIT_START_DATE or one week after the corresponding VISIT_END_DATE
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -223,10 +223,10 @@ FROM (
             cdmTable.*
         FROM dbo.DRUG_EXPOSURE cdmTable
         
-        JOIN dbo.visit_occurrence vo
-            ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
-        WHERE cdmTable.DRUG_EXPOSURE_START_DATE < DATEADD(DAY, -7, vo.visit_start_date)
-            OR cdmTable.DRUG_EXPOSURE_START_DATE > DATEADD(DAY, 7, vo.visit_end_date)
+        JOIN dbo.VISIT_OCCURRENCE vo
+            ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
+        WHERE cdmTable.DRUG_EXPOSURE_START_DATE < DATEADD(DAY, -7, vo.VISIT_START_DATE)
+            OR cdmTable.DRUG_EXPOSURE_START_DATE > DATEADD(DAY, 7, vo.VISIT_END_DATE)
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -235,8 +235,8 @@ FROM (
         COUNT_BIG(*) AS num_rows
     FROM dbo.DRUG_EXPOSURE cdmTable
     
-    JOIN dbo.visit_occurrence vo
-        ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
+    JOIN dbo.VISIT_OCCURRENCE vo
+        ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
 ) denominator
 
 
@@ -276,7 +276,7 @@ SELECT
 FROM (
   /*********
 FIELD LEVEL check:
-WITHIN_VISIT_DATES - find events that occur one week before the corresponding visit_start_date or one week after the corresponding visit_end_date
+WITHIN_VISIT_DATES - find events that occur one week before the corresponding VISIT_START_DATE or one week after the corresponding VISIT_END_DATE
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -302,10 +302,10 @@ FROM (
             cdmTable.*
         FROM dbo.MEASUREMENT cdmTable
         
-        JOIN dbo.visit_occurrence vo
-            ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
-        WHERE cdmTable.MEASUREMENT_DATE < DATEADD(DAY, -7, vo.visit_start_date)
-            OR cdmTable.MEASUREMENT_DATE > DATEADD(DAY, 7, vo.visit_end_date)
+        JOIN dbo.VISIT_OCCURRENCE vo
+            ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
+        WHERE cdmTable.MEASUREMENT_DATE < DATEADD(DAY, -7, vo.VISIT_START_DATE)
+            OR cdmTable.MEASUREMENT_DATE > DATEADD(DAY, 7, vo.VISIT_END_DATE)
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -314,8 +314,8 @@ FROM (
         COUNT_BIG(*) AS num_rows
     FROM dbo.MEASUREMENT cdmTable
     
-    JOIN dbo.visit_occurrence vo
-        ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
+    JOIN dbo.VISIT_OCCURRENCE vo
+        ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
 ) denominator
 
 
@@ -355,7 +355,7 @@ SELECT
 FROM (
   /*********
 FIELD LEVEL check:
-WITHIN_VISIT_DATES - find events that occur one week before the corresponding visit_start_date or one week after the corresponding visit_end_date
+WITHIN_VISIT_DATES - find events that occur one week before the corresponding VISIT_START_DATE or one week after the corresponding VISIT_END_DATE
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -381,10 +381,10 @@ FROM (
             cdmTable.*
         FROM dbo.NOTE cdmTable
         
-        JOIN dbo.visit_occurrence vo
-            ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
-        WHERE cdmTable.NOTE_DATE < DATEADD(DAY, -7, vo.visit_start_date)
-            OR cdmTable.NOTE_DATE > DATEADD(DAY, 7, vo.visit_end_date)
+        JOIN dbo.VISIT_OCCURRENCE vo
+            ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
+        WHERE cdmTable.NOTE_DATE < DATEADD(DAY, -7, vo.VISIT_START_DATE)
+            OR cdmTable.NOTE_DATE > DATEADD(DAY, 7, vo.VISIT_END_DATE)
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -393,8 +393,8 @@ FROM (
         COUNT_BIG(*) AS num_rows
     FROM dbo.NOTE cdmTable
     
-    JOIN dbo.visit_occurrence vo
-        ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
+    JOIN dbo.VISIT_OCCURRENCE vo
+        ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
 ) denominator
 
 
@@ -434,7 +434,7 @@ SELECT
 FROM (
   /*********
 FIELD LEVEL check:
-WITHIN_VISIT_DATES - find events that occur one week before the corresponding visit_start_date or one week after the corresponding visit_end_date
+WITHIN_VISIT_DATES - find events that occur one week before the corresponding VISIT_START_DATE or one week after the corresponding VISIT_END_DATE
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -460,10 +460,10 @@ FROM (
             cdmTable.*
         FROM dbo.OBSERVATION cdmTable
         
-        JOIN dbo.visit_occurrence vo
-            ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
-        WHERE cdmTable.OBSERVATION_DATE < DATEADD(DAY, -7, vo.visit_start_date)
-            OR cdmTable.OBSERVATION_DATE > DATEADD(DAY, 7, vo.visit_end_date)
+        JOIN dbo.VISIT_OCCURRENCE vo
+            ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
+        WHERE cdmTable.OBSERVATION_DATE < DATEADD(DAY, -7, vo.VISIT_START_DATE)
+            OR cdmTable.OBSERVATION_DATE > DATEADD(DAY, 7, vo.VISIT_END_DATE)
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -472,8 +472,8 @@ FROM (
         COUNT_BIG(*) AS num_rows
     FROM dbo.OBSERVATION cdmTable
     
-    JOIN dbo.visit_occurrence vo
-        ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
+    JOIN dbo.VISIT_OCCURRENCE vo
+        ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
 ) denominator
 
 
@@ -513,7 +513,7 @@ SELECT
 FROM (
   /*********
 FIELD LEVEL check:
-WITHIN_VISIT_DATES - find events that occur one week before the corresponding visit_start_date or one week after the corresponding visit_end_date
+WITHIN_VISIT_DATES - find events that occur one week before the corresponding VISIT_START_DATE or one week after the corresponding VISIT_END_DATE
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -539,10 +539,10 @@ FROM (
             cdmTable.*
         FROM dbo.PROCEDURE_OCCURRENCE cdmTable
         
-        JOIN dbo.visit_occurrence vo
-            ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
-        WHERE cdmTable.PROCEDURE_DATE < DATEADD(DAY, -7, vo.visit_start_date)
-            OR cdmTable.PROCEDURE_DATE > DATEADD(DAY, 7, vo.visit_end_date)
+        JOIN dbo.VISIT_OCCURRENCE vo
+            ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
+        WHERE cdmTable.PROCEDURE_DATE < DATEADD(DAY, -7, vo.VISIT_START_DATE)
+            OR cdmTable.PROCEDURE_DATE > DATEADD(DAY, 7, vo.VISIT_END_DATE)
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -551,8 +551,8 @@ FROM (
         COUNT_BIG(*) AS num_rows
     FROM dbo.PROCEDURE_OCCURRENCE cdmTable
     
-    JOIN dbo.visit_occurrence vo
-        ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
+    JOIN dbo.VISIT_OCCURRENCE vo
+        ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
 ) denominator
 
 
@@ -592,7 +592,7 @@ SELECT
 FROM (
   /*********
 FIELD LEVEL check:
-WITHIN_VISIT_DATES - find events that occur one week before the corresponding visit_start_date or one week after the corresponding visit_end_date
+WITHIN_VISIT_DATES - find events that occur one week before the corresponding VISIT_START_DATE or one week after the corresponding VISIT_END_DATE
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -618,10 +618,10 @@ FROM (
             cdmTable.*
         FROM dbo.VISIT_DETAIL cdmTable
         
-        JOIN dbo.visit_occurrence vo
-            ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
-        WHERE cdmTable.VISIT_DETAIL_END_DATE < DATEADD(DAY, -7, vo.visit_start_date)
-            OR cdmTable.VISIT_DETAIL_END_DATE > DATEADD(DAY, 7, vo.visit_end_date)
+        JOIN dbo.VISIT_OCCURRENCE vo
+            ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
+        WHERE cdmTable.VISIT_DETAIL_END_DATE < DATEADD(DAY, -7, vo.VISIT_START_DATE)
+            OR cdmTable.VISIT_DETAIL_END_DATE > DATEADD(DAY, 7, vo.VISIT_END_DATE)
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -630,8 +630,8 @@ FROM (
         COUNT_BIG(*) AS num_rows
     FROM dbo.VISIT_DETAIL cdmTable
     
-    JOIN dbo.visit_occurrence vo
-        ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
+    JOIN dbo.VISIT_OCCURRENCE vo
+        ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
 ) denominator
 
 
@@ -671,7 +671,7 @@ SELECT
 FROM (
   /*********
 FIELD LEVEL check:
-WITHIN_VISIT_DATES - find events that occur one week before the corresponding visit_start_date or one week after the corresponding visit_end_date
+WITHIN_VISIT_DATES - find events that occur one week before the corresponding VISIT_START_DATE or one week after the corresponding VISIT_END_DATE
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -697,10 +697,10 @@ FROM (
             cdmTable.*
         FROM dbo.VISIT_DETAIL cdmTable
         
-        JOIN dbo.visit_occurrence vo
-            ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
-        WHERE cdmTable.VISIT_DETAIL_START_DATE < DATEADD(DAY, -7, vo.visit_start_date)
-            OR cdmTable.VISIT_DETAIL_START_DATE > DATEADD(DAY, 7, vo.visit_end_date)
+        JOIN dbo.VISIT_OCCURRENCE vo
+            ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
+        WHERE cdmTable.VISIT_DETAIL_START_DATE < DATEADD(DAY, -7, vo.VISIT_START_DATE)
+            OR cdmTable.VISIT_DETAIL_START_DATE > DATEADD(DAY, 7, vo.VISIT_END_DATE)
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -709,8 +709,8 @@ FROM (
         COUNT_BIG(*) AS num_rows
     FROM dbo.VISIT_DETAIL cdmTable
     
-    JOIN dbo.visit_occurrence vo
-        ON cdmTable.visit_occurrence_id = vo.visit_occurrence_id
+    JOIN dbo.VISIT_OCCURRENCE vo
+        ON cdmTable.VISIT_OCCURRENCE_ID = vo.VISIT_OCCURRENCE_ID
 ) denominator
 
 

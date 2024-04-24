@@ -1667,7 +1667,7 @@ SELECT
 FROM (
   /*********
 CONCEPT_RECORD_COMPLETENESS
-number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where value_as_number IS NOT NULL
+number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where VALUE_AS_NUMBER IS NOT NULL
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1741,7 +1741,7 @@ SELECT
 FROM (
   /*********
 CONCEPT_RECORD_COMPLETENESS
-number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where value_as_number IS NOT NULL
+number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where VALUE_AS_NUMBER IS NOT NULL
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1815,7 +1815,7 @@ SELECT
 FROM (
   /*********
 CONCEPT_RECORD_COMPLETENESS
-number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where value_as_number IS NOT NULL
+number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where VALUE_AS_NUMBER IS NOT NULL
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1841,7 +1841,7 @@ FROM (
             cdmTable.* 
         FROM dbo.MEASUREMENT cdmTable
         
-        WHERE cdmTable.UNIT_CONCEPT_ID = 0 AND cdmTable.value_as_number IS NOT NULL
+        WHERE cdmTable.UNIT_CONCEPT_ID = 0 AND cdmTable.VALUE_AS_NUMBER IS NOT NULL
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -1849,7 +1849,7 @@ FROM (
     SELECT COUNT_BIG(*) AS num_rows
     FROM dbo.MEASUREMENT cdmTable
     
-    WHERE cdmTable.value_as_number IS NOT NULL
+    WHERE cdmTable.VALUE_AS_NUMBER IS NOT NULL
 ) denominator
 
 
@@ -1889,7 +1889,7 @@ SELECT
 FROM (
   /*********
 CONCEPT_RECORD_COMPLETENESS
-number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where value_as_number IS NOT NULL
+number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where VALUE_AS_NUMBER IS NOT NULL
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -1963,7 +1963,7 @@ SELECT
 FROM (
   /*********
 CONCEPT_RECORD_COMPLETENESS
-number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where value_as_number IS NOT NULL
+number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where VALUE_AS_NUMBER IS NOT NULL
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2037,7 +2037,7 @@ SELECT
 FROM (
   /*********
 CONCEPT_RECORD_COMPLETENESS
-number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where value_as_number IS NOT NULL
+number of 0s / total number of records * for the OBSERVATION.unit_concept_id and MEASUREMENT.unit_concept_id the numerator and denominator are limited to records where VALUE_AS_NUMBER IS NOT NULL
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
@@ -2063,7 +2063,7 @@ FROM (
             cdmTable.* 
         FROM dbo.OBSERVATION cdmTable
         
-        WHERE cdmTable.UNIT_CONCEPT_ID = 0 AND cdmTable.value_as_number IS NOT NULL
+        WHERE cdmTable.UNIT_CONCEPT_ID = 0 AND cdmTable.VALUE_AS_NUMBER IS NOT NULL
         /*violatedRowsEnd*/
     ) violated_rows
 ) violated_row_count,
@@ -2071,7 +2071,7 @@ FROM (
     SELECT COUNT_BIG(*) AS num_rows
     FROM dbo.OBSERVATION cdmTable
     
-    WHERE cdmTable.value_as_number IS NOT NULL
+    WHERE cdmTable.VALUE_AS_NUMBER IS NOT NULL
 ) denominator
 
 
@@ -2163,8 +2163,8 @@ SELECT
   ,'' as query_text
   ,'standardConceptRecordCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value of 0 in the standard concept field ETHNICITY_CONCEPT_ID in the PERSON table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a value of 0 in the standard concept field ETHNICITY_CONCEPT_ID in the person table.' as check_description
+  ,'person' as cdm_table_name
   ,'ETHNICITY_CONCEPT_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -2189,7 +2189,7 @@ number of 0s / total number of records
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = ETHNICITY_CONCEPT_ID
 
 **********/
@@ -2207,9 +2207,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.ETHNICITY_CONCEPT_ID' AS violating_field, 
+            'person.ETHNICITY_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
         
         WHERE cdmTable.ETHNICITY_CONCEPT_ID = 0 
         /*violatedRowsEnd*/
@@ -2217,7 +2217,7 @@ FROM (
 ) violated_row_count,
 ( 
     SELECT COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
     
 ) denominator
@@ -2237,8 +2237,8 @@ SELECT
   ,'' as query_text
   ,'standardConceptRecordCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value of 0 in the standard concept field GENDER_CONCEPT_ID in the PERSON table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a value of 0 in the standard concept field GENDER_CONCEPT_ID in the person table.' as check_description
+  ,'person' as cdm_table_name
   ,'GENDER_CONCEPT_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -2263,7 +2263,7 @@ number of 0s / total number of records
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = GENDER_CONCEPT_ID
 
 **********/
@@ -2281,9 +2281,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.GENDER_CONCEPT_ID' AS violating_field, 
+            'person.GENDER_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
         
         WHERE cdmTable.GENDER_CONCEPT_ID = 0 
         /*violatedRowsEnd*/
@@ -2291,7 +2291,7 @@ FROM (
 ) violated_row_count,
 ( 
     SELECT COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
     
 ) denominator
@@ -2311,8 +2311,8 @@ SELECT
   ,'' as query_text
   ,'standardConceptRecordCompleteness' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records with a value of 0 in the standard concept field RACE_CONCEPT_ID in the PERSON table.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records with a value of 0 in the standard concept field RACE_CONCEPT_ID in the person table.' as check_description
+  ,'person' as cdm_table_name
   ,'RACE_CONCEPT_ID' as cdm_field_name
   ,'NA' as concept_id
   ,'NA' as unit_concept_id
@@ -2337,7 +2337,7 @@ number of 0s / total number of records
 
 Parameters used in this template:
 cdmDatabaseSchema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = RACE_CONCEPT_ID
 
 **********/
@@ -2355,9 +2355,9 @@ FROM (
     FROM (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.RACE_CONCEPT_ID' AS violating_field, 
+            'person.RACE_CONCEPT_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
         
         WHERE cdmTable.RACE_CONCEPT_ID = 0 
         /*violatedRowsEnd*/
@@ -2365,7 +2365,7 @@ FROM (
 ) violated_row_count,
 ( 
     SELECT COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
     
     
 ) denominator

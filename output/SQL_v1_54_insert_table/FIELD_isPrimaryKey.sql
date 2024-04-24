@@ -20,7 +20,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the CARE_SITE_ID field of the CARE_SITE.' as check_description
   ,'CARE_SITE' as cdm_table_name
   ,'CARE_SITE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -105,7 +105,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the CONCEPT_ID field of the CONCEPT.' as check_description
   ,'CONCEPT' as cdm_table_name
   ,'CONCEPT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -190,7 +190,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the CONCEPT_CLASS_ID field of the CONCEPT_CLASS.' as check_description
   ,'CONCEPT_CLASS' as cdm_table_name
   ,'CONCEPT_CLASS_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -275,7 +275,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the CONDITION_ERA_ID field of the CONDITION_ERA.' as check_description
   ,'CONDITION_ERA' as cdm_table_name
   ,'CONDITION_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -360,7 +360,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the CONDITION_OCCURRENCE_ID field of the CONDITION_OCCURRENCE.' as check_description
   ,'CONDITION_OCCURRENCE' as cdm_table_name
   ,'CONDITION_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -445,7 +445,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the COST_ID field of the COST.' as check_description
   ,'COST' as cdm_table_name
   ,'COST_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -530,7 +530,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the DEVICE_EXPOSURE_ID field of the DEVICE_EXPOSURE.' as check_description
   ,'DEVICE_EXPOSURE' as cdm_table_name
   ,'DEVICE_EXPOSURE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -615,7 +615,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the DOMAIN_ID field of the DOMAIN.' as check_description
   ,'DOMAIN' as cdm_table_name
   ,'DOMAIN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -700,7 +700,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the DOSE_ERA_ID field of the DOSE_ERA.' as check_description
   ,'DOSE_ERA' as cdm_table_name
   ,'DOSE_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -785,7 +785,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the DRUG_ERA_ID field of the DRUG_ERA.' as check_description
   ,'DRUG_ERA' as cdm_table_name
   ,'DRUG_ERA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -870,7 +870,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the DRUG_EXPOSURE_ID field of the DRUG_EXPOSURE.' as check_description
   ,'DRUG_EXPOSURE' as cdm_table_name
   ,'DRUG_EXPOSURE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -955,7 +955,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the EPISODE_ID field of the EPISODE.' as check_description
   ,'EPISODE' as cdm_table_name
   ,'EPISODE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1040,7 +1040,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the LOCATION_ID field of the LOCATION.' as check_description
   ,'LOCATION' as cdm_table_name
   ,'LOCATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1125,7 +1125,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the MEASUREMENT_ID field of the MEASUREMENT.' as check_description
   ,'MEASUREMENT' as cdm_table_name
   ,'MEASUREMENT_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1210,7 +1210,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the METADATA_ID field of the METADATA.' as check_description
   ,'METADATA' as cdm_table_name
   ,'METADATA_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1295,7 +1295,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the NOTE_ID field of the NOTE.' as check_description
   ,'NOTE' as cdm_table_name
   ,'NOTE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1380,7 +1380,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the NOTE_NLP_ID field of the NOTE_NLP.' as check_description
   ,'NOTE_NLP' as cdm_table_name
   ,'NOTE_NLP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1465,7 +1465,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the OBSERVATION_ID field of the OBSERVATION.' as check_description
   ,'OBSERVATION' as cdm_table_name
   ,'OBSERVATION_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1550,7 +1550,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the OBSERVATION_PERIOD_ID field of the OBSERVATION_PERIOD.' as check_description
   ,'OBSERVATION_PERIOD' as cdm_table_name
   ,'OBSERVATION_PERIOD_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1635,7 +1635,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the PAYER_PLAN_PERIOD_ID field of the PAYER_PLAN_PERIOD.' as check_description
   ,'PAYER_PLAN_PERIOD' as cdm_table_name
   ,'PAYER_PLAN_PERIOD_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1717,10 +1717,10 @@ SELECT
   ,'' as query_text
   ,'isPrimaryKey' as check_name
   ,'FIELD' as check_level
-  ,'The number and percent of records that have a duplicate value in the PERSON_ID field of the PERSON.' as check_description
-  ,'PERSON' as cdm_table_name
+  ,'The number and percent of records that have a duplicate value in the PERSON_ID field of the person.' as check_description
+  ,'person' as cdm_table_name
   ,'PERSON_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1745,7 +1745,7 @@ Primary Key - verify that values in fields where isPrimaryKey == Yes are unique
 
 Parameters used in this template:
 schema = dbo
-cdmTableName = PERSON
+cdmTableName = person
 cdmFieldName = PERSON_ID
 
 **********/
@@ -1766,14 +1766,14 @@ FROM
     (
         /*violatedRowsBegin*/
         SELECT 
-            'PERSON.PERSON_ID' AS violating_field, 
+            'person.PERSON_ID' AS violating_field, 
             cdmTable.* 
-        FROM dbo.PERSON cdmTable
+        FROM dbo.person cdmTable
             
         WHERE cdmTable.PERSON_ID IN ( 
             SELECT 
                 PERSON_ID 
-            FROM dbo.PERSON
+            FROM dbo.person
             GROUP BY PERSON_ID
             HAVING COUNT_BIG(*) > 1 
         )
@@ -1783,7 +1783,7 @@ FROM
 ( 
     SELECT 
         COUNT_BIG(*) AS num_rows
-    FROM dbo.PERSON cdmTable
+    FROM dbo.person cdmTable
         
 ) denominator
 
@@ -1805,7 +1805,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the PROCEDURE_OCCURRENCE_ID field of the PROCEDURE_OCCURRENCE.' as check_description
   ,'PROCEDURE_OCCURRENCE' as cdm_table_name
   ,'PROCEDURE_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1890,7 +1890,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the PROVIDER_ID field of the PROVIDER.' as check_description
   ,'PROVIDER' as cdm_table_name
   ,'PROVIDER_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -1975,7 +1975,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the RELATIONSHIP_ID field of the RELATIONSHIP.' as check_description
   ,'RELATIONSHIP' as cdm_table_name
   ,'RELATIONSHIP_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -2060,7 +2060,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the SPECIMEN_ID field of the SPECIMEN.' as check_description
   ,'SPECIMEN' as cdm_table_name
   ,'SPECIMEN_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -2145,7 +2145,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the VISIT_DETAIL_ID field of the VISIT_DETAIL.' as check_description
   ,'VISIT_DETAIL' as cdm_table_name
   ,'VISIT_DETAIL_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -2230,7 +2230,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the VISIT_OCCURRENCE_ID field of the VISIT_OCCURRENCE.' as check_description
   ,'VISIT_OCCURRENCE' as cdm_table_name
   ,'VISIT_OCCURRENCE_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
@@ -2315,7 +2315,7 @@ SELECT
   ,'The number and percent of records that have a duplicate value in the VOCABULARY_ID field of the VOCABULARY.' as check_description
   ,'VOCABULARY' as cdm_table_name
   ,'VOCABULARY_ID' as cdm_field_name
-  ,'NA' as concept_id
+  ,'NA' as CONCEPT_ID
   ,'NA' as unit_concept_id
   ,'field_is_primary_key.sql' as sql_file
   ,'Conformance' as category
