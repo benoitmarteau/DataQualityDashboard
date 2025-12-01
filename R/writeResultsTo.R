@@ -1,4 +1,4 @@
-# Copyright 2024 Observational Health Data Sciences and Informatics
+# Copyright 2025 Observational Health Data Sciences and Informatics
 #
 # This file is part of DataQualityDashboard
 #
@@ -75,7 +75,7 @@
 
   # convert column names to snake case, omitting the checkId column,
   # which has no underscore in the results table DDL
-  for (i in 1:ncol(checkResults)) {
+  for (i in seq_len(ncol(checkResults))) {
     if (colnames(checkResults)[i] == "checkId") {
       colnames(checkResults)[i] <- tolower(colnames(checkResults)[i])
     } else {
@@ -92,6 +92,7 @@
       ParallelLogger::logInfo("Finished writing table")
     },
     error = function(e) {
+      warning(sprintf("Writing table failed: %s", e$message))
       ParallelLogger::logError(sprintf("Writing table failed: %s", e$message))
     }
   )

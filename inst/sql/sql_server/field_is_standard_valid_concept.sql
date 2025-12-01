@@ -42,7 +42,11 @@ FROM
 	  	JOIN @vocabDatabaseSchema.concept co 
 	  	    ON cdmTable.@cdmFieldName = co.concept_id
 		WHERE co.concept_id != 0 
-			AND (co.standard_concept != 'S' OR co.invalid_reason IS NOT NULL)
+			AND (
+				co.standard_concept != 'S' 
+				OR co.invalid_reason IS NOT NULL
+				OR co.standard_concept IS NULL
+			)
 		/*violatedRowsEnd*/
   ) violated_rows
 ) violated_row_count,
@@ -54,6 +58,7 @@ FROM
   		JOIN @cohortDatabaseSchema.@cohortTableName c 
   		    ON cdmTable.person_id = c.subject_id
   		    AND c.cohort_definition_id = @cohortDefinitionId
-    }
+    	}
+	WHERE cdmTable.@cdmFieldName IS NOT NULL
 ) denominator
 ;

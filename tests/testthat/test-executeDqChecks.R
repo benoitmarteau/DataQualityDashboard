@@ -74,6 +74,121 @@ test_that("Execute CONCEPT checks on Synthea/Eunomia", {
   expect_true(nrow(results$CheckResults) > 0)
 })
 
+test_that("Execute observation period overlap check", {
+  outputFolder <- tempfile("dqd_")
+  on.exit(unlink(outputFolder, recursive = TRUE))
+
+  # First, run the check on clean data (should pass)
+  resultsClean <- executeDqChecks(
+    connectionDetails = connectionDetailsEunomiaOverlap,
+    cdmDatabaseSchema = cdmDatabaseSchemaEunomia,
+    resultsDatabaseSchema = resultsDatabaseSchemaEunomia,
+    cdmSourceName = "Eunomia",
+    checkNames = c("measureObservationPeriodOverlap"),
+    outputFolder = outputFolder,
+    writeToTable = F
+  )
+
+  expect_true(nrow(resultsClean$CheckResults) > 0)
+
+  # Get the result for the observation period overlap check
+  overlapResultClean <- resultsClean$CheckResults[
+    resultsClean$CheckResults$checkName == "measureObservationPeriodOverlap",
+  ]
+
+  expect_true(nrow(overlapResultClean) == 1)
+
+  # Now create overlapping observation periods to test the failure scenario
+  connection <- DatabaseConnector::connect(connectionDetailsEunomiaOverlap)
+  on.exit(DatabaseConnector::disconnect(connection), add = TRUE)
+
+  # Insert overlapping observation periods for a test person
+  # First, get an existing person_id
+  personId <- DatabaseConnector::querySql(connection, "SELECT person_id FROM observation_period LIMIT 1;")[1, 1]
+
+  # Insert overlapping observation periods
+  DatabaseConnector::renderTranslateExecuteSql(connection,
+    "INSERT INTO observation_period (observation_period_id, person_id, observation_period_start_date, observation_period_end_date, period_type_concept_id)
+     VALUES
+     (999999, @person_id, strftime('%s', '2020-01-01'), strftime('%s', '2020-06-30'), 44814724),
+     (999998, @person_id, strftime('%s', '2020-04-01'), strftime('%s', '2020-12-31'), 44814724);",
+    person_id = personId
+  )
+
+  # Run the check again with overlapping data (should fail)
+  resultsOverlap <- executeDqChecks(
+    connectionDetails = connectionDetailsEunomiaOverlap,
+    cdmDatabaseSchema = cdmDatabaseSchemaEunomia,
+    resultsDatabaseSchema = resultsDatabaseSchemaEunomia,
+    cdmSourceName = "Eunomia",
+    checkNames = c("measureObservationPeriodOverlap"),
+    outputFolder = outputFolder,
+    writeToTable = F
+  )
+
+  expect_true(nrow(resultsOverlap$CheckResults) > 0)
+
+  # Get the result for the observation period overlap check with overlapping data
+  overlapResultOverlap <- resultsOverlap$CheckResults[
+    resultsOverlap$CheckResults$checkName == "measureObservationPeriodOverlap",
+  ]
+
+  expect_true(nrow(overlapResultOverlap) == 1)
+
+  # Verify that the check detected the overlap (should have violated rows)
+  expect_true(overlapResultOverlap$numViolatedRows > 0)
+  expect_true(overlapResultOverlap$pctViolatedRows > 0)
+
+  # Verify that the clean data had no violations
+  expect_true(overlapResultClean$numViolatedRows == 0)
+  expect_true(overlapResultClean$pctViolatedRows == 0)
+
+  # Clean up the overlapping data
+  DatabaseConnector::renderTranslateExecuteSql(
+    connection,
+    "DELETE FROM observation_period WHERE observation_period_id IN (999999, 999998);"
+  )
+
+  # Now test back-to-back observation periods
+  DatabaseConnector::renderTranslateExecuteSql(connection,
+    "INSERT INTO observation_period (observation_period_id, person_id, observation_period_start_date, observation_period_end_date, period_type_concept_id)
+     VALUES
+     (999997, @person_id, strftime('%s', '2020-01-01'), strftime('%s', '2020-06-30'), 44814724),
+     (999996, @person_id, strftime('%s', '2020-07-01'), strftime('%s', '2020-12-31'), 44814724);",
+    person_id = personId
+  )
+
+  # Run the check again with back-to-back data (should fail)
+  resultsBackToBack <- executeDqChecks(
+    connectionDetails = connectionDetailsEunomiaOverlap,
+    cdmDatabaseSchema = cdmDatabaseSchemaEunomia,
+    resultsDatabaseSchema = resultsDatabaseSchemaEunomia,
+    cdmSourceName = "Eunomia",
+    checkNames = c("measureObservationPeriodOverlap"),
+    outputFolder = outputFolder,
+    writeToTable = F
+  )
+
+  expect_true(nrow(resultsBackToBack$CheckResults) > 0)
+
+  # Get the result for the observation period overlap check with back-to-back data
+  overlapResultBackToBack <- resultsBackToBack$CheckResults[
+    resultsBackToBack$CheckResults$checkName == "measureObservationPeriodOverlap",
+  ]
+
+  expect_true(nrow(overlapResultBackToBack) == 1)
+
+  # Verify that the check detected the back-to-back periods (should have violated rows)
+  expect_true(overlapResultBackToBack$numViolatedRows > 0)
+  expect_true(overlapResultBackToBack$pctViolatedRows > 0)
+
+  # Clean up the back-to-back data
+  DatabaseConnector::renderTranslateExecuteSql(
+    connection,
+    "DELETE FROM observation_period WHERE observation_period_id IN (999997, 999996);"
+  )
+})
+
 test_that("Execute a single DQ check on a cohort in Synthea/Eunomia", {
   # simulating cohort table entries using observation period data
   connection <- DatabaseConnector::connect(connectionDetailsEunomia)
@@ -120,7 +235,8 @@ test_that("Execute a single DQ check on remote databases", {
     "oracle",
     "postgresql",
     "sql server",
-    "redshift"
+    "redshift",
+    "iris"
   )
 
   for (dbType in dbTypes) {
@@ -131,7 +247,7 @@ test_that("Execute a single DQ check on remote databases", {
       sysPassword != "" &
       sysServer != "") {
       cdmDatabaseSchema <- Sys.getenv(sprintf("CDM5_%s_CDM54_SCHEMA", toupper(gsub(" ", "_", dbType))))
-      resultsDatabaseSchema <- Sys.getenv("CDM5_%s_OHDSI_SCHEMA", toupper(gsub(" ", "_", dbType)))
+      resultsDatabaseSchema <- Sys.getenv(sprintf("CDM5_%s_OHDSI_SCHEMA", toupper(gsub(" ", "_", dbType))))
 
       connectionDetails <- createConnectionDetails(
         dbms = dbType,
@@ -393,7 +509,39 @@ test_that("checkNames are filtered by checkSeverity", {
 
   expectedCheckNames <- c(
     "cdmTable", "cdmField", "isRequired", "cdmDatatype",
-    "isPrimaryKey", "isForeignKey"
+    "isPrimaryKey", "isForeignKey", "measureObservationPeriodOverlap"
   )
   expect_true(all(results$CheckResults$checkName %in% expectedCheckNames))
+})
+
+test_that("Execute a single DQ check on DuckDB", {
+  outputFolder <- tempfile("dqd_")
+  on.exit(unlink(outputFolder, recursive = TRUE))
+
+  # Get Eunomia database file in DuckDB format
+  eunomiaDbPath <- Eunomia::getDatabaseFile(
+    datasetName = "GiBleed",
+    dbms = "duckdb"
+  )
+
+  # Create DuckDB connection details using the Eunomia database file
+  duckdbConnectionDetails <- DatabaseConnector::createConnectionDetails(
+    dbms = "duckdb",
+    server = eunomiaDbPath
+  )
+
+  expect_warning(
+    results <- executeDqChecks(
+      connectionDetails = duckdbConnectionDetails,
+      cdmDatabaseSchema = "main",
+      resultsDatabaseSchema = "main",
+      cdmSourceName = "DuckDB Test",
+      checkNames = "measurePersonCompleteness",
+      outputFolder = outputFolder,
+      writeToTable = FALSE
+    ),
+    regexp = "^Missing check names.*"
+  )
+
+  expect_true(nrow(results$CheckResults) > 0)
 })
